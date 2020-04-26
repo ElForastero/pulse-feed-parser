@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+
+>
+
+  <channel>
+    <title>The GitHub Blog</title>
+    <atom:link href="https://github.blog/feed/" rel="self" type="application/rss+xml"/>
+    <link>https://github.blog</link>
+    <description>Updates, ideas, and inspiration from GitHub to help developers build and design software.</description>
+    <lastBuildDate>Thu, 23 Apr 2020 05:00:36 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>
+      hourly
+    </sy:updatePeriod>
+    <sy:updateFrequency>
+      1
+    </sy:updateFrequency>
+    <generator>https://wordpress.org/?v=5.4</generator>
+
+    <image>
+      <url>https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32</url>
+      <title>The GitHub Blog</title>
+      <link>https://github.blog</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+    <site xmlns="com-wordpress:feed-additions:1">153214340</site>
+    <item>
+      <title>GitHub Protips: Tips, tricks, hacks, and secrets from Alyson La</title>
+      <link>https://github.blog/2020-04-23-github-protips-tips-tricks-hacks-and-secrets-from-alyson-la/</link>
+
+      <dc:creator><![CDATA[Alyson La]]></dc:creator>
+      <pubDate>Thu, 23 Apr 2020 16:00:39 +0000</pubDate>
+      <category><![CDATA[Community]]></category>
+      <category><![CDATA[Features]]></category>
+      <category><![CDATA[Insights]]></category>
+      <category><![CDATA[Open source]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[community]]></category>
+      <category><![CDATA[features]]></category>
+      <category><![CDATA[insights]]></category>
+      <category><![CDATA[open source]]></category>
+      <category><![CDATA[product]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52554</guid>
+
+      <description><![CDATA[<p>Check out Alyson La’s favorite tips for getting started with Git and GitHub. Get into the GitHub Flow, try out a few tools, practice merge conflicts, and more!</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-23-github-protips-tips-tricks-hacks-and-secrets-from-alyson-la/">GitHub Protips: Tips, tricks, hacks, and secrets from Alyson La</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p><em>This is the fourth in a series of posts featuring protips from GitHubbers for improving productivity, efficiency, and more.</em></p>
+<hr />
+<p>When I started working at GitHub, I was hired as the first staff accountant and had never even <i>seen</i> code prior to joining the company in 2012. I remember filling out a tax form that required me to describe what GitHub does and I wrote, “Social Repositories”. <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f604.png" alt="😄" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>It’s thanks to the social nature of GitHub as a product (and many helpful co-workers) that I started reading other people’s code and pull requests while learning Git and GitHub basics. After two years of honing my coding skills by attempting to automate some accounting processes, all the while facepalming due to yet another merge conflict, and working on open source side projects, I was offered a position to become one of GitHub’s first Data Scientists. Now as a member of our Data Science team, I get to apply my analytical and coding skills together to help GitHub (the business) better understand our users.</p>
+<p>But even working at GitHub, learning Git and GitHub was hard! As its own form of an open source contribution, I want to share my top tips for getting started using GitHub for the folks who are new to coding.</p>
+<h2 id="tip-1-gui-vs-cli-why-not-both">Tip 1: GUI vs CLI—why not both?<a href="#tip-1-gui-vs-cli-why-not-both" class="heading-link" aria-label="Tip 1: GUI vs CLI—why not both?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>When you first get started with Git/GitHub, you might get to a fork in the road (no pun intended) and will need to pick whether you use the command line interface (CLI) for <a href="https://education.github.com/git-cheat-sheet-education.pdf">git commands</a> or a GUI (Graphical User Interface) like <a href="https://desktop.github.com/">GitHub Desktop</a>—or even the <a href="https://visualstudio.github.com/">GitHub extension for Visual Studio</a>. My advice is to try both! Try out cloning repositories, branching, and committing changes to a branch—first in the CLI, then using a GUI. Which do you prefer? I ended up sticking with using Git commands in the terminal because I wanted to become more proficient in bash commands anyway. I also typically clone repositories using GitHub Desktop since it’s just a click away.</p>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/121322/80028499-0d3aaa80-849a-11ea-8249-8778e75af16e.png?ssl=1" data-recalc-dims="1" /></p>
+<p>Try both and choose the tool that works best for you right now—it may be a combo of both. As a new coder, you’ll likely want to build some muscle memory with git and bash commands in the terminal, but you may also enjoy the ease of use of a GUI for some tasks—like cloning or comparing diffs. Also, ask your fellow coders what tool they use and why! When learning Git/GitHub, it can be easier to use the same tooling as your colleagues or classmates who can help you get unstuck when you run into an inevitable git situation.</p>
+<h2 id="tip-2-set-up-your-dotfiles">Tip 2: Set up your dotfiles<a href="#tip-2-set-up-your-dotfiles" class="heading-link" aria-label="Tip 2: Set up your dotfiles" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>This is a game-changer for folks running git commands in the terminal. I didn’t learn about dotfiles until after I’d been coding and using Git/GitHub for multiple years. I’m still bummed that I didn’t know about this sooner!</p>
+<p><img src="https://i0.wp.com/user-images.githubusercontent.com/121322/80027474-ad8fcf80-8498-11ea-8d0d-fe1546492114.png?ssl=1" data-recalc-dims="1" /></p>
+<p>Dotfiles have many uses but one neat use is they allow you to customize your terminal prompt so you can see what git branch you are on and if you have uncommitted changes. YAY! I forked <a href="https://github.com/alysonla/dotfiles">my dotfiles</a> from a former co-worker (<a href="https://github.com/jnunemaker/dotfiles">John Nunemaker</a>) but if you search GitHub for <code>dotfiles</code> you’ll find loads of options.</p>
+<h2 id="tip-3-make-a-github-pages-site">Tip 3: Make a GitHub Pages site<a href="#tip-3-make-a-github-pages-site" class="heading-link" aria-label="Tip 3: Make a GitHub Pages site" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>A GitHub page is a personal or project-based website that GitHub hosts for free! It always helps to have an actual project to push to GitHub so you can practice your Git and GitHub skills.</p>
+<p><a href="http://alysonla.github.io/"><img src="https://i2.wp.com/user-images.githubusercontent.com/121322/80027345-77eae680-8498-11ea-8993-d121ea2afd38.png?ssl=1" data-recalc-dims="1" /></a></p>
+<p>Make a simple website using HTML, CSS, and JavaScript on your own, from a coding tutorial, or even forked from another user on GitHub, then follow the details on how to <a href="https://pages.github.com/">host it on GitHub</a>.</p>
+<p>The screenshot pictured above is my simple personal website hosted on GitHub Pages, which I forked from another co-worker, <a href="https://github.com/cobyism">@cobyism</a>. For more GitHub Pages inspiration, check out the source code for all the websites in <a href="https://github.com/collections/github-pages-examples">this GitHub collection</a> or browse repositories tagged <a href="https://github.com/topics/github-pages">#github-pages</a>. For fellow data scientists out there, there&#8217;s also a neat project called <a href="https://github.com/fastai/fastpages">fastpages</a>, which allows you to easily publish a GitHub Pages site directly from a Jupyter notebook using GitHub Actions.</p>
+<h2 id="tip-4-review-the-github-flow">Tip 4: Review the GitHub Flow<a href="#tip-4-review-the-github-flow" class="heading-link" aria-label="Tip 4: Review the GitHub Flow" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p><img class="alignnone" src="https://i0.wp.com/user-images.githubusercontent.com/121322/80027671-f47dc500-8498-11ea-88ea-df698510f875.png?resize=2086%2C794&#038;ssl=1" alt="The GitHub flow represented as a giraffe that gets iterated on as it moves through the process. Image credit goes to diy.org." width="2086" height="794" data-recalc-dims="1" /></p>
+<p>So you have a GitHub account, you’ve installed Git and/or a Git client, you’ve got a sticky note for some common Git commands on your monitor, and perhaps you’ve updated your dotfiles and created a personal GitHub pages site. But how does one actually <i>use GitHub to collaborate</i>? The GitHub Flow graphic (pictured above) is from a <a href="http://www.diy.org">kid’s learning site</a>, and after seeing it for the first time, I finally understood what GitHub is good for! By sharing our code, others can benefit from it and we can make something better, together! From the previous tips, note how both my dotfiles and personal website were forked from other people!</p>
+<p><a href="https://guides.github.com/introduction/flow/">Review the GitHub flow</a></p>
+<h2 id="tip-5-practice-merge-conflicts">Tip 5: Practice merge conflicts<a href="#tip-5-practice-merge-conflicts" class="heading-link" aria-label="Tip 5: Practice merge conflicts" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Merge conflicts can happen when you want to merge your pull request into a master branch but there are competing commits, and Git needs your help to decide which changes to incorporate in the final merge. This often happens when people make different changes to the same line of the same file, or when one person edits a file and another person deletes the same file.</p>
+<p>I can’t remember the number of times that I’ve abandoned a project or pull request because I hit a merge conflict. They scared me, the docs on how to fix them scared me, and then I was in VIM and wanted to <a href="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/05/practicaldev-1-457x600.jpg">quit forever</a>.</p>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/121322/80027458-a963b200-8498-11ea-9cdf-3155ee536b11.png?ssl=1" data-recalc-dims="1" /></p>
+<p>Then I realized I needed to face my fear, so I started a practice repository, created a merge conflict on purpose, and <a href="https://github.com/blog/2293-resolve-simple-merge-conflicts-on-github">walked through the documentation</a>, and watched <a href="https://www.youtube.com/watch?v=sfT0WrChMrM">a video on how to fix merge conflicts</a>. I did that a few times. And now you can <a href="https://github.com/blog/2293-resolve-simple-merge-conflicts-on-github">fix simple merge conflicts</a> in the GitHub User Interface, so that’s been handy.</p>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/121322/80027568-d0ba7f00-8498-11ea-9baa-1e9fbae30ca3.png?ssl=1" data-recalc-dims="1" /></p>
+<p>Today, when I hit a merge conflict, I’m slightly less scared and calmly make my way deleting the carrots, knowing that thanks to version control, I can’t mess things up too much. Or worse case, you can just <a href="https://xkcd.com/1597/">delete the project and re-clone</a>.</p>
+<h2 id="tip-6-your-first-open-source-contribution-can-be-docs-and-thats-ok">Tip 6: Your first open source contribution can be Docs and that’s OK!<a href="#tip-6-your-first-open-source-contribution-can-be-docs-and-thats-ok" class="heading-link" aria-label="Tip 6: Your first open source contribution can be Docs and that’s OK!" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>If you’ve made it this far, the next step is to connect with the open source community. <a href="https://help.github.com/en/github/getting-started-with-github/following-people">Follow</a> some people, <a href="https://help.github.com/en/github/getting-started-with-github/saving-repositories-with-stars">star</a> or watch some repositories, and when you’re up for it, make a contribution back to open source software by opening a pull request to request incorporating your changes back to the project. My <a href="https://github.com/railsgirls/railsgirls.github.io/pull/66">first open source contribution</a> (many, many moons ago) was a guide on <a href="http://guides.railsgirls.com/github">how to use GitHub</a> for RailGirls. Your first OS contribution can be docs and that’s OK! In fact, each year the GitHub Data Science team publishes the <a href="https://octoverse.github.com/">State of Octoverse</a> report that details the most popular and trending repositories and, for the past several years, some of the most widely contributed-to projects have been docs-related—for example, <a href="https://github.com/MicrosoftDocs/azure-docs">Azure Docs</a> and <a href="https://github.com/MicrosoftDocs/azure-devops-docs">Azure DevOps</a>.</p>
+<p><a href="https://octoverse.github.com/"><img class="alignnone" src="https://i0.wp.com/user-images.githubusercontent.com/121322/80028251-b03ef480-8499-11ea-8a74-9fd04f943850.png?resize=3152%2C1348&#038;ssl=1" alt="" width="3152" height="1348" data-recalc-dims="1" /></a></p>
+<h2 id="and-finally">And finally&#8230;<a href="#and-finally" class="heading-link" aria-label="And finally&#8230;" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>I’m sneaking in one last, maybe obvious tip which is&#8230;take a Git and GitHub class or tutorial! Here are a few that are worth checking out:</p>
+<ul>
+<li style="font-weight: 400"><a href="https://github.com/jlord/git-it-electron">Git-it</a></li>
+<li style="font-weight: 400"><a href="https://youtu.be/vR-y_2zWrIE">freeCodeCamp Git/GitHub videos</a></li>
+<li style="font-weight: 400"><a href="https://lab.github.com/">GitHub Learning Lab</a></li>
+<li style="font-weight: 400"><a href="https://guides.github.com/">GitHub Guides</a></li>
+</ul>
+<p>I hope this list of tips was helpful and if these or any other tips have been useful to you on your journey to learn Git and GitHub, we’d love to hear about it!</p>
+<h2 id="do-you-have-a-github-protip">Do you have a GitHub Protip?<a href="#do-you-have-a-github-protip" class="heading-link" aria-label="Do you have a GitHub Protip?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Do you have a tip, trick, or hack that makes your daily life easier on GitHub? Share it with us on social media with <a href="https://twitter.com/search?q=%23GitHubProtips&amp;src=typed_query">#GitHubProtips</a>.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-23-github-protips-tips-tricks-hacks-and-secrets-from-alyson-la/">GitHub Protips: Tips, tricks, hacks, and secrets from Alyson La</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52554</post-id>
+    </item>
+    <item>
+      <title>Improving notifications for everyone</title>
+      <link>https://github.blog/2020-04-22-improving-notifications-for-everyone/</link>
+
+      <dc:creator><![CDATA[Benjamin Nickolls]]></dc:creator>
+      <pubDate>Wed, 22 Apr 2020 17:20:09 +0000</pubDate>
+      <category><![CDATA[Features]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[features]]></category>
+      <category><![CDATA[product]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52546</guid>
+
+      <description><![CDATA[<p>We’re dedicated to making notifications as simple and valuable as they can be, so you can be as productive on GitHub and you can be.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-22-improving-notifications-for-everyone/">Improving notifications for everyone</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>We recently made the new web notifications experience the <a href="https://github.blog/2020-02-25-your-new-web-notifications-experience-is-here/">default for everyone on GitHub.com</a>. Now, we’re removing the classic interface to focus on improving the new experience for everyone.</p>
+<h2 id="a-better-notifications-experience">A better notifications experience<a href="#a-better-notifications-experience" class="heading-link" aria-label="A better notifications experience" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Notifications was designed to keep you productive and responsive on GitHub, no matter how many repositories, organizations or teams you contribute to. With custom filters, you can create workflows that work for <i>you</i>. Maybe you start your day with requested reviews, or check in with your favorite open source repository—you’re free to choose. Just getting started with notifications? Check out <a href="https://help.github.com/en/github/managing-subscriptions-and-notifications-on-github/customizing-a-workflow-for-triaging-your-notifications">a few techniques</a> you can use to get going.</p>
+<p><img src="https://i2.wp.com/user-images.githubusercontent.com/158833/79959349-eff6e380-847b-11ea-97d1-9e4c0439d3af.png?ssl=1" data-recalc-dims="1" /></p>
+<p>Our new interface also works with GitHub Mobile—your notifications, filters, and saved notifications are exactly where you expect them to be, regardless of how you use GitHub.</p>
+<p><img src="https://i2.wp.com/user-images.githubusercontent.com/158833/79965469-f6895900-8483-11ea-95e8-2c8401642733.png?ssl=1" data-recalc-dims="1" /></p>
+<h2 id="moving-forward">Moving forward<a href="#moving-forward" class="heading-link" aria-label="Moving forward" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>We know shifting from the previous experience is a big change, and we made sure to spend the time listening to and working with your feedback during our beta. In that time, we saw that, compared to the previous experience, you are <b>two and a half times as likely to read a notification, and you’ll do so 15 hours earlier when you’re mentioned</b>. More importantly, we built this interface <i>with</i> you. We read thousands of feedback responses, hundreds of comments from maintainers, spent hours talking to you, and nearly a year developing Notifications with your help. And we’d like to thank you by doing more of the same. We’re working on giving you more filters as well as greater control of when, where, and how you’re notified of activity on GitHub.</p>
+<h2 id="let-us-know">Let us know<a href="#let-us-know" class="heading-link" aria-label="Let us know" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>We’re dedicated to making notifications as simple and valuable as they can be, so you can be as productive as possible on GitHub. Do you have a suggestion or comment? <a href="https://support.github.com/contact/feedback?contact[subject]=Product+feedback&amp;contact[category]=notifications">Share your feedback</a> to help us improve the notifications experience.</p>
+<p><a href="https://help.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications">Learn more about the new notifications interface</a></p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-22-improving-notifications-for-everyone/">Improving notifications for everyone</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52546</post-id>
+    </item>
+    <item>
+      <title>GitHub Actions: Community momentum, enterprise capabilities, and developer improvements</title>
+      <link>
+        https://github.blog/2020-04-22-github-actions-community-momentum-enterprise-capabilities-and-developer-improvements/
+      </link>
+
+      <dc:creator><![CDATA[Jeremy Epling]]></dc:creator>
+      <pubDate>Wed, 22 Apr 2020 17:00:22 +0000</pubDate>
+      <category><![CDATA[Enterprise]]></category>
+      <category><![CDATA[Insights]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[enterprise]]></category>
+      <category><![CDATA[GitHub Actions]]></category>
+      <category><![CDATA[insights]]></category>
+      <category><![CDATA[product]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52538</guid>
+
+      <description><![CDATA[<p>GitHub Actions continues its community momentum and ships new features for enterprises and developers.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-22-github-actions-community-momentum-enterprise-capabilities-and-developer-improvements/">GitHub Actions: Community momentum, enterprise capabilities, and developer improvements</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>GitHub Actions puts powerful CI/CD and automation directly into the developer workflow, and it became generally available just six months ago. Since then, we’ve continued to improve with <a href="https://github.blog/changelog/2019-11-04-github-actions-adds-dependency-caching/">artifact and dependency caching</a> for faster workflows, <a href="https://github.blog/changelog/2019-11-05-github-actions-self-hosted-runners/">self-hosted runners</a> for greater flexibility, and the <a href="https://github.blog/2020-02-06-manage-secrets-and-more-with-the-github-actions-api/">Actions API</a> for extensibility. The community response has been amazing and we’re excited to share some new and upcoming enhancements.</p>
+<h2 id="community-powered-ci-cd-and-workflows">Community-powered CI/CD and workflows<a href="#community-powered-ci-cd-and-workflows" class="heading-link" aria-label="Community-powered CI/CD and workflows" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>At its core, GitHub Actions allows you to automate any development workflow. Just like how our projects build on each other&#8217;s work through open source packages, GitHub Actions does the same thing for workflow automation. You can quickly reuse existing workflows or build on the thousands of free actions in the <a href="https://github.com/marketplace?type=actions">GitHub Marketplace</a>. There’s an action for almost everything, including: Kubernetes deployments, linting, SMS alerts, or automatically assigning and labeling an issue—and it keeps growing every day.</p>
+<ul>
+<li style="font-weight: 400;"><b>GitHub Marketplace now has over 3,200 Actions, </b>representing a 500% increase in less than six months. We’re especially grateful to everyone who took place in the recent GitHub Actions Hackathon, with over 700 submissions. <a href="https://github.blog/2020-04-09-featured-actions-from-the-github-actions-hackathon/">Check out a few of our favorites</a><b>.</b></li>
+<li><b>There&#8217;s a growing and extensiv</b><strong>e ecosystem</strong>, thanks to our partners. <span style="font-weight: 400;">It’s great to see how they&#8217;re expanding the ways developers can deploy their code, with new Actions from </span><a href="https://github.com/digitalocean/action-doctl"><span style="font-weight: 400;">DigitalOcean</span></a><span style="font-weight: 400;">, </span><a href="https://github.com/marketplace/actions/tencent-cloud-cli-action"><span style="font-weight: 400;">Tencent Cloud</span></a><span style="font-weight: 400;">, </span><a href="https://github.com/hashicorp/terraform-github-actions"><span style="font-weight: 400;">HashiCorp</span></a><span style="font-weight: 400;">, and </span><a href="https://github.com/docker/build-push-action"><span style="font-weight: 400;">Docker</span></a><span style="font-weight: 400;">.</span></li>
+</ul>
+<p>We’re thrilled to see how GitHub Actions is helping developers, teams, enterprises, and the open source community automate their workflows—so developers can spend more time writing code.</p>
+<h2 id="scaling-github-actions-for-teams-and-enterprises">Scaling GitHub Actions for teams and enterprises<a href="#scaling-github-actions-for-teams-and-enterprises" class="heading-link" aria-label="Scaling GitHub Actions for teams and enterprises" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>The community momentum behind GitHub Actions has been tremendous, and we’ve seen quick adoption with teams and enterprise customers. We want to highlight new, enterprise-focused features for GitHub Actions.</p>
+<h3 id="share-self-hosted-runners-across-an-organization">Share self-hosted runners across an organization<a href="#share-self-hosted-runners-across-an-organization" class="heading-link" aria-label="Share self-hosted runners across an organization" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Now, organizations can share and manage self-hosted runners across their organization using new policies and labels. This enables large teams and enterprises to centralize the management of their core infrastructure.</p>
+<ul>
+<li><b>Organization self-hosted runners</b> make it easier for multiple repositories to reuse a set of runners. This ensures runner environments are correctly configured for the organization, resources are used efficiently, and errors resulting in extra work are avoided.</li>
+<li><strong>Custom runner labels</strong> are used to route workflows to particular runners. For example, compute-intensive workflows may use custom labels to ensure they’re always run on virtual machines with eight cores.</li>
+</ul>
+<h3 id="improvements-to-the-daily-experience">Improvements to the daily experience<a href="#improvements-to-the-daily-experience" class="heading-link" aria-label="Improvements to the daily experience" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Small changes can have a big impact on the daily experience for developers. Here are a few improvements that we recently shipped:</p>
+<ul>
+<li><b>Run defaults</b> allow users to set shell and working directory defaults in their workflows, streamlining workflow files and decreasing the likelihood of errors.</li>
+<li><strong>Explicit <code>include</code> matrix</strong> gives more flexibility to customer-specific legs of a parallel set of jobs, commonly used for platform-specific customization.</li>
+<li><strong>Job outputs</strong> allow a workflow to easily pass data to downstream jobs, adding flexibility to how developers automate their work.</li>
+</ul>
+<h2 id="next-up-more-security-and-compliance-features-as-well-as-actions-for-github-enterprise-server">Next up: More security and compliance features, as well as Actions for GitHub Enterprise Server<a href="#next-up-more-security-and-compliance-features-as-well-as-actions-for-github-enterprise-server" class="heading-link" aria-label="Next up: More security and compliance features, as well as Actions for GitHub Enterprise Server" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>In the coming months, we’ll ship additional features that help our customers standardize on their workflows across organizations so they can better manage compliance and security for CI/CD and automated workflows. Some of these improvements include sharing and managing secrets across multiple repositories, the ability for organizations to create their own starter workflows for GitHub Actions, and the addition of advanced continuous deployment capabilities.</p>
+<p>We’re also working closely with customers to deliver GitHub Actions and Packages to GitHub Enterprise Server.  Interested in working with us? <a href="https://enterprise.github.com/contact">We’d love to chat!</a></p>
+<h2 id="learn-more">Learn more<a href="#learn-more" class="heading-link" aria-label="Learn more" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>If you’re new to automation with GitHub Actions or want to learn more, check out a few ways to get started:</p>
+<ul>
+<li style="font-weight: 400;">Join us on <a href="https://resources.github.com/webcasts/Devops-collaboration-GitHub-Actions/">April 30 to see how Wiley uses GitHub Actions</a> to move faster, and more securely in the enterprise.</li>
+<li style="font-weight: 400;">Check out GitHub Learning Lab for self-paced courses to <a href="https://lab.github.com/github/hello-github-actions!">get started</a>, or join our <a href="https://lab.github.com/githubtraining/github-actions:-writing-javascript-actions">newest course on writing JavaScript Actions</a>.</li>
+</ul>
+<p>We’re looking forward to continuing our collaboration with users, customers, partners, and the open source community, and connecting with you at <a href="https://githubsatellite.com/">GitHub Satellite</a> (a 100% virtual experience) in May!</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-22-github-actions-community-momentum-enterprise-capabilities-and-developer-improvements/">GitHub Actions: Community momentum, enterprise capabilities, and developer improvements</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52538</post-id>
+    </item>
+    <item>
+      <title>Meet some of this year’s GitHub Satellite speakers</title>
+      <link>https://github.blog/2020-04-21-meet-some-of-this-years-github-satellite-speakers/</link>
+
+      <dc:creator><![CDATA[Brian DeMott]]></dc:creator>
+      <pubDate>Tue, 21 Apr 2020 17:00:37 +0000</pubDate>
+      <category><![CDATA[Community]]></category>
+      <category><![CDATA[Events]]></category>
+      <category><![CDATA[community]]></category>
+      <category><![CDATA[events]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52521</guid>
+
+      <description><![CDATA[<p>GitHub Satellite is back, and this year it’s virtual. Tune in at githubsatellite.com on May 6 at 9 am PT / 12 pm ET to hear from CEO Nat Friedman and developers around the world.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-21-meet-some-of-this-years-github-satellite-speakers/">Meet some of this year’s GitHub Satellite speakers</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>GitHub Satellite is virtual this year, and we’d love to see you there. Join us at <a href="http://www.githubsatellite.com">githubsatellite.com</a> on May 6 starting at 9 am PT / 12 pm ET / 6 pm CET for a full day of free product talks, protips from teams, code-powered musical performances, and much more. We’ll have two different live stream tracks, one for work and one for play, all day. Tune in for all 12 hours or just watch the sessions that interest you—from wherever you are. And if you miss them live, all sessions will be available on demand after the event.</p>
+<p><a href="https://githubsatellite.com/#add-to-calendar">Add the keynote to your calendar</a></p>
+<p><a href="https://githubsatellite.com/lightning-talks/">Share a lightning talk with us</a></p>
+<p>Want to build something with us the day after Satellite? Reserve a spot for two different workshops on May 7 for $50—all of your purchase goes to COVID-19 response efforts. <a href="https://githubsatellite.com/workshops/">Learn more</a></p>
+<h2 id="meet-some-of-our-satellite-speakers">Meet some of our Satellite speakers<a href="#meet-some-of-our-satellite-speakers" class="heading-link" aria-label="Meet some of our Satellite speakers" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>From DJs who code to infrastructure security experts, we’ve curated a line up of inspiring speakers who will be dropping knowledge (and beats) at Satellite. Get to know them a bit before the event with a few questions we asked about their sessions and interests:</p>
+<h3 id="meet-luca-cipriani-cio-of-arduino">Meet <a href="http://github.com/mastrolinux">Luca Cipriani</a>, CIO of Arduino<a href="#meet-luca-cipriani-cio-of-arduino" class="heading-link" aria-label="Meet &lt;a href=&quot;http://github.com/mastrolinux&quot;&gt;Luca Cipriani&lt;/a&gt;, CIO of Arduino" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p><b>Session: “</b><b>Bring time back on your side with GitHub Actions” (Work Track)</b></p>
+<h4 id="what-is-the-most-valuable-piece-of-advice-you-have-been-given">What is the most valuable piece of advice you have been given?<a href="#what-is-the-most-valuable-piece-of-advice-you-have-been-given" class="heading-link" aria-label="What is the most valuable piece of advice you have been given?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Read the logs, Luke!</p>
+<h4 id="what-is-the-main-takeaway-from-your-presentation-at-satellite">What is the main takeaway from your presentation at Satellite?<a href="#what-is-the-main-takeaway-from-your-presentation-at-satellite" class="heading-link" aria-label="What is the main takeaway from your presentation at Satellite?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Attendees will learn how to automate software and hardware testing with GitHub Actions.</p>
+<h4 id="whats-a-fun-fact-about-you">What’s a fun fact about you?<a href="#whats-a-fun-fact-about-you" class="heading-link" aria-label="What’s a fun fact about you?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">My nickname is mastrolinux, and now I am using Windows 10 after 17 years of Linux. Indeed Windows is now the best Linux distro out there!</p>
+<h3 id="meet-ivan-pashchenko-university-of-trento">Meet <a href="https://github.com/Riruk">Ivan Pashchenko</a><b>,</b> University of Trento<a href="#meet-ivan-pashchenko-university-of-trento" class="heading-link" aria-label="Meet &lt;a href=&quot;https://github.com/Riruk&quot;&gt;Ivan Pashchenko&lt;/a&gt;&lt;b&gt;,&lt;/b&gt; University of Trento" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p><b>Session: “Dependency hell or developers&#8217; perception of software dependencies” (Work Track)</b></p>
+<h4 id="what-made-you-want-to-be-a-developer">What made you want to be a developer?<a href="#what-made-you-want-to-be-a-developer" class="heading-link" aria-label="What made you want to be a developer?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">When I was a child, I dreamed of being a magician. Development opened the magical universe for me, where code and your brain can create miracles.</p>
+<h4 id="whats-the-one-thing-you-want-people-to-take-away-from-your-session">What’s the one thing you want people to take away from your session?<a href="#whats-the-one-thing-you-want-people-to-take-away-from-your-session" class="heading-link" aria-label="What’s the one thing you want people to take away from your session?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">I want you to be able to improve the security of the software dependencies in your projects. I want to spread the word about my work in security of software dependencies, especially since vulnerabilities introduced by dependencies have already led to many severe security breaches.</p>
+<h4 id="what-song-pumps-you-up-in-the-middle-of-a-long-work-session">What song pumps you up in the middle of a long work session?<a href="#what-song-pumps-you-up-in-the-middle-of-a-long-work-session" class="heading-link" aria-label="What song pumps you up in the middle of a long work session?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">When we stand together by Nickelback</p>
+<hr />
+<h3 id="meet-alexandra-cardenas-live-coder">Meet <a href="http://github.com/tiemposdelruido">Alexandra Cardenas</a>, Live Coder<a href="#meet-alexandra-cardenas-live-coder" class="heading-link" aria-label="Meet &lt;a href=&quot;http://github.com/tiemposdelruido&quot;&gt;Alexandra Cardenas&lt;/a&gt;, Live Coder" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p><b>Session: Live coding (Play Track)</b></p>
+<h4 id="what-made-you-interested-in-code">What made you interested in code?<a href="#what-made-you-interested-in-code" class="heading-link" aria-label="What made you interested in code?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Code allows me to express my musical thoughts better than anything else.</p>
+<h4 id="what-is-something-youve-worked-on-in-the-last-year-youd-love-to-spread-the-word-on">What is something you’ve worked on in the last year you’d love to spread the word on?<a href="#what-is-something-youve-worked-on-in-the-last-year-youd-love-to-spread-the-word-on" class="heading-link" aria-label="What is something you’ve worked on in the last year you’d love to spread the word on?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">My album <a href="https://tiemposdelruido.bandcamp.com/releases">HIPERSONICA</a><b>.</b></p>
+<h4 id="whats-your-favorite-snack-when-youre-working">What&#8217;s your favorite snack when you&#8217;re working?<a href="#whats-your-favorite-snack-when-youre-working" class="heading-link" aria-label="What&#8217;s your favorite snack when you&#8217;re working?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Cacao nibs.</p>
+<hr />
+<h3 id="meet-maya-kaczorowski-github">Meet <a href="http://github.com/mayakacz">Maya Kaczorowski</a>, GitHub<a href="#meet-maya-kaczorowski-github" class="heading-link" aria-label="Meet &lt;a href=&quot;http://github.com/mayakacz&quot;&gt;Maya Kaczorowski&lt;/a&gt;, GitHub" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p><b>Session: “Securing the software supply chain together” (Work Track)</b></p>
+<h4 id="whats-the-last-thing-you-geeked-out-on">What&#8217;s the last thing you geeked out on?<a href="#whats-the-last-thing-you-geeked-out-on" class="heading-link" aria-label="What&#8217;s the last thing you geeked out on?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">AI-generated artwork that’s made to fool neural nets into thinking they were looking at a specific object.</p>
+<h4 id="what-are-you-hoping-developers-learn-from-your-session">What are you hoping developers learn from your session?<a href="#what-are-you-hoping-developers-learn-from-your-session" class="heading-link" aria-label="What are you hoping developers learn from your session?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">It&#8217;s your responsibility to better understand and protect what you&#8217;re consuming in your code—as a developer, make sure to patch patch patch!</p>
+<h4 id="who-is-a-developer-that-you-admire-and-why">Who is a developer that you admire, and why?<a href="#who-is-a-developer-that-you-admire-and-why" class="heading-link" aria-label="Who is a developer that you admire, and why?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Lea Kissner. She gets to work on super cool privacy problems, and engineer solutions that help better protect users, at scale.</p>
+<hr />
+<h3 id="meet-sam-aaron-dj-and-ceo-of-sonic-pi-limited">Meet <a href="http://github.com/samaaron">Sam Aaron</a>, DJ and CEO of Sonic Pi Limited<a href="#meet-sam-aaron-dj-and-ceo-of-sonic-pi-limited" class="heading-link" aria-label="Meet &lt;a href=&quot;http://github.com/samaaron&quot;&gt;Sam Aaron&lt;/a&gt;, DJ and CEO of Sonic Pi Limited" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p><b>Session: Live DJ set (Play Track)</b></p>
+<h4 id="what-do-you-hope-people-take-away-when-they-watch-you-perform-at-satellite">What do you hope people take away when they watch you perform at Satellite?<a href="#what-do-you-hope-people-take-away-when-they-watch-you-perform-at-satellite" class="heading-link" aria-label="What do you hope people take away when they watch you perform at Satellite?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">We should be using our magical developer skills to lower the barriers to entry for a creative experience with code for everyone.</p>
+<h4 id="who-is-a-developer-that-you-admire-and-why">Who is a developer that you admire, and why?<a href="#who-is-a-developer-that-you-admire-and-why" class="heading-link" aria-label="Who is a developer that you admire, and why?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Joe Armstrong. For thinking so deeply and creatively and seeing so clearly through all of the fashion and hubris that clouds the programming world.</p>
+<h4 id="what-song-pumps-you-up-in-the-middle-of-a-long-work-session">What song pumps you up in the middle of a long work session?<a href="#what-song-pumps-you-up-in-the-middle-of-a-long-work-session" class="heading-link" aria-label="What song pumps you up in the middle of a long work session?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h4>
+<p style="padding-left: 40px">Diesel Power by The Prodigy</p>
+<h2 id="see-who-else-will-be-there">See who else will be there<a href="#see-who-else-will-be-there" class="heading-link" aria-label="See who else will be there" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>There are a lot more speakers you’ll hear from at Satellite. Check out the lineup—and don’t forget to watch on May 6 at <a href="http://www.githubsatellite.com">githubstatellite.com</a>.</p>
+<p><a href="https://githubsatellite.com/schedule/">Explore the schedule</a></p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-21-meet-some-of-this-years-github-satellite-speakers/">Meet some of this year’s GitHub Satellite speakers</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52521</post-id>
+    </item>
+    <item>
+      <title>Stay on top of your code reviews with scheduled reminders</title>
+      <link>https://github.blog/2020-04-21-stay-on-top-of-your-code-reviews-with-scheduled-reminders/</link>
+
+      <dc:creator><![CDATA[Will Smythe]]></dc:creator>
+      <pubDate>Tue, 21 Apr 2020 15:00:32 +0000</pubDate>
+      <category><![CDATA[Features]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[features]]></category>
+      <category><![CDATA[product]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52518</guid>
+
+      <description><![CDATA[<p>Scheduled reminders is out of beta to help your team be more efficient by reducing time spent waiting on code reviews, and more.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-21-stay-on-top-of-your-code-reviews-with-scheduled-reminders/">Stay on top of your code reviews with scheduled reminders</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>Scheduled reminders is officially out of beta. Now your team can get a daily reminder of pull requests waiting for review and reduce time spent waiting on code reviews.</p>
+<h2 id="reminders-to-keep-your-team-on-track">Reminders to keep your team on track<a href="#reminders-to-keep-your-team-on-track" class="heading-link" aria-label="Reminders to keep your team on track" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Scheduled reminders delivers a daily, prioritized list of pull requests waiting for review—right to your team’s Slack channel. Teams can choose how often to receive reminders and can set filters to reduce noise and ensure the most important reviews are never missed or delayed.</p>
+<p>With reminders, teams can stay on track, reduce code review time, and deliver more.</p>
+<h2 id="get-personal-reminders-too">Get personal reminders, too<a href="#get-personal-reminders-too" class="heading-link" aria-label="Get personal reminders, too" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Members of organization accounts can also receive personalized daily reminders and real-time updates in Slack about pull requests needing attention or ready to be merged. This helps organization members stay on top of code reviews and helps them complete their own pull requests faster.</p>
+<p>The Scheduled reminders feature is currently available in organization accounts. This feature requires the <a href="https://slack.github.com/">GitHub and Slack</a> integration be installed and enabled for the organization.</p>
+<p><a href="https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-scheduled-reminders-for-pull-requests">Learn more about scheduled reminders</a></p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-21-stay-on-top-of-your-code-reviews-with-scheduled-reminders/">Stay on top of your code reviews with scheduled reminders</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52518</post-id>
+    </item>
+    <item>
+      <title>Git credential helper vulnerability announced (Update)</title>
+      <link>https://github.blog/2020-04-20-git-credential-helper-vulnerability-announced-update/</link>
+
+      <dc:creator><![CDATA[Taylor Blau]]></dc:creator>
+      <pubDate>Mon, 20 Apr 2020 18:00:04 +0000</pubDate>
+      <category><![CDATA[Community]]></category>
+      <category><![CDATA[Open source]]></category>
+      <category><![CDATA[Security]]></category>
+      <category><![CDATA[community]]></category>
+      <category><![CDATA[open source]]></category>
+      <category><![CDATA[security]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52501</guid>
+
+      <description><![CDATA[<p>Learn more about the security vulnerabilities affecting Git 2.26.1 and older.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-20-git-credential-helper-vulnerability-announced-update/">Git credential helper vulnerability announced (Update)</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>A couple of days ago, Git released v2.26.1 to address a <a href="https://github.com/git/git/security/advisories/GHSA-qm7j-c969-7j4q">critical vulnerability</a> in the credential helper mechanism. Today, the Git project is <a href="https://lore.kernel.org/git/xmqq4kterq5s.fsf@gitster.c.googlers.com/">releasing</a> another round of updates to address a <a href="https://github.com/git/git/security/advisories/GHSA-hjc9-x69f-jqj7">related issue</a> that’s present in v2.26.1 and older.</p>
+<p>This vulnerability allows a malformed URL to create a credential pattern inside Git with some fields left blank. Many credential helpers interpret these blank values as an instruction to match any credential. This can result in leaking values from the underlying credential store to untrusted sources, sending the password stored for one server to another.</p>
+<p>These updates address this new issue by not invoking the credential helper at all when the URL contains an un-representable value.</p>
+<p>Note that not all credential helpers behave in a way that triggers the vulnerability. Git’s own <code>store</code> and <code>cache</code> helpers, along with the <code>osxkeychain</code> helper, <i>are</i> known to be vulnerable. Git Credential Manager for Windows is known to be unaffected. Other helpers should be assumed to be affected.</p>
+<h2 id="upgrade-to-the-latest-git-version">Upgrade to the latest Git version<a href="#upgrade-to-the-latest-git-version" class="heading-link" aria-label="Upgrade to the latest Git version" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>The most effective way to protect against this vulnerability is to upgrade to v2.26.2. If you can&#8217;t update your client immediately, reduce your risk by following the same guidelines we <a href="https://github.blog/2020-04-14-git-credential-helper-vulnerability-announced/#upgrade-to-the-latest-git-version">recommend</a> for v2.26.1:</p>
+<ul>
+<li style="font-weight: 400;">Avoid running git clone with <code>--recurse-submodules</code> against untrusted repositories.</li>
+<li style="font-weight: 400;">Avoid using the credential helper by only cloning publicly available repositories</li>
+</ul>
+<p>GitHub has implemented additional steps on top of the ones we took to protect against the attacks discovered in v2.26.1. Specifically, that means:</p>
+<ul>
+<li style="font-weight: 400;">Malicious <code>.gitmodules</code> (including new variants discovered in v2.26.2) are blocked from being pushed to GitHub.com.</li>
+<li style="font-weight: 400;">A new GitHub Desktop release is being prepared that prevents exploiting the new vulnerability.</li>
+<li style="font-weight: 400;">The next patch release of GitHub Enterprise Server backports the push-blocking changes we’re using on GitHub.com. Note that installations themselves are not vulnerable to this new attack.</li>
+</ul>
+<p>Credit for finding these vulnerabilities goes to Carlo Arenas, as well as further analysis by Jonathan Nieder of Google.</p>
+<p><a href="https://git-scm.com">Download Git v2.26.2</a></p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-20-git-credential-helper-vulnerability-announced-update/">Git credential helper vulnerability announced (Update)</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52501</post-id>
+    </item>
+    <item>
+      <title>Remote work: Working together when we’re not together</title>
+      <link>https://github.blog/2020-04-16-remote-work-working-together-when-were-not-together/</link>
+
+      <dc:creator><![CDATA[Laura Heisman]]></dc:creator>
+      <pubDate>Fri, 17 Apr 2020 03:59:32 +0000</pubDate>
+      <category><![CDATA[Company]]></category>
+      <category><![CDATA[Remote work]]></category>
+      <category><![CDATA[company]]></category>
+      <category><![CDATA[remote work]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52505</guid>
+
+      <description><![CDATA[<p>GitHub shares best practices for making remote work part of your company culture.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-remote-work-working-together-when-were-not-together/">Remote work: Working together when we’re not together</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p><span style="font-weight: 400;">For years, a majority of Hubbers have been working remotely, including many of our senior leaders. As a result, GitHub naturally developed a culture centered around collaboration and communication. Today we continue our series to share how Hubbers are managing remote work. Our <a href="https://github.blog/2020-04-10-remote-work-a-series-of-best-practices-for-a-remote-workplace/">first post</a> featured Kem Boggs, Head of Global Talent Acquisition at GitHub, who provided a unique perspective on how we foster a remote-friendly culture, starting with the hiring process and employee programs. </span></p>
+<p>Today we introduce you to Ben Balter, Senior Product Manager at GitHub, who shares how best practices for successful communications can go a long way to establishing cultural “rules”. Ben currently oversees the platform’s community and safety efforts. Previously, he served as GitHub’s government evangelist, leading the efforts to encourage government at all levels to adopt open source philosophies for code, data, and policy development. Ben has been working remotely for the past seven years at GitHub and has shared his wisdom on cultural guidelines for successful remote communication, regardless of your industry, role, or what tools you use.</p>
+<h2 id="githubs-remote-first-communication-style-has-often-been-described-as-asynchronous-but-what-does-that-actually-mean">GitHub’s remote-first communication style has often been described as asynchronous, but what does that actually mean?<a href="#githubs-remote-first-communication-style-has-often-been-described-as-asynchronous-but-what-does-that-actually-mean" class="heading-link" aria-label="GitHub’s remote-first communication style has often been described as asynchronous, but what does that actually mean?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>When it comes to GitHub’s asynchronous communication style, we define this by the workflows of the open source community, where many of us got our start. As a distributed and now fully remote organization, part of this is done out of necessity. Much like open source, several people are rarely in the same place and time, working on the same thing simultaneously. Like the case of Wikipedia versus Encyclopedia Britannica, distributed workflows produce better results than their traditional counterparts, and I’d argue that daily quality of life is better for those involved, as a result.</p>
+<p>With this in mind, asynchronous communication through mediums like Slack or Google Docs eliminates the “you had to be there” aspect of most workflows. And it reduces the administrative overhead necessary to capture, collect, and share information between teams. You could have the best tools available, but without the necessary social norms, you’re ultimately setting yourself up for failure. Asynchronous communication is a preferred way to work with your remote team to avoid too many interruptions. This is especially true now with many people unexpectedly working from home—some for the first time. Asynchronous communication provides flexibility for things like childcare, healthcare, and errands, by focusing on outputs rather than inputs.</p>
+<h2 id="what-if-i-need-to-have-a-more-meaningful-discussion-to-either-brainstorm-on-something-or-solicit-feedback-from-my-team">What if I need to have a more meaningful discussion to either brainstorm on something or solicit feedback from my team?<a href="#what-if-i-need-to-have-a-more-meaningful-discussion-to-either-brainstorm-on-something-or-solicit-feedback-from-my-team" class="heading-link" aria-label="What if I need to have a more meaningful discussion to either brainstorm on something or solicit feedback from my team?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Simple answer: Post it where the team can discuss it. Post it before a conversation, to give people time to digest and reflect (different people consume information differently) and afterward, to memorialize and surface outcomes from the sync. There are certain discussions, such as soliciting input on a design, that might require more high fidelity mediums that aren’t easily accomplished by lower fidelity options, such as Slack or a Google Docs.</p>
+<p>High fidelity, synchronous mediums, like Zoom or Teams where you can see and interact with fellow collaborators, can be extremely valuable when used correctly—they’re often the default in some workplaces. For example, I might have some input on a post and would like to discuss it with you. Feedback is inherently human, and as such, it deserves a human face. You might choose Zoom for other situations like brainstorms and small groups or 1:1 check-ins. Last, when working remotely, it’s on you to take that extra step to be able to connect on a human level, so don’t forget to turn on your camera, especially these days when it’s really nice to see other faces.</p>
+<h2 id="how-do-i-make-sure-im-providing-valuable-feedback-when-there-are-so-many-people-who-have-access-to-a-document">How do I make sure I’m providing valuable feedback when there are so many people who have access to a document?<a href="#how-do-i-make-sure-im-providing-valuable-feedback-when-there-are-so-many-people-who-have-access-to-a-document" class="heading-link" aria-label="How do I make sure I’m providing valuable feedback when there are so many people who have access to a document?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>There are some things I recommend considering when thinking about providing feedback. First, avoid drive-by opinions. Assume for a moment that you have a potential say in all that your company does. What issues can you contribute to the most? Where would you have the most impact? Think twice before providing your opinion on issues fringe to your area of expertise, especially when you don’t have the full context or are unable to follow through to do what’s necessary.</p>
+<p>Second, only comment if you have something to add to the discussion. It’s one thing to show that you’ve taken the time to review a proposed change and give it a <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f44d.png" alt="👍" class="wp-smiley" style="height: 1em; max-height: 1em;" />, but adding a standard <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f44d.png" alt="👍" class="wp-smiley" style="height: 1em; max-height: 1em;" /> to a thread that already has 10+ <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f44d.png" alt="👍" class="wp-smiley" style="height: 1em; max-height: 1em;" />s may not be necessary. Unless what you’re posting moves the issue closer to resolution, don’t press the send button.</p>
+<p>Lastly, always provide context. Courteous collaborators provide teammates with the necessary context to get up-to-speed on a discussion and decide what action they need to take (if any). Messages entitled “a few edits” or “minor improvements” do the exact opposite. This is especially important when including team members who are more of an FYI. In the same comment that brings them into the discussion, minimize the cognitive burden by absorbing the complexity on their behalf, and be clear about what’s being asked of them.</p>
+<h2 id="what-is-the-best-way-to-translate-in-person-social-conventions-to-be-more-async">What is the best way to translate in-person social conventions to be more async?<a href="#what-is-the-best-way-to-translate-in-person-social-conventions-to-be-more-async" class="heading-link" aria-label="What is the best way to translate in-person social conventions to be more async?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>My best advice here is don’t ping, just ask. There’s often the polite tendency to start a chat conversation with “Hi” and waiting for a response before asking, or saying “Hey, do you have sec?” While the desire to be polite is understandable, it defeats the purpose of using Slack or other tools for asynchronous communication. Just ask the question. It&#8217;s a win-win: you get your answer faster and the other person can better manage their own schedule.</p>
+<p>Also, when it comes to asking questions, use private direct messages in Slack sparingly, and only when necessary. Instead, prefer shared channels whenever possible. If you mention a user by @name at the start of a message, they’ll receive a notification with your question, but what’s even better is there’s a good chance someone else in the channel might know the answer and can reply immediately. Plus, it’s an open way to capture and surface organizational knowledge for others that might have the same question. That’s the beauty of a distributed, collaborative workflow.</p>
+<h2 id="do-you-have-any-advice-for-how-to-capture-tone">Do you have any advice for how to capture tone?<a href="#do-you-have-any-advice-for-how-to-capture-tone" class="heading-link" aria-label="Do you have any advice for how to capture tone?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Many people think that it’s hard to capture tone via electronic communications, but that’s not true. Today’s tech culture is built on a foundation of emoji and animated GIFs, and we know how much Hubbers love their emojis. It’s not simply because animated GIFs of puppies are adorable, but because a <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f625.png" alt="😥" class="wp-smiley" style="height: 1em; max-height: 1em;" /> is often the most efficient way to express sadness or <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f389.png" alt="🎉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> to celebrate great work. Be human and sincere. As we say at GitHub, “Mind your words, they’re important.”</p>
+<h2 id="whats-the-most-important-item-on-your-desk-right-now">What&#8217;s the most important item on your desk right now?<a href="#whats-the-most-important-item-on-your-desk-right-now" class="heading-link" aria-label="What&#8217;s the most important item on your desk right now?" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>I’ve worked remotely for so many years, and I’ve found that investing in a good microphone and lighting setup is really important, especially as your primary voice and face to the world. I also have a world clock with all timezones that my team is working in, which makes me more considerate of timezones.</p>
+<hr />
+<p>Want to learn more about best practices for working remotely? Check back next week as we continue our series to help you make the most of working in a remote environment from our next interview.  And share these useful tips with others who may be new to working remotely.</p>
+<p><a href="https://github.blog/category/company/remote-work/">Explore the remote work series</a></p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-remote-work-working-together-when-were-not-together/">Remote work: Working together when we’re not together</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52505</post-id>
+    </item>
+    <item>
+      <title>GitHub Sponsors is now available in Mexico, plus some exciting updates</title>
+      <link>https://github.blog/2020-04-16-github-sponsors-is-now-available-in-mexico-plus-some-exciting-updates/</link>
+
+      <dc:creator><![CDATA[Devon Zuegel]]></dc:creator>
+      <pubDate>Thu, 16 Apr 2020 17:00:03 +0000</pubDate>
+      <category><![CDATA[Community]]></category>
+      <category><![CDATA[Open source]]></category>
+      <category><![CDATA[community]]></category>
+      <category><![CDATA[open source]]></category>
+      <category><![CDATA[sponsors]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52464</guid>
+
+      <description><![CDATA[<p>GitHub Sponsors is now generally available in Mexico, and we’ve also released a lot of exciting new features for sponsored developers, inspired by the community.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-github-sponsors-is-now-available-in-mexico-plus-some-exciting-updates/">GitHub Sponsors is now available in Mexico, plus some exciting updates</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>Open source is built by a global community. And we’re all part of a global software team, so expanding opportunities to participate on that team is at the core of our mission. <a href="https://github.com/sponsors">GitHub Sponsors</a> is now available in Mexico, and it’s just one exciting step on the path of helping all developers make a career out of their open source work. Keep an eye out as we continue to expand the program to developers worldwide!</p>
+<h2 id="github-sponsors-is-now-out-of-beta-in-mexico">GitHub Sponsors is now out of beta in Mexico!<a href="#github-sponsors-is-now-out-of-beta-in-mexico" class="heading-link" aria-label="GitHub Sponsors is now out of beta in Mexico!" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>You can <a href="http://github.com/sponsors">sign up now</a> if you have a bank account in Mexico or any of the other <a href="http://github.com/sponsors#countries">31 countries</a> where Sponsors is out of beta. <a href="https://github.com/sponsors">Join the waitlist</a> to receive updates when we expand to new countries.</p>
+<h2 id="updates-to-improve-your-experience">Updates to improve your experience<a href="#updates-to-improve-your-experience" class="heading-link" aria-label="Updates to improve your experience" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>We’ve also released a number of improvements for sponsored developers to help you get started and stay in touch with your sponsorship activity.</p>
+<h3 id="get-started-with-github-sponsors">Get started with GitHub Sponsors<a href="#get-started-with-github-sponsors" class="heading-link" aria-label="Get started with GitHub Sponsors" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>If you’re interested in becoming a sponsored developer but don’t know where to start, we released a guide to help you navigate your way.</p>
+<p><a href="https://github.blog/2020-03-24-getting-started-with-github-sponsors/">Check out the guide to get started</a></p>
+<h3 id="explore-your-activity-feed">Explore your activity feed<a href="#explore-your-activity-feed" class="heading-link" aria-label="Explore your activity feed" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Keep track of everything that’s happening to your Sponsors listing in the new activity feed. Follow new sponsorships, tier changes, and more from the Activity tab on your dashboard.</p>
+<p><img src="https://i2.wp.com/user-images.githubusercontent.com/6806032/79406492-1f719180-7f4c-11ea-99ab-0d1bad4f17e8.png?ssl=1" data-recalc-dims="1" /></p>
+<p><a href="https://github.blog/changelog/2020-01-13-github-sponsors-activity-feed/">Learn more about your activity feed</a></p>
+<h3 id="export-a-list-of-your-sponsors">Export a list of your sponsors<a href="#export-a-list-of-your-sponsors" class="heading-link" aria-label="Export a list of your sponsors" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>We know that you need better visibility into who your sponsors are and how much they’ve provided in order to efficiently handle accounting, reward fulfillment, taxes, and more.</p>
+<p>Now, you can export your sponsorship transactions from the <b>Your Sponsors</b> tab on your dashboard. We’ll export each sponsor’s name, email, sponsorship start date, and details about their transactions with you in CSV or JSON format.</p>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/6806032/79406511-2dbfad80-7f4c-11ea-8b33-56fab39dd218.gif?ssl=1" data-recalc-dims="1" /></p>
+<h3 id="automate-with-webhooks">Automate with webhooks<a href="#automate-with-webhooks" class="heading-link" aria-label="Automate with webhooks" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>You can also set up webhooks for events in your sponsored account. Use webhooks to notify you when you receive a new sponsorship, automatically invite new sponsors to your chat channel, and more!</p>
+<p><a href="https://github.blog/changelog/2020-01-13-github-sponsors-webhooks/">Get into automating tasks with webhooks</a></p>
+<h2 id="more-improvements-for-the-community-by-the-community">More improvements for the community, by the community<a href="#more-improvements-for-the-community-by-the-community" class="heading-link" aria-label="More improvements for the community, by the community" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>We’re not the only ones working to make Sponsors better for everyone. Check out these open source projects built by the community:</p>
+<ul>
+<li style="font-weight: 400;"><a href="https://github.com/alexellis/sponsors-functions">alexellis/sponsors-functions</a>: A GitHub Sponsors webhook receiver that forwards all Sponsors events to Slack, written in Node.js.</li>
+<li style="font-weight: 400;"><a style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" href="https://github.com/JasonEtco/is-sponsor-label-action">jasonetco/is-sponsor-label-action</a>: A GitHub Action that labels issues and pull requests with a “Sponsor” label if the creator is a sponsor of the owner.</li>
+</ul>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-github-sponsors-is-now-available-in-mexico-plus-some-exciting-updates/">GitHub Sponsors is now available in Mexico, plus some exciting updates</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52464</post-id>
+    </item>
+    <item>
+      <title>GitHub Protips: Tips, tricks, hacks, and secrets from Jason Etcovitch</title>
+      <link>https://github.blog/2020-04-16-github-protips-tips-tricks-hacks-and-secrets-from-jason-etcovitch/</link>
+
+      <dc:creator><![CDATA[Jason Etcovich]]></dc:creator>
+      <pubDate>Thu, 16 Apr 2020 16:00:16 +0000</pubDate>
+      <category><![CDATA[Community]]></category>
+      <category><![CDATA[Features]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[community]]></category>
+      <category><![CDATA[features]]></category>
+      <category><![CDATA[product]]></category>
+      <category><![CDATA[tips and tricks]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52479</guid>
+
+      <description><![CDATA[<p>From GitHub Actions and magic URLs to gists, check out Jason Etcovich’s top ten tips and tricks to help you hack your GitHub experience. </p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-github-protips-tips-tricks-hacks-and-secrets-from-jason-etcovitch/">GitHub Protips: Tips, tricks, hacks, and secrets from Jason Etcovitch</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p><i>This is the third in a series of posts featuring protips from GitHubbers for improving productivity, efficiency, and more.</i></p>
+<hr />
+<p>Hello <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f44b.png" alt="👋" class="wp-smiley" style="height: 1em; max-height: 1em;" />! I’m a big proponent of the GitHub API, and building integrations to extend your workflows. I’m sharing a few features, tools, and projects to help you explore a ton of awesome potential for building on top of GitHub, and customizing it to your needs.</p>
+<h2 id="github-actions-and-probot">GitHub Actions and Probot<a href="#github-actions-and-probot" class="heading-link" aria-label="GitHub Actions and Probot" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>While this is more of a topic than a tip,  you’ll be hooked once you start building automation tools. GitHub Actions and Probot are separate projects with the shared goal to enable developers to extend GitHub functionality by eliminating boilerplate (like authentication and handling webhook events) and providing helpful abstractions. If you’re interested in learning more, I wrote a few <a href="https://jasonet.co">blog posts</a> about the specific features of each, but here’s a quick description of the two:</p>
+<h3 id="run-your-automation-tool-with-actions">Run your automation tool with Actions<a href="#run-your-automation-tool-with-actions" class="heading-link" aria-label="Run your automation tool with Actions" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>GitHub Actions is a runtime for “doing stuff” when things happen in your repository. It’s really that vague, because you can run whatever code you want in a virtual machine, run by GitHub. A standard example is CI, but I like to focus on the more interesting bits, like tweaking and improving your workflows with the help of robots. For example, my team uses <a href="https://github.com/JasonEtco/create-an-issue">JasonEtco/create-an-issue</a> to create a weekly meeting notes issue every Monday morning. There are a ton of amazing GitHub Actions out there—and tools to help you build them. If you’re interested in building Actions, check out <a href="https://github.com/JasonEtco/actions-toolkit">actions-toolkit</a>, an opinionated toolkit that I created for building Actions. I’ve even used it to create a few different Actions like <a href="https://github.com/JasonEtco/is-sponsor-label-action">is-sponsor-label-action</a> and <a href="https://github.com/JasonEtco/action-record/">action-record</a>.</p>
+<p><img src="https://i2.wp.com/user-images.githubusercontent.com/10660468/79356022-6fc8ff00-7f0c-11ea-8eab-85569d63ac51.png?ssl=1" data-recalc-dims="1" /></p>
+<p>You should also check out <a href="http://github.com/actions/github-script">actions/github-script</a>, an awesome action that lets you write JavaScript, with an authenticated GitHub API client, directly in your workflow YAML file.</p>
+<h3 id="build-github-apps-with-probot">Build GitHub Apps with Probot<a href="#build-github-apps-with-probot" class="heading-link" aria-label="Build GitHub Apps with Probot" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Next, Probot is a framework for building GitHub Apps, integrations on top of GitHub. There are a few use-cases when you might <a href="https://jasonet.co/posts/probot-app-or-github-action-v2/">choose Probot instead of Actions</a>. It focuses on webhook-driven events, so when something happens on GitHub, your Probot app can take action. Here’s a little-known fact for you: The <a href="https://slack.github.com">official GitHub/Slack integration</a> is actually a Probot app! But there are way more scoped examples, including <a href="https://github.com/behaviorbot/welcome">congratulating first-time contributors</a>, <a href="https://github.com/release-drafter/release-drafter">drafting release notes</a>, or <a href="https://github.com/JasonEtco/todo">turning your TODO comments into issues</a>.</p>
+<p><img src="https://i2.wp.com/user-images.githubusercontent.com/121322/79163388-d4ad1980-7d93-11ea-92d8-f72fea81fb11.png?ssl=1" data-recalc-dims="1" /></p>
+<h2 id="magic-url-extensions">Magic URL extensions<a href="#magic-url-extensions" class="heading-link" aria-label="Magic URL extensions" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<h3 id="get-a-user-or-organizations-avatar">Get a user or organization’s avatar<a href="#get-a-user-or-organizations-avatar" class="heading-link" aria-label="Get a user or organization’s avatar" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>You can get the avatar of any GitHub user or organization by visiting <code>https://github.com/&lt;username&gt;.png</code>! This is useful when you’re building websites or designs that rely on GitHub accounts, like <a href="https://github.com/all-contributors/all-contributors#contributors-">All Contributor’s table view</a>, or <a href="https://probot.github.io/apps/stale/">Probot’s app catalog</a>.</p>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/10660468/79352857-5b830300-7f08-11ea-944e-5f3e34544cf9.png?ssl=1" data-recalc-dims="1" /></p>
+<p style="padding-left: 40px;"><b>Fun fact:</b> This actually returns a JPEG, not a PNG, but nothing on the Internet appears broken (yet).</p>
+<h3 id="get-the-patch-or-diff-of-a-commit-or-pull-request">Get the patch or diff of a commit or pull request<a href="#get-the-patch-or-diff-of-a-commit-or-pull-request" class="heading-link" aria-label="Get the patch or diff of a commit or pull request" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>When I was first building <a href="https://github.com/JasonEtco/todo">todo</a>, I needed a way to get a particular commit or pull request’s diff. As it turns out, that’s super easy to do—in your browser, you can even add a couple of characters to the end of a URL:</p>
+<pre><code class="shell">https://github.com/&lt;owner&gt;/&lt;repo&gt;/commit/&lt;sha&gt;.diff
+https://github.com/&lt;owner&gt;/&lt;repo&gt;/commit/&lt;sha&gt;.patch</code></pre>
+<p>And you can do the same with pull requests—check out <a href="https://github.com/integrations/snappydoo/pull/8.diff">this example</a>.</p>
+<h2 id="pinned-gists-are-portals-to-narnia">Pinned Gists are portals to Narnia<a href="#pinned-gists-are-portals-to-narnia" class="heading-link" aria-label="Pinned Gists are portals to Narnia" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Last year, we added support for pinning Gists to your user profile. And since Gists have an API, we can use that feature in really interesting ways to pin “dynamic” content to your profile. Using GitHub Actions, we can update a Gist on a schedule. Here are several examples:</p>
+<ul>
+<li style="font-weight: 400;"><a href="https://github.com/JasonEtco/activity-box">activity-box</a></li>
+<li style="font-weight: 400;"><a href="https://github.com/matchai/bird-box">bird-box</a></li>
+<li style="font-weight: 400;"><a href="https://github.com/matchai/waka-box">waka-box</a></li>
+</ul>
+<p><img src="https://i1.wp.com/user-images.githubusercontent.com/10660468/79355434-a4888680-7f0b-11ea-8d80-8fabf3f6543f.png?ssl=1" data-recalc-dims="1" /></p>
+<h3 id="build-your-own-pinned-gists">Build your own pinned Gists<a href="#build-your-own-pinned-gists" class="heading-link" aria-label="Build your own pinned Gists" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>I built a helper library called <a href="https://github.com/JasonEtco/gist-box">gist-box</a>, and if you want to build your own, check out <a href="https://github.com/matchai/awesome-pinned-gists">awesome-pinned-gists</a> for more.</p>
+<p style="padding-left: 40px;"><b>Fun fact:</b> The GitHub Education team launched the <a href="https://github.blog/2019-06-03-pin-gists-to-win-a-github-education-backpack/">Pins to Win competition</a> last year, encouraging students to promote themselves and their projects on their profiles through pinned gists. There were <a href="https://github.blog/2019-06-03-pin-gists-to-win-a-github-education-backpack/">tons of great entries</a>.</p>
+<h2 id="delete-branches-when-theyre-merged-to-master">Delete branches when they’re merged to master<a href="#delete-branches-when-theyre-merged-to-master" class="heading-link" aria-label="Delete branches when they’re merged to master" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>This isn’t a tip so much as a really great feature, but since it’s fairly new I want to highlight it. In your repository settings, you can enable <b>Automatically delete head branches</b>, which deletes the head branch of pull requests that are merged. Unless you rely on long-lived branches that also get merged in pull requests, this is a quick improvement. You can always restore the branch if you want, so there’s no risk. Personally, I always delete my branches right away, so why not automate it.</p>
+<h2 id="get-anything-through-the-graphql-api">Get “anything” through the GraphQL API<a href="#get-anything-through-the-graphql-api" class="heading-link" aria-label="Get “anything” through the GraphQL API" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>This is a bit of a niche trick, but it can be extremely helpful when you’re building integrations on top of the GitHub API. If you have a URL to a resource (like a repository or an issue) then you can write one GraphQL query to return a bunch of information about it:</p>
+<pre><code class="shell">query ($url: String!) {
+  resource (url: $url) {
+    __typename
+
+    ... on Repository {
+      nameWithOwner
+    }
+
+    ... on Issue {
+      title
+    }
+  }
+}</code></pre>
+<p>If the <code>url</code> is for a repository, it returns an object with the <code>nameWithOwner</code> property. If it’s an issue, it returns the title. This can be useful when you only have a URL. Note that this doesn’t work with every single URL on GitHub—check out the <a href="https://developer.github.com/v4/interface/uniformresourcelocatable/">docs for <code>resource</code></a>!</p>
+<p>If you aren’t familiar with GraphQL, get started with the <a href="https://developer.github.com/v4/">GitHub API docs</a>. You can also play around with GitHub’s GraphQL API with the <a href="https://developer.github.com/v4/explorer/">GraphQL Explorer</a>.</p>
+<p>Thanks for reading, I hope this assortment of cool stuff is helpful! Feel free to reach out on <a href="https://twitter.com/JasonEtco">Twitter</a> if you have any questions or ideas you want to chat about <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/2728.png" alt="✨" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2 id="share-your-tips">Share your tips!<a href="#share-your-tips" class="heading-link" aria-label="Share your tips!" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h2>
+<p>Do you have a tip, trick, or hack that makes your daily life easier? Share it with us on social media with <a href="https://twitter.com/hashtag/GitHubProtips">#GitHubProtips</a>.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-16-github-protips-tips-tricks-hacks-and-secrets-from-jason-etcovitch/">GitHub Protips: Tips, tricks, hacks, and secrets from Jason Etcovitch</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52479</post-id>
+    </item>
+    <item>
+      <title>npm has joined GitHub</title>
+      <link>https://github.blog/2020-04-15-npm-has-joined-github/</link>
+
+      <dc:creator><![CDATA[Jeremy Epling]]></dc:creator>
+      <pubDate>Wed, 15 Apr 2020 07:00:45 +0000</pubDate>
+      <category><![CDATA[Company]]></category>
+      <category><![CDATA[Product]]></category>
+      <category><![CDATA[company]]></category>
+      <category><![CDATA[product]]></category>
+      <guid isPermaLink="false">https://github.blog/?p=52456</guid>
+
+      <description><![CDATA[<p>With the npm acquisition complete, we’re ready to start the next chapter of npm and support the JavaScript community in a new way.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-15-npm-has-joined-github/">npm has joined GitHub</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+      <content:encoded><![CDATA[<p>We’re excited to announce that GitHub has completed its acquisition of <a href="https://blog.npmjs.org/post/612764866888007680/next-phase-montage">npm</a>.</p>
+<p>The public npm registry will always be available and free for the millions of developers who use it. Now that npm is officially part of GitHub, we’re beginning work on our three immediate areas of focus:</p>
+<ul>
+<li style="font-weight: 400;">Engaging with the community</li>
+<li style="font-weight: 400;">Investing in the registry infrastructure and platform</li>
+<li style="font-weight: 400;">Improving the core experience</li>
+</ul>
+<p>We’re honored to be part of the next chapter of npm and support the JavaScript community in a new way.</p>
+<p>Check out the <a href="https://github.blog/2020-03-16-npm-is-joining-github/">GitHub</a> and <a href="https://blog.npmjs.org/post/612764866888007680/next-phase-montage">npm</a> blog posts for more information on what this means for the community.</p>
+<p>The post <a rel="nofollow" href="https://github.blog/2020-04-15-npm-has-joined-github/">npm has joined GitHub</a> appeared first on <a rel="nofollow" href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+
+
+      <post-id xmlns="com-wordpress:feed-additions:1">52456</post-id>
+    </item>
+  </channel>
+</rss>

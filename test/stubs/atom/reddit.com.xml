@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <category term="reactjs" label="r/reactjs"/>
+  <updated>2020-04-25T09:02:59+00:00</updated>
+  <icon>https://www.redditstatic.com/icon.png/</icon>
+  <id>/r/reactjs.rss</id>
+  <link rel="self" href="https://www.reddit.com/r/reactjs.rss" type="application/atom+xml"/>
+  <link rel="alternate" href="https://www.reddit.com/r/reactjs" type="text/html"/>
+  <logo>https://b.thumbs.redditmedia.com/5AK7GoOGvz6ILKV3revM3Vz5YcPj0cPf-J-QGgFSduc.png</logo>
+  <subtitle>A community for learning and developing web applications using React by Facebook.</subtitle>
+  <title>/r/ReactJS - The Front Page of React</title>
+  <entry>
+    <author>
+      <name>/u/dance2die</name>
+      <uri>https://www.reddit.com/user/dance2die</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;You can find &lt;a href=&quot;https://www.reddit.com/r/reactjs/wiki/index#wiki_previous_threads&quot;&gt;previous
+      threads&lt;/a&gt; in the wiki.&lt;/p&gt; &lt;p&gt;Got questions about React or anything else in its ecosystem?&lt;br/&gt;
+      Stuck making progress on your app?&lt;br/&gt; Ask away! We’re a friendly bunch.&lt;/p&gt; &lt;p&gt;No question is
+      too simple. 🙂&lt;/p&gt; &lt;hr/&gt; &lt;h2&gt;🆘 Want Help with your Code? 🆘&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Improve
+      your chances&lt;/strong&gt; by adding a minimal example with &lt;a href=&quot;https://jsfiddle.net/Luktwrdm/&quot;&gt;JSFiddle&lt;/a&gt;,
+      &lt;a href=&quot;https://codesandbox.io/s/new&quot;&gt;CodeSandbox&lt;/a&gt;, or &lt;a href=&quot;https://stackblitz.com/&quot;&gt;Stackblitz&lt;/a&gt;.
+      &lt;ul&gt; &lt;li&gt;Describe what you want it to do, and things you&amp;#39;ve tried. Don&amp;#39;t just post big
+      blocks of code!&lt;/li&gt; &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/wiki/index#wiki_formatting_code&quot;&gt;Formatting
+      Code&lt;/a&gt;&lt;/strong&gt; wiki shows how to format code in this thread.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Pay
+      it forward!&lt;/strong&gt; Answer questions even if there is already an answer. Other perspectives can be helpful
+      to beginners. Also, there&amp;#39;s no quicker way to learn than &lt;a href=&quot;https://xkcd.com/386/&quot;&gt;being
+      wrong on the Internet&lt;/a&gt;.&lt;/li&gt; &lt;/ul&gt; &lt;hr/&gt; &lt;h2&gt;New to React?&lt;/h2&gt; &lt;h3&gt;Check
+      out the sub&amp;#39;s &lt;strong&gt;sidebar&lt;/strong&gt;!&lt;/h3&gt; &lt;p&gt;🆓 Here are great, &lt;strong&gt;free&lt;/strong&gt;
+      resources! 🆓&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot;&gt;Read
+      the &lt;strong&gt;official&lt;/strong&gt; Getting Started page&lt;/a&gt; on the docs.&lt;/li&gt; &lt;li&gt;&lt;a
+      href=&quot;https://www.reddit.com/r/reactjs/comments/auu02f/microsoft_has_open_sourced_their_frontend/&quot;&gt;Microsoft
+      Frontend Bootcamp&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://www.codecademy.com/catalog/language/javascript&quot;&gt;Codecademy&amp;#39;s
+      React courses&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://scrimba.com/g/glearnreact&quot;&gt;Scrimba&amp;#39;s
+      React Course&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/learn-react-course/&quot;&gt;FreeCodeCamp&amp;#39;s
+      React course&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;http://kcd.im/beginner-react&quot;&gt;Kent Dodd&amp;#39;s
+      Egghead.io course&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://wattenberger.com/blog/react-hooks&quot;&gt;New
+      to Hooks? Check Amelia Wattenberger&amp;#39;s Thinking in React Hooks&lt;/a&gt;&lt;/li&gt; &lt;li&gt;What other
+      updated resources do you suggest?&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Any ideas/suggestions to improve this thread -
+      feel free to comment here!&lt;/p&gt; &lt;p&gt;&lt;em&gt;Finally, thank you to all who post questions and those who
+      answer them. We&amp;#39;re a growing community and &lt;a href=&quot;https://en.wikipedia.org/wiki/Learning_by_teaching&quot;&gt;helping
+      each other&lt;/a&gt; only &lt;a href=&quot;https://www.swyx.io/writing/learn-in-public/&quot;&gt;strengthens it!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+      &lt;hr/&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/dance2die&quot;&gt;
+      /u/dance2die &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/fsqgep/beginners_thread_easy_questions_april_2020/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/fsqgep/beginners_thread_easy_questions_april_2020/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_fsqgep</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/fsqgep/beginners_thread_easy_questions_april_2020/"/>
+    <updated>2020-04-01T02:03:59+00:00</updated>
+    <title>Beginner's Thread / Easy Questions (April 2020)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/dance2die</name>
+      <uri>https://www.reddit.com/user/dance2die</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;We alternate between hirers (on
+      the 1st of the month) and agencies/freelancers/jobseekers (on the 15th).&lt;br/&gt; If you are looking to post or
+      reply to React job postings, please check &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/fsqgf9/whos_hiring_april_2020/&quot;&gt;this
+      month&amp;#39;s Who&amp;#39;s Hiring post here.&lt;/a&gt;&lt;/p&gt; &lt;hr/&gt; &lt;p&gt;If your post or comment
+      is removed wrongly, please &lt;a href=&quot;https://www.reddit.com/message/compose?to=%2Fr%2Freactjs&quot;&gt;send
+      a message&lt;/a&gt; to mods&lt;br/&gt; because Automods bot is not perfect :)&lt;/p&gt; &lt;hr/&gt; &lt;p&gt;Top
+      Level comments must be Agencies and React Devs available for contract/permanent work.&lt;/p&gt; &lt;p&gt;Please
+      include Location or any other Requirements in your comment. You can choose to use this format if it helps:&lt;/p&gt;
+      &lt;h2&gt;(Fulltime | Contract | USA | Remote)&lt;/h2&gt; &lt;p&gt;or&lt;/p&gt; &lt;h2&gt;(Agency | Europe |
+      Remote)&lt;/h2&gt; &lt;p&gt;Then we recommend adding a 2-3 sentence bio as well.&lt;/p&gt; &lt;p&gt;Not required,
+      but may help:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Link to Github/Portfolio&lt;/li&gt; &lt;li&gt;Notable &lt;a href=&quot;https://www.reddit.com/r/reactjs/&quot;&gt;r/reactjs&lt;/a&gt;
+      submissions&lt;/li&gt; &lt;li&gt;Preferred stack&lt;/li&gt; &lt;li&gt;Former companies or clients&lt;/li&gt; &lt;li&gt;Design
+      or backend dev experience&lt;/li&gt; &lt;li&gt;anything else you consider relevant. Put on your best show!&lt;/li&gt;
+      &lt;li&gt;Listing years of experience NOT required, it&amp;#39;s a poor metric&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;If
+      you are looking to hire, you can send a PM, or reply so that others might see your job opening.&lt;br/&gt; &lt;strong&gt;Note&lt;/strong&gt;:
+      Due to the sensitive nature of availability while currently in a job, users may be using alternate accounts.&lt;/p&gt;
+      &lt;p&gt;For more ideas on what to include, look at the &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/fiv53t/whos_available_mar_2020/&quot;&gt;last
+      Who&amp;#39;s Available posts&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;If you just want some portfolio feedback, check the
+      stickied post below.&lt;/p&gt; &lt;p&gt;Good luck! #WriteOnceApplyEverywhere&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+      --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/dance2die&quot;&gt;
+      /u/dance2die &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g24x22/whos_available_april_2020/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g24x22/whos_available_april_2020/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g24x22</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g24x22/whos_available_april_2020/"/>
+    <updated>2020-04-16T00:58:18+00:00</updated>
+    <title>Who's Available? [April 2020]</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/bmvantunes</name>
+      <uri>https://www.reddit.com/user/bmvantunes</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7kb9n/nextjs_environment_variables_and_runtime/&quot;&gt;
+      &lt;img src=&quot;https://b.thumbs.redditmedia.com/4HqsZQxSDSo6E2cEkZYPOUrRALKFwZphPLu461uZf-g.jpg&quot; alt=&quot;Next.js
+      | Environment Variables and Runtime Configuration&quot; title=&quot;Next.js | Environment Variables and Runtime
+      Configuration&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/bmvantunes&quot;&gt;
+      /u/bmvantunes &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Mh9BJNfAVsM&amp;amp;feature=share&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7kb9n/nextjs_environment_variables_and_runtime/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g7kb9n</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7kb9n/nextjs_environment_variables_and_runtime/"/>
+    <updated>2020-04-25T00:47:02+00:00</updated>
+    <title>Next.js | Environment Variables and Runtime Configuration</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/iSidney</name>
+      <uri>https://www.reddit.com/user/iSidney</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g79s4e/i_made_the_same_web_app_in_gatsby_and_nextjs_and/&quot;&gt;
+      &lt;img src=&quot;https://a.thumbs.redditmedia.com/jEcOxX35OYIcs3ZgYaosx2nV_OqCon6z-H9LlvujAB8.jpg&quot; alt=&quot;I
+      made the same web app in Gatsby and Next.js and found Gatsby performed better&quot; title=&quot;I made the same
+      web app in Gatsby and Next.js and found Gatsby performed better&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32;
+      submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/iSidney&quot;&gt; /u/iSidney &lt;/a&gt; &lt;br/&gt;
+      &lt;span&gt;&lt;a href=&quot;https://medium.com/@sidneyalcantara/gatsby-won-against-next-js-in-this-head-to-head-7d446569ec57?source=friends_link&amp;amp;sk=7702bb95b3f2d5f033e9c33bf56ed43a&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g79s4e/i_made_the_same_web_app_in_gatsby_and_nextjs_and/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g79s4e</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g79s4e/i_made_the_same_web_app_in_gatsby_and_nextjs_and/"/>
+    <updated>2020-04-24T14:54:45+00:00</updated>
+    <title>I made the same web app in Gatsby and Next.js and found Gatsby performed better</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/bernaferrari</name>
+      <uri>https://www.reddit.com/user/bernaferrari</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I saw Chakra-UI, Theme-UI,
+      Rebass, Ant Design, Priceline one, Semantic UI, Carbon, Microsoft Fluent, Google Material, Reakit, Gestalt and
+      others, including Tailwind CSS.. The list is endless, but how do you choose between them? Most of them follow the
+      same structure AND have the same components (Box, Flex, Card, Spinner, etc) with the same custom attributes
+      (p={2}, mr={2}, etc) but some changes, like css={} or sx={}.&lt;/p&gt; &lt;p&gt;[Personally] I&amp;#39;m using
+      React, Typescript and Emotion. I just want an easier way to deal with flexbox/css, I spent one afternoon trying to
+      make it work for a relatively complex responsive layout, without success. I only need a few of these components,
+      so it doesn&amp;#39;t make a difference, all libs have them.&lt;/p&gt; &lt;p&gt;[As a good Reddit user] I also
+      hope to help anyone having the same question in the future, so feel free to say anything, even if it doesn&amp;#39;t
+      fit in my specific scenario.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+      href=&quot;https://www.reddit.com/user/bernaferrari&quot;&gt; /u/bernaferrari &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+      href=&quot;https://www.reddit.com/r/reactjs/comments/g7ifjl/there_are_way_too_many_ui_libraries_how_do_you/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7ifjl/there_are_way_too_many_ui_libraries_how_do_you/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7ifjl</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7ifjl/there_are_way_too_many_ui_libraries_how_do_you/"/>
+    <updated>2020-04-24T22:49:23+00:00</updated>
+    <title>There are way too many UI libraries. How do you choose one vs another?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/flybayer</name>
+      <uri>https://www.reddit.com/user/flybayer</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g77pg1/announcing_the_blitz_alpha_release_a_railslike/&quot;&gt;
+      &lt;img src=&quot;https://b.thumbs.redditmedia.com/BtSZ_VAXjlUMtieOwdpso0BqlCKdTOifpIYWLLMluKg.jpg&quot; alt=&quot;Announcing
+      the Blitz Alpha Release! A Rails-like framework built on Next.js&quot; title=&quot;Announcing the Blitz Alpha
+      Release! A Rails-like framework built on Next.js&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32; submitted
+      by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/flybayer&quot;&gt; /u/flybayer &lt;/a&gt; &lt;br/&gt;
+      &lt;span&gt;&lt;a href=&quot;https://github.com/blitz-js/blitz&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32;
+      &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g77pg1/announcing_the_blitz_alpha_release_a_railslike/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g77pg1</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g77pg1/announcing_the_blitz_alpha_release_a_railslike/"/>
+    <updated>2020-04-24T12:42:51+00:00</updated>
+    <title>Announcing the Blitz Alpha Release! A Rails-like framework built on Next.js</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/ASAP_ROCKY</name>
+      <uri>https://www.reddit.com/user/ASAP_ROCKY</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey guys, I&amp;#39;m stuck on
+      implementing drag and drop in react, here is my codepen &lt;a href=&quot;https://codepen.io/erangeles/pen/abvJKxr?editors=1111&quot;&gt;https://codepen.io/erangeles/pen/abvJKxr?editors=1111&lt;/a&gt;
+      . expected behaviour is the ability to move the items in a drag and drop motion from column to column like trello.
+      my hoc component is passing down the appropriate event handlers for drag and drop but it&amp;#39;s still not
+      allowing the functionality. I am seeing this error below when i drag a &amp;quot;card&amp;quot; over. &lt;/p&gt;
+      &lt;p&gt;&lt;code&gt;Uncaught TypeError: Failed to execute &amp;#39;appendChild&amp;#39; on &amp;#39;Node&amp;#39;:
+      parameter 1 is not of type &amp;#39;Node&amp;#39;. at pen.js:39&lt;/code&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+      --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ASAP_ROCKY&quot;&gt;
+      /u/ASAP_ROCKY &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7p64j/drag_and_drop_in_react_js_stuck/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7p64j/drag_and_drop_in_react_js_stuck/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7p64j</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7p64j/drag_and_drop_in_react_js_stuck/"/>
+    <updated>2020-04-25T06:56:01+00:00</updated>
+    <title>Drag and Drop in react js [stuck]</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/yjose</name>
+      <uri>https://www.reddit.com/user/yjose</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g6yybh/forms_in_react_native_the_right_way/&quot;&gt;
+      &lt;img src=&quot;https://b.thumbs.redditmedia.com/9-pJ4woPAP_KRgBcUqhwuMpZJdtsDjCtY-UwS2e-oGU.jpg&quot; alt=&quot;Forms
+      in React Native, The right way 💪💪&quot; title=&quot;Forms in React Native, The right way 💪💪&quot; /&gt; &lt;/a&gt;
+      &lt;/td&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/yjose&quot;&gt;
+      /u/yjose &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://v.redd.it/12ydp3f00ou41&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g6yybh/forms_in_react_native_the_right_way/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g6yybh</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g6yybh/forms_in_react_native_the_right_way/"/>
+    <updated>2020-04-24T01:01:06+00:00</updated>
+    <title>Forms in React Native, The right way 💪💪</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/yyannekk</name>
+      <uri>https://www.reddit.com/user/yyannekk</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I created a little
+      boilerplate/template for react applications with some pretty nice libraries. The project is based on &lt;strong&gt;create-react-app&lt;/strong&gt;
+      (+ react rewired), uses &lt;strong&gt;TypeScript&lt;/strong&gt; and enables &lt;strong&gt;fast-refresh&lt;/strong&gt;
+      (no full page refreshs, instead the UI and state is stable), uses the awesome &lt;strong&gt;Ant Design&lt;/strong&gt;
+      component library for ui elements, &lt;strong&gt;react-router&lt;/strong&gt; for client side routing and &lt;strong&gt;formik&lt;/strong&gt;
+      to make working with forms straight forward.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;Hope it is usefull
+      beyond me, here is the link: &lt;a href=&quot;https://github.com/jannikbuschke/cra-antd-x&quot;&gt;https://github.com/jannikbuschke/cra-antd-x&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/yyannekk&quot;&gt;
+      /u/yyannekk &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pw2e/craantdx_a_project_template_based_on/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pw2e/craantdx_a_project_template_based_on/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7pw2e</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7pw2e/craantdx_a_project_template_based_on/"/>
+    <updated>2020-04-25T08:04:08+00:00</updated>
+    <title>cra-antd-x: a project template based on create-react-app (+rewired), ant design, typescript and
+      react-router
+    </title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/s_trader</name>
+      <uri>https://www.reddit.com/user/s_trader</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I know that in production I just
+      need to build and put the files in a public folder and let express serve it as static files, but what about in
+      development?&lt;/p&gt; &lt;p&gt;I&amp;#39;ve tried to add &amp;quot;proxy&amp;quot;: &amp;quot;localhost:3001&amp;quot;
+      to my react&amp;#39;s package.json file but it didn&amp;#39;t do nothing and I couldn&amp;#39;t find any other
+      solution..&lt;/p&gt; &lt;p&gt;I&amp;#39;d really love to get some help with this issue :)&lt;/p&gt; &lt;/div&gt;&lt;!--
+      SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/s_trader&quot;&gt;
+      /u/s_trader &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pj2f/how_can_i_run_reactjs_app_through_nodejs_server/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pj2f/how_can_i_run_reactjs_app_through_nodejs_server/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7pj2f</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7pj2f/how_can_i_run_reactjs_app_through_nodejs_server/"/>
+    <updated>2020-04-25T07:29:26+00:00</updated>
+    <title>How can I run ReactJS app through NodeJS server in development on Windows?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/KieranOsgood</name>
+      <uri>https://www.reddit.com/user/KieranOsgood</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Doing some research before I
+      start a new project at work soon, (not looking for a component library, but a css-in-js library), and I like using
+      tailwind and just discovered / really liking the look of the syntax of tailwind with a `styled` library, using the
+      &lt;a href=&quot;https://www.npmjs.com/package/tailwind.macro&quot;&gt;tailwind.macro&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;So
+      I&amp;#39;ve seen some dated comparisons between styled-components and emotion where emotion was considered faster
+      and smaller etc. but with the v5 styled-components (vs emotion v10 at present) I wondered how the two css-in-js
+      libraries compared. I understand the difference is probably pretty minimal with tradeoffs, both seemingly able to
+      match each other in adding features like the css prop and jsx pragma, and both have excellent docs, I&amp;#39;m
+      struggling to see if there really is any significant benefits advantages over one or the other?&lt;/p&gt; &lt;p&gt;Seems
+      most will endorse styled-components as its the more established and popular (totally fair), just wanting to know
+      if theres any real differences at current time. If not I&amp;#39;ll probably stick with styled-components as it&amp;#39;s
+      what I already have used, just curious if anyones able to share some knowledge bombs :) Thanks!&lt;/p&gt; &lt;/div&gt;&lt;!--
+      SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/KieranOsgood&quot;&gt;
+      /u/KieranOsgood &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pbk5/styledcomponents_vs_emotion_any_significant/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pbk5/styledcomponents_vs_emotion_any_significant/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7pbk5</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7pbk5/styledcomponents_vs_emotion_any_significant/"/>
+    <updated>2020-04-25T07:09:56+00:00</updated>
+    <title>Styled-Components vs Emotion - Any significant differences nowadays?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/yashatreya</name>
+      <uri>https://www.reddit.com/user/yashatreya</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/yashatreya&quot;&gt;
+      /u/yashatreya &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;/r/reactnative/comments/g7pb9n/invariant_violation_element_type_expected_a/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7pbc8/invariant_violation_element_type_expected_a/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7pbc8</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7pbc8/invariant_violation_element_type_expected_a/"/>
+    <updated>2020-04-25T07:09:24+00:00</updated>
+    <title>Invariant Violation: Element type expected a string or a class/function got: undefined</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/chiragchan1</name>
+      <uri>https://www.reddit.com/user/chiragchan1</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/reactez&quot;&gt;https://www.npmjs.com/package/reactez&lt;/a&gt;
+      A simple CLI for rapid React Components and Pages creation. Do make use of it and any suggestions are
+      appreciated.😀&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/chiragchan1&quot;&gt;
+      /u/chiragchan1 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7p5to/reactez/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7p5to/reactez/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7p5to</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7p5to/reactez/"/>
+    <updated>2020-04-25T06:55:11+00:00</updated>
+    <title>Reactez</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/TaGeuelePutain</name>
+      <uri>https://www.reddit.com/user/TaGeuelePutain</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m really tired of
+      interviewing with people who have only positive feedback to say to my face, then getting ghosted by the same
+      company.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;It makes no sense and it has happened on more than one
+      occasion. I&amp;#39;ll be sure to let whoever interviews with me in the future know if they won&amp;#39;t make it
+      to the next step instead of handing off my dirty laundry to the recruiter to do it for me.&lt;/p&gt; &lt;/div&gt;&lt;!--
+      SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/TaGeuelePutain&quot;&gt;
+      /u/TaGeuelePutain &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7aazu/rant_on_interviewing/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7aazu/rant_on_interviewing/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7aazu</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7aazu/rant_on_interviewing/"/>
+    <updated>2020-04-24T15:24:25+00:00</updated>
+    <title>Rant on interviewing</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/jeremeheh</name>
+      <uri>https://www.reddit.com/user/jeremeheh</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi im currently new to react and
+      im having a hard time organizing my files. So what im asking is how do you folder structure files in react js? Any
+      comments would be gladly appreciated!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32;
+      &lt;a href=&quot;https://www.reddit.com/user/jeremeheh&quot;&gt; /u/jeremeheh &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+      href=&quot;https://www.reddit.com/r/reactjs/comments/g7gqg0/how_do_you_folder_structure_in_react_js/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7gqg0/how_do_you_folder_structure_in_react_js/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7gqg0</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7gqg0/how_do_you_folder_structure_in_react_js/"/>
+    <updated>2020-04-24T21:11:44+00:00</updated>
+    <title>How do you folder structure in react js?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/ShanjaiRaj</name>
+      <uri>https://www.reddit.com/user/ShanjaiRaj</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7leum/react_props_explained_2020/&quot;&gt;
+      &lt;img src=&quot;https://b.thumbs.redditmedia.com/0CyifYuyV3oUwtxjxB4NcQU4eIyxVi7mCkUJyLlAqcs.jpg&quot; alt=&quot;React
+      Props Explained [2020]&quot; title=&quot;React Props Explained [2020]&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt;
+      &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ShanjaiRaj&quot;&gt; /u/ShanjaiRaj
+      &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://youtu.be/e9bEKtj0P6U&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7leum/react_props_explained_2020/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g7leum</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7leum/react_props_explained_2020/"/>
+    <updated>2020-04-25T02:00:44+00:00</updated>
+    <title>React Props Explained [2020]</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/astritmalsia</name>
+      <uri>https://www.reddit.com/user/astritmalsia</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;CSS.GG v2.0 is live now \ 700 UI
+      Icons in Pure CSS, SVG &amp;amp; Figma&lt;/p&gt; &lt;ul&gt; &lt;li&gt;200 New Icons&lt;/li&gt; &lt;li&gt;SVG Icons&lt;/li&gt;
+      &lt;li&gt;SVG Sprite&lt;/li&gt; &lt;li&gt;Styled Components - ⚛ React JS&lt;/li&gt; &lt;li&gt;Local Styled
+      Components&lt;/li&gt; &lt;li&gt;Figma Components&lt;/li&gt; &lt;li&gt;Adobe XD Components&lt;/li&gt; &lt;/ul&gt;
+      &lt;p&gt;Figma: &lt;a href=&quot;https://css.gg/fig&quot;&gt;https://css.gg/fig&lt;/a&gt; \ Adobe XD: &lt;a href=&quot;https://css.gg/xd&quot;&gt;https://css.gg/xd&lt;/a&gt;
+      \ Website: &lt;a href=&quot;https://css.gg&quot;&gt;https://css.gg&lt;/a&gt; \ Repo: &lt;a href=&quot;https://github.com/astrit/css.gg&quot;&gt;https://github.com/astrit/css.gg&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;This project is open source.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32;
+      &lt;a href=&quot;https://www.reddit.com/user/astritmalsia&quot;&gt; /u/astritmalsia &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+      href=&quot;https://www.reddit.com/r/reactjs/comments/g7jfgt/cssgg_v20_700_ui_icons_in_css_styledcomponents/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7jfgt/cssgg_v20_700_ui_icons_in_css_styledcomponents/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7jfgt</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7jfgt/cssgg_v20_700_ui_icons_in_css_styledcomponents/"/>
+    <updated>2020-04-24T23:50:02+00:00</updated>
+    <title>CSS.GG v2.0 - 700+ UI Icons in CSS, styled-components, TSX, NPM &amp; API</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/brunezy</name>
+      <uri>https://www.reddit.com/user/brunezy</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7by6e/google_onetap_login_nextjs_firebase_auth/&quot;&gt;
+      &lt;img src=&quot;https://b.thumbs.redditmedia.com/u0rZYfH4H0Mk2hk1QJSwaV60XMEk7lvVhR-zgjuCMek.jpg&quot; alt=&quot;Google
+      One-Tap Login + Next.js + Firebase Auth&quot; title=&quot;Google One-Tap Login + Next.js + Firebase Auth&quot; /&gt;
+      &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/brunezy&quot;&gt;
+      /u/brunezy &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://google-one-tap.now.sh&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7by6e/google_onetap_login_nextjs_firebase_auth/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g7by6e</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7by6e/google_onetap_login_nextjs_firebase_auth/"/>
+    <updated>2020-04-24T16:55:18+00:00</updated>
+    <title>Google One-Tap Login + Next.js + Firebase Auth</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/BigBrainTechies</name>
+      <uri>https://www.reddit.com/user/BigBrainTechies</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi all, sorry for the long post!
+      There is a TLDR at the end!&lt;/p&gt; &lt;p&gt;I graduated in 2019 from a university in the bay area with a BS in
+      Information Technology. I developed a huge passion for web development in my last quarter. Ever since, I have been
+      self-studying and working on personal projects to build up my resume (I didn&amp;#39;t have any work experience
+      other than being a grader at the time). &lt;/p&gt; &lt;p&gt;By November, I had about 3 personal full stack
+      projects (ReactJS, Django) and 1 class project (Vue, Web2py). That&amp;#39;s when I felt comfortable applying for
+      jobs. It&amp;#39;s been almost half a year now, I have applied to more than 500 jobs, and gotten about 5
+      interviews, but no job offer except for an unpaid internship position which is where I am currently working. &lt;/p&gt;
+      &lt;p&gt;I was very excited for the intern position because they did have a couple of React projects, and I
+      thought it would be a great opportunity for me to learn from other React developers. However, it turns out that
+      all of my co-workers are interns, and I was the one who had the most knowledge in React. I was assigned to an
+      existing project. The code base from previous interns is really messy and super unscalable. I feel like I&amp;#39;m
+      wasting time working there because it&amp;#39;s a company who only hires unpaid interns (so no possibility to
+      become a full-time employee), and it seems like I&amp;#39;m getting worse at React instead of improving. &lt;/p&gt;
+      &lt;p&gt;I should also mention that I am an international student on my F1 OPT right now (expires in 2.5 years
+      with extension). It is important to me to be able to find a full-time position in order to pursue my dreams in the
+      US. At this point I&amp;#39;m feeling hopeless. I don&amp;#39;t know what I&amp;#39;m lacking in order to find an
+      entry level job. I feel like my web dev skills are pretty good and I&amp;#39;m mostly being held back because of
+      my non-citizen status and lack of connections.&lt;/p&gt; &lt;p&gt;Let me know if you have any suggestions/advice
+      for me. Should I build more personal projects? Should I perfect my current ones? Should I remake my personal
+      portfolio (I&amp;#39;m not feeling confident about the current one I have)? Should I learn mobile development?&lt;/p&gt;
+      &lt;p&gt;*Feel free to DM me if would like to see and critique on my portfolio/projects!&lt;/p&gt; &lt;p&gt;TLDR:
+      Recently graduated international student with OPT work authorization seeking career advice. Currently at an unpaid
+      Software Engineer internship with no promotions available. Wondering what I should do next in order to obtain a
+      full-time position.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/BigBrainTechies&quot;&gt;
+      /u/BigBrainTechies &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7infe/looking_for_career_advice/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7infe/looking_for_career_advice/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7infe</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7infe/looking_for_career_advice/"/>
+    <updated>2020-04-24T23:02:18+00:00</updated>
+    <title>Looking For Career Advice...</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/one_lame_programmer</name>
+      <uri>https://www.reddit.com/user/one_lame_programmer</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m trying to compile the
+      best rules for prettier and eslint for myself and will later make a starter type repo. So can you guys share what
+      eslint prettier config do u use? I&amp;#39;m looking for both Javascript and typescript configs.&lt;/p&gt; &lt;/div&gt;&lt;!--
+      SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/one_lame_programmer&quot;&gt;
+      /u/one_lame_programmer &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7g6cb/what_eslint_prettier_config_do_u_use/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7g6cb/what_eslint_prettier_config_do_u_use/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7g6cb</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7g6cb/what_eslint_prettier_config_do_u_use/"/>
+    <updated>2020-04-24T20:40:49+00:00</updated>
+    <title>What eslint prettier config do u use?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/sipacate</name>
+      <uri>https://www.reddit.com/user/sipacate</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey folks, I&amp;#39;m curating a
+      newsletter for Enterprise React developers. The next issue comes out next week. We&amp;#39;d love to have you if
+      you are interested in these topics. &lt;/p&gt; &lt;p&gt;Check out the archives here: &lt;a href=&quot;https://www.digitalprimates.net/enterprise-react/the-enterprise-react-newsletter/?utm_medium=social&amp;amp;utm_source=reddit.com&amp;amp;utm_campaign=enterprise-react-newsletter&quot;&gt;https://www.digitalprimates.net/enterprise-react/the-enterprise-react-newsletter/?utm_medium=social&amp;amp;utm_source=reddit.com&amp;amp;utm_campaign=enterprise-react-newsletter&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/sipacate&quot;&gt;
+      /u/sipacate &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7dwu2/react_enterprise_react_topics/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7dwu2/react_enterprise_react_topics/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7dwu2</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7dwu2/react_enterprise_react_topics/"/>
+    <updated>2020-04-24T18:38:20+00:00</updated>
+    <title>React Enterprise React topics</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/jkgAbella</name>
+      <uri>https://www.reddit.com/user/jkgAbella</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7lbz4/a_jamstack_template_service_for_generating_vitae/&quot;&gt;
+      &lt;img src=&quot;https://a.thumbs.redditmedia.com/XmjZ6cYxIgel4Gv14siuZ-2r_o3jvsaBizRgLx4Bz44.jpg&quot; alt=&quot;A
+      JAMStack template / service for generating vitae and portfolio from your JSON Resume&quot; title=&quot;A JAMStack
+      template / service for generating vitae and portfolio from your JSON Resume&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt;
+      &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/jkgAbella&quot;&gt; /u/jkgAbella
+      &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://github.com/jkga/me&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7lbz4/a_jamstack_template_service_for_generating_vitae/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </content>
+    <id>t3_g7lbz4</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7lbz4/a_jamstack_template_service_for_generating_vitae/"/>
+    <updated>2020-04-25T01:55:20+00:00</updated>
+    <title>A JAMStack template / service for generating vitae and portfolio from your JSON Resume</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/wurbie</name>
+      <uri>https://www.reddit.com/user/wurbie</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello,&lt;/p&gt; &lt;p&gt;I have
+      built a fairly sophisticated site, and now I want to be able to publish articles to the site, I only require a
+      fairly basic fields like;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Title&lt;/li&gt; &lt;li&gt;Slug&lt;/li&gt; &lt;li&gt;Article
+      Hero Image&lt;/li&gt; &lt;li&gt;Article Thumbnail Image&lt;/li&gt; &lt;li&gt;Short field (Text input)&lt;/li&gt;
+      &lt;li&gt;Article Body (A basic wysiwyg editor, with text formatting and ideally I want to be able to embed images
+      and upload them to an s3 bucket).&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Now I have heard a lot about headless CMS&amp;#39;s
+      to use, but there is a cost for those, and this is something that many a year back I would have written in PHP and
+      used TinyMCE or so. Now I am using React, and NextJS.&lt;/p&gt; &lt;p&gt;All my site content comes from a Restful
+      API, so I want the content to come from the API also; that bit wouldnt be a problem to make, but I am having some
+      trouble finding a suitable way of having a nice WYSIWYG field in NextJS and ideally one with an example of the
+      editor uploading the image to s3.&lt;/p&gt; &lt;p&gt;There is DraftJS, Quill and loads of others; but by en large
+      these seem dead or abandoned - my concerns around a headless CMS are that the costs would quickly mount up and as
+      I have no other dependencies on third-parties I am hesitant to add one in now. Anyone using any good WYSIWYG
+      editors with NextJS?&lt;/p&gt; &lt;p&gt;The database type I want to use is MySQL&lt;/p&gt; &lt;p&gt;Oh and I
+      expect to add a *lot* of content, like I&amp;#39;d like to hope it would be hundreds/thousands over time.&lt;/p&gt;
+      &lt;p&gt;-- Thanks for your time reading this.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+      &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/wurbie&quot;&gt; /u/wurbie &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+      href=&quot;https://www.reddit.com/r/reactjs/comments/g7hpq1/how_to_create_a_basic_cms_for_use_with_nextjs/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7hpq1/how_to_create_a_basic_cms_for_use_with_nextjs/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7hpq1</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7hpq1/how_to_create_a_basic_cms_for_use_with_nextjs/"/>
+    <updated>2020-04-24T22:07:09+00:00</updated>
+    <title>How to create a basic CMS for use with NextJS?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/jawmes8</name>
+      <uri>https://www.reddit.com/user/jawmes8</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey everyone,&lt;/p&gt; &lt;p&gt;After
+      a long time of looking at React from the sidelines I finally decided to dive in. I&amp;#39;m building an IoT
+      device and needed a front-end to display real time data. React made that &lt;strong&gt;a lot&lt;/strong&gt;
+      simpler than the vanilla JS/HTML I&amp;#39;m used to.&lt;/p&gt; &lt;p&gt;Thought I would share it with you folks
+      as it might give inspiration to someone looking for an example to learn React. IoT just happens to be my interest.
+      Let me know what you think!&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://theskenengineering.com/building-a-react-js-app-with-aws-iot/&quot;&gt;https://theskenengineering.com/building-a-react-js-app-with-aws-iot/&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/jawmes8&quot;&gt;
+      /u/jawmes8 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7kv5d/learning_reactjs_by_building_a_aws_iot_applicatoin/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7kv5d/learning_reactjs_by_building_a_aws_iot_applicatoin/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7kv5d</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7kv5d/learning_reactjs_by_building_a_aws_iot_applicatoin/"/>
+    <updated>2020-04-25T01:23:36+00:00</updated>
+    <title>Learning React.js by building a AWS IoT applicatoin</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/adamthompson922</name>
+      <uri>https://www.reddit.com/user/adamthompson922</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am modifying the background
+      position of a background image that a user just uploaded (and so is a raw Data URI) using CSS but the re-rendering
+      starts to lag if the image is &amp;gt;1mb.&lt;/p&gt; &lt;p&gt;The issue is not present for smaller images.&lt;/p&gt;
+      &lt;p&gt;Is there anyway of dealing with this short of trying to optimize renders? I already am not re-rendering
+      unless the background position changes by at least 1% (i.e. the change was 1% or greater between re-renders).&lt;/p&gt;
+      &lt;p&gt;The issue is not present with the same image when I host it and then load the image from a URL.&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/adamthompson922&quot;&gt;
+      /u/adamthompson922 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7h4cg/large_blob_images_lag_on_rerender/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7h4cg/large_blob_images_lag_on_rerender/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7h4cg</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7h4cg/large_blob_images_lag_on_rerender/"/>
+    <updated>2020-04-24T21:32:49+00:00</updated>
+    <title>Large blob images lag on re-render?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/i_messed_up_hooks</name>
+      <uri>https://www.reddit.com/user/i_messed_up_hooks</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;So, I&amp;#39;ve written a large
+      production grade application and more or less used hooks wrong throughout the entire thing due to a
+      misunderstanding in the beginning. Now I&amp;#39;m starting to realize there is no way to actually fix anything
+      because I&amp;#39;ve gone too far. &lt;/p&gt; &lt;p&gt;Most things work fine, but the problem is now that I&amp;#39;m
+      wiser and understand how to use them better I can&amp;#39;t actually use them properly because there are too many
+      layers that cause issues. Most of the time this is because somewhere up the chain, there is a function being
+      passed down wrongly that when used as a dep triggers an infinite rerender or causes a callback to reinitialize.
+      There are other cases, but this is the number one thing I&amp;#39;m fighting with now. I can&amp;#39;t really fix
+      everything because I simply don&amp;#39;t have time, so what can I do to do damage control? &lt;/p&gt; &lt;p&gt;What
+      are some tricks &amp;amp; tips I can use to fix my problems?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32;
+      submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/i_messed_up_hooks&quot;&gt;
+      /u/i_messed_up_hooks &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7btb8/i_messed_up_a_big_app_by_using_hooks_wrong_how_do/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7btb8/i_messed_up_a_big_app_by_using_hooks_wrong_how_do/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7btb8</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7btb8/i_messed_up_a_big_app_by_using_hooks_wrong_how_do/"/>
+    <updated>2020-04-24T16:47:58+00:00</updated>
+    <title>I messed up a big app by using hooks wrong, how do I stop the bleeding and do damage control?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/thetruepinecone</name>
+      <uri>https://www.reddit.com/user/thetruepinecone</uri>
+    </author>
+    <category term="reactjs" label="r/reactjs"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;It seems that there has been a
+      lot of discussion between these approaches and I wanted to create a post to talk about when you should use these.&lt;/p&gt;
+      &lt;p&gt;From what I understand, these are the use cases (please correct me if I&amp;#39;m wrong):&lt;/p&gt; &lt;p&gt;Static
+      Site Generation: For the vast majority of websites, this is the best approach. For websites that don&amp;#39;t
+      change much, you can just generate and deploy. For websites with a lot of pages, you can use incremental SSG.&lt;/p&gt;
+      &lt;p&gt;Server Side Rendering: For websites with highly variable content. For example, the front page of reddit,
+      the tiktok trending page, the amazon search results page, etc. The content can be fetched, rendered, and then sent
+      to the client.&lt;/p&gt; &lt;p&gt;Client Side Rendering: For in-house applications that need to be as performant
+      as possible without worry of initial bundle load time. For example GUIs to control internal machines and monitor
+      statuses.&lt;/p&gt; &lt;p&gt;Is my understanding correct? Would love to hear more from an expert on this topic.&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/thetruepinecone&quot;&gt;
+      /u/thetruepinecone &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7ecgg/when_to_use_ssg_vs_ssr_vs_csr/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+      &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/reactjs/comments/g7ecgg/when_to_use_ssg_vs_ssr_vs_csr/&quot;&gt;[комментарии]&lt;/a&gt;&lt;/span&gt;
+    </content>
+    <id>t3_g7ecgg</id>
+    <link href="https://www.reddit.com/r/reactjs/comments/g7ecgg/when_to_use_ssg_vs_ssr_vs_csr/"/>
+    <updated>2020-04-24T19:01:26+00:00</updated>
+    <title>When to use SSG vs SSR vs CSR</title>
+  </entry>
+</feed>
