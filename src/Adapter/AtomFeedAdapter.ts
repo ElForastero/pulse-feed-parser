@@ -1,93 +1,85 @@
-// @ts-nocheck
 import { Enclosure, Feed, Image, Item, Person } from '../types/Feed';
-import {
-  AtomFeed,
-  AtomEntry,
-  AtomSource,
-  AtomCategory,
-  AtomLink,
-  AtomGenerator,
-  AtomContent,
-  AtomPerson,
-  AtomText,
-} from '../Atom/Atom';
+import { AtomEntry, AtomFeed } from '../types/Atom';
 import { parsePerson } from '../utils/parsePerson';
 
+// DefaultAtomTranslator converts an atom.Feed struct
+// into the generic Feed struct.
+//
+// This default implementation defines a set of
+// mapping rules between atom.Feed -> Feed
+// for each of the fields in Feed.
 export class AtomFeedAdapter {
-  public adapt(atom: AtomFeed): Feed {
+  public static adapt(atom: AtomFeed): Feed {
     let feed = {} as Feed;
 
     feed.title = atom.title;
-    feed.description = atom.description;
-    feed.link = atom.link;
-    // @todo
-    feed.feedLink = null;
-    feed.updated = atom.lastBuildDate;
-    feed.published = atom.pubDate;
-    feed.author = this.getFeedAuthor(atom);
+    feed.description = atom.subtitle;
+    feed.link = atom.links?.find(({ type }) => type === 'alternate')?.href ?? null;
+    feed.feedLink = atom.links?.find(({ type }) => type === 'self')?.href ?? null;
+    feed.updated = atom.updated;
+    feed.published = null;
+    feed.author = AtomFeedAdapter.getAuthor(atom);
     feed.language = atom.language;
-    feed.image = this.getImage(atom);
-    feed.copyright = atom.copyright;
-    feed.generator = atom.generator;
-    feed.categories = this.getFeedCategories(atom);
-    feed.items = this.getItems(atom);
-    feed.feedType = 'rss';
+    feed.image = AtomFeedAdapter.getImage(atom);
+    feed.copyright = atom.rights;
+    feed.generator = AtomFeedAdapter.getGenerator(atom);
+    feed.categories = AtomFeedAdapter.getCategories(atom);
+    feed.items = AtomFeedAdapter.getItems(atom);
+    feed.feedType = 'atom';
 
     return feed;
   }
 
-  private getItem(atom: AtomEntry): Item {
+  private static getItem(atom: AtomEntry): Item {
     let item = {} as Item;
 
     item.title = atom.title;
-    item.description = atom.description;
-    item.content = atom.content;
-    item.link = atom.link;
-    item.published = atom.pubDate;
-    item.author = this.getItemAuthor(atom);
-    item.guid = atom.guid?.value ?? null;
-    // @todo
+    item.description = atom.summary;
+    item.content = atom.content?.value ?? null;
+    item.link = atom.links?.find(({ type }) => type === 'alternate')?.href ?? null;
+    item.published = atom.published;
+    item.author = AtomFeedAdapter.getAuthor(atom);
+    item.guid = atom.id;
     item.image = null;
-    item.categories = this.getItemCategories(atom);
-    item.enclosures = this.getEnclosures(atom);
+    item.categories = AtomFeedAdapter.getCategories(atom);
+    item.enclosures = AtomFeedAdapter.getEnclosures(atom);
 
     return item;
   }
 
-  private getItemAuthor(atom: AtomEntry): Maybe<Person> {
-    if (atom.author) {
-      return parsePerson(atom.author);
-    }
+  private static getAuthor(atom: AtomFeed | AtomEntry): Maybe<Person> {
+    const dcCreator = atom.extensions?.dc?.creator?.[0]?.value;
 
-    return null;
-  }
+    if (atom.authors) {
+      const { name, email } = atom.authors[0];
 
-  private getFeedAuthor(atom: AtomFeed): Maybe<Person> {
-    if (atom.managingEditor) {
-      return parsePerson(atom.managingEditor);
-    } else if (atom.webmaster) {
-      return parsePerson(atom.webmaster);
-    }
-
-    return null;
-  }
-
-  private getImage(atom: AtomFeed): Maybe<Image> {
-    if (atom.image) {
       return {
-        title: atom.image.title,
-        url: atom.image.url,
+        name,
+        email,
+      };
+    } else if (dcCreator) {
+      return parsePerson(dcCreator);
+    }
+
+    return null;
+  }
+
+  private static getImage(atom: AtomFeed): Maybe<Image> {
+    if (atom.logo) {
+      return {
+        url: atom.logo,
+        title: null,
       };
     }
 
     return null;
   }
 
-  private getFeedCategories(atom: AtomFeed): Maybe<Array<string>> {
+  private static getCategories(atom: AtomFeed | AtomEntry): Maybe<Array<string>> {
     if (atom.categories !== null) {
       const categories = atom.categories
-        .filter(({ value }) => value !== null)
-        .map(({ value }) => value);
+        .filter(({ term }) => term !== null)
+        .map(({ term }) => term);
 
       if (categories.length > 0) {
         return categories as Array<string>;
@@ -97,37 +89,33 @@ export class AtomFeedAdapter {
     return null;
   }
 
-  private getItemCategories(atom: AtomEntry): Maybe<Array<string>> {
-    if (atom.categories !== null) {
-      const categories = atom.categories
-        .filter(({ value }) => value !== null)
-        .map(({ value }) => value);
+  private static getEnclosures(atom: AtomEntry): Maybe<Array<Enclosure>> {
+    const enclosureLinks = atom.links?.filter(({ rel }) => rel === 'enclosure');
 
-      if (categories.length > 0) {
-        return categories as Array<string>;
-      }
+    if (enclosureLinks) {
+      return enclosureLinks.map(({ href, length, type }) => ({
+        length,
+        type,
+        url: href,
+      }));
     }
 
     return null;
   }
 
-  private getEnclosures(atom: AtomEntry): Maybe<Array<Enclosure>> {
-    if (atom.enclosure) {
-      const enclosure: Enclosure = {
-        length: atom.enclosure.length,
-        type: atom.enclosure.type,
-        url: atom.enclosure.url,
-      };
+  private static getGenerator(atom: AtomFeed): Maybe<string> {
+    if (atom.generator) {
+      const { value, version, uri } = atom.generator;
 
-      return [enclosure];
+      return [value, version, uri].join(' ');
     }
 
     return null;
   }
 
-  private getItems(atom: AtomFeed): Maybe<Array<Item>> {
-    if (atom.items !== null) {
-      return atom.items.map(this.getItem);
+  private static getItems(atom: AtomFeed): Maybe<Array<Item>> {
+    if (atom.entries !== null) {
+      return atom.entries.map(AtomFeedAdapter.getItem);
     }
 
     return null;

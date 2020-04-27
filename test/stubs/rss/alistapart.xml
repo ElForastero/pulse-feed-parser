@@ -1,39 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
-	<channel>
-		<title>
-			<![CDATA[A List Apart: The Full Feed]]>		</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>
+      <![CDATA[A List Apart: The Full Feed]]>    </title>
 
-		<link>
-			https://alistapart.com		</link>
+    <link>
+      https://alistapart.com
+    </link>
 
-		<description>Articles for people who make web sites.</description>
+    <description>Articles for people who make web sites.</description>
 
-		<dc:language>
-			en-US		</dc:language>
+    <dc:language>
+      en-US
+    </dc:language>
 
-		<dc:creator>The fine folks at A List Apart</dc:creator>
+    <dc:creator>The fine folks at A List Apart</dc:creator>
 
-		<dc:rights>Copyright 2020</dc:rights>
+    <dc:rights>Copyright 2020</dc:rights>
 
-		<dc:date>
-			2020-04-24T09:30:01+00:00		</dc:date>
+    <dc:date>
+      2020-04-24T09:30:01+00:00
+    </dc:date>
 
-		
-			<item>
-				<title>
-					<![CDATA[Usability Testing for Voice Content]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/preston-so/">Preston So</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Usability Testing for Voice Content]]>        </title>
 
-				<link>
-					https://alistapart.com/article/usability-testing-for-voice-content/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/preston-so/">Preston So</a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/usability-testing-for-voice-content/				</guid>
+      <link>
+        https://alistapart.com/article/usability-testing-for-voice-content/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/usability-testing-for-voice-content/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>It’s an important time to be in voice design. Many of us are turning to voice assistants in these times, whether for comfort, recreation, or staying informed. As the interest in interfaces driven by voice continues to reach new heights around the world, so too will users’ expectations and the best practices that guide their design.</p>
 <!-- /wp:paragraph -->
 
@@ -287,31 +294,37 @@
 
 <!-- wp:paragraph -->
 <p><em>Special thanks to </em><a href="https://twitter.com/nikofthehill/"><em>Nikhil Deshpande</em></a><em> for his feedback during the writing process.</em></p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Content, Usability]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Content, Usability]]>        </dc:subject>
 
-				<dc:date>
-					2020-04-09T14:00:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2020-04-09T14:00:00+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Cross-Cultural Design]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/senongo-akpem/">Senongo Akpem</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Cross-Cultural Design]]>        </title>
 
-				<link>
-					https://alistapart.com/article/cross-cultural-design/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/senongo-akpem/">Senongo
+        Akpem
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/cross-cultural-design/				</guid>
+      <link>
+        https://alistapart.com/article/cross-cultural-design/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/cross-cultural-design/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>When I first traveled
 to Japan as an exchange student in 2001, I lived in northern Kyoto, a block
 from the Kitayama subway station. </p>
@@ -570,31 +583,38 @@ you can do keep expansion factors in mind as you design:</p>
 
 <!-- wp:list -->
 <ul><li><strong>Generate dummy text in different languages for your design comps.</strong> Of course, you should make sure your text doesn’t contain any unintentional swearwords or improper language, but tools like Foreign Ipsum are<strong> </strong>a good place to start getting your head around expansion factors (<a href="http://bkaprt.com/ccd/05-13/">http://bkaprt.com/ccd/05-13/</a>).</li><li><strong>Leave extra space around buttons, menu items, and other microcopy. </strong>As well as being general good practice in responsive design, this allows you to account for how text in your target languages expands.</li><li><strong>Make sure your components are expandable.</strong> Stay away from assigning a fixed width to your UI elements unless it’s unavoidable.</li><li><strong>Let longer text strings wrap to a second line.</strong> Just ensure that text is aligned correctly and is easy to scan.</li></ul>
-<!-- /wp:list -->]]>				</description>
+<!-- /wp:list -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Design, Typography &amp; Web Fonts]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Design, Typography &amp; Web Fonts]]>        </dc:subject>
 
-				<dc:date>
-					2020-02-27T15:30:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2020-02-27T15:30:00+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Standards for Writing Accessibly]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/michael-j-metts/">Michael J. Metts</a>, <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/andy-welfle/">Andy Welfle</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Standards for Writing Accessibly]]>        </title>
 
-				<link>
-					https://alistapart.com/article/standards-for-writing-accessibly/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/michael-j-metts/">Michael
+        J. Metts</a>, <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/andy-welfle/">
+        Andy Welfle
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/standards-for-writing-accessibly/				</guid>
+      <link>
+        https://alistapart.com/article/standards-for-writing-accessibly/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/standards-for-writing-accessibly/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Writing to meet WCAG2 standards can be a challenge, but it’s worthwhile. Albert Einstein, the archetypical genius and physicist, once said, “Any fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage—to move in the opposite direction.”</p>
 <!-- /wp:paragraph -->
 
@@ -745,31 +765,37 @@ you can do keep expansion factors in mind as you design:</p>
 
 <!-- wp:paragraph -->
 <p>There are plenty of exceptions to this rule. If your interface requires a certain action to execute a particular function, and you need to teach the user how their gesture affects the interface (“Pinch to zoom out,” for example), then of course you need to describe the behavior. But generally, the copy you’re writing will be simpler and more consistent if you stick with the action in the context of the interface itself.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Accessibility, Content, User Experience, Writing]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Accessibility, Content, User Experience, Writing]]>        </dc:subject>
 
-				<dc:date>
-					2020-01-23T15:20:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2020-01-23T15:20:00+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Making Room for Variation]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/yperezcruz/">Yesenia Perez-Cruz</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Making Room for Variation]]>        </title>
 
-				<link>
-					https://alistapart.com/article/making-room-for-variation/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/yperezcruz/">Yesenia
+        Perez-Cruz
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/making-room-for-variation/				</guid>
+      <link>
+        https://alistapart.com/article/making-room-for-variation/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/making-room-for-variation/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Making a brand feel unified, cohesive, and harmonious while also leaving
 room for experimentation is a tough balancing act. It’s one of the most
 challenging aspects of a design system. </p>
@@ -1049,31 +1075,37 @@ larger. </p>
 a great example of how to build the right variation into your system. Build
 your system around helping your users navigate your product more clearly and serving
 content needs and you’ll unlock scalable expression. </p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Design]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Design]]>        </dc:subject>
 
-				<dc:date>
-					2019-12-12T14:30:03+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-12-12T14:30:03+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Request with Intent: Caching Strategies in the Age of PWAs]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/agustafson/"> Aaron Gustafson</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Request with Intent: Caching Strategies in the Age of PWAs]]>        </title>
 
-				<link>
-					https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/agustafson/">Aaron
+        Gustafson
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/				</guid>
+      <link>
+        https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Once upon a time, we relied on browsers to handle caching for us; as developers in those days, we had very little control. But then came <a href="https://alistapart.com/article/yes-that-web-project-should-be-a-pwa/">Progressive Web Apps</a> (PWAs), <a href="https://developer.mozilla.org/docs/Web/API/Service_Worker_API">Service Workers</a>, and the <a href="https://developer.mozilla.org/docs/Web/API/Cache">Cache API</a>—and suddenly we have expansive power over what gets put in the cache and how it gets put there. We can now cache everything we want to… and therein lies a potential problem.</p>
 <!-- /wp:paragraph -->
 
@@ -1657,31 +1689,37 @@ if ( navigator.serviceWorker.controller ) {
 
 <!-- wp:paragraph -->
 <p>Draw distinctions between critical, nice-to-have, and superfluous media. Remove the cruft, then optimize the bejeezus out of each remaining asset. Serve your media in multiple formats and sizes, prioritizing the smallest versions first to make the most of high latency and slow connections. If your users say they want to save data, respect that and have a fallback plan in place. Cache wisely and with the utmost respect for your users’ disk space. And, finally, audit your caching strategies regularly—especially when it comes to large media files.Follow these guidelines, and every one of your users—from folks rocking a <a href="https://www.jio.com/en-in/jiophone2">JioPhone</a> on a rural mobile network in India to people on a high-end gaming laptop wired to a 10 Gbps fiber line in Silicon Valley—will thank you.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Browsers, Code, The Server Side]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Browsers, Code, The Server Side]]>        </dc:subject>
 
-				<dc:date>
-					2019-11-21T14:30:06+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-11-21T14:30:06+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Responsible JavaScript: Part III]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy Wagner</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Responsible JavaScript: Part III]]>        </title>
 
-				<link>
-					https://alistapart.com/article/responsible-javascript-part-3/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy
+        Wagner
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/responsible-javascript-part-3/				</guid>
+      <link>
+        https://alistapart.com/article/responsible-javascript-part-3/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/responsible-javascript-part-3/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>You’ve done everything you thought was possible to address your website’s JavaScript problem. You <a href="https://alistapart.com/article/responsible-javascript-part-1/">relied on the web platform where you could</a>. You <a href="https://alistapart.com/article/responsible-javascript-part-2/#section9">sidestepped Babel</a> and <a href="https://alistapart.com/article/responsible-javascript-part-2/#section7">found smaller framework alternatives</a>. You whittled your application code down to its most streamlined form possible. Yet, things are just not fast enough. When websites fail to perform the way we as designers and developers expect them to, we inevitably turn on ourselves:</p>
 <!-- /wp:paragraph -->
 
@@ -1904,7 +1942,7 @@ const intersectionListener = new IntersectionObserver(entries =&gt; {
       scriptEl.onload = () =&gt; {
         loadedFbScript = true;
       };
-      
+
       document.body.append(scriptEl);
     }
   });
@@ -1945,31 +1983,37 @@ intersectionListener.observe(document.querySelector(".fb-like"));
 
 <!-- wp:paragraph -->
 <p>So it will come to pass that in the fourth and final installment of this series we’ll discuss what it means to do the hard work of using JavaScript responsibly in the context of process. Therein, we’ll explore what it takes to unite your organization under the banner of making your website faster and more accessible, and therefore more usable for everyone, everywhere.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Application Development, Code, Industry &amp; Business, JavaScript, State of the Web]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Application Development, Code, Industry &amp; Business, JavaScript, State of the Web]]>        </dc:subject>
 
-				<dc:date>
-					2019-11-14T14:30:42+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-11-14T14:30:42+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[The Untapped Power of Vulnerability &#038; Transparency in Content Strategy]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/travis-mcknight/">Travis McKnight</a>					</author>
+    <item>
+      <title>
+        <![CDATA[The Untapped Power of Vulnerability &#038; Transparency in Content Strategy]]>        </title>
 
-				<link>
-					https://alistapart.com/article/the-untapped-power-of-vulnerability-transparency-in-content-strategy/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/travis-mcknight/">Travis
+        McKnight
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/the-untapped-power-of-vulnerability-transparency-in-content-strategy/				</guid>
+      <link>
+        https://alistapart.com/article/the-untapped-power-of-vulnerability-transparency-in-content-strategy/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/the-untapped-power-of-vulnerability-transparency-in-content-strategy/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>In marketing, transparency and vulnerability are unjustly stigmatized. The words conjure illusions of being frightened, imperfect, and powerless. And for companies that shove carefully curated personas in front of users, little is more terrifying than losing control of how people perceive the brand.</p>
 <!-- /wp:paragraph -->
 
@@ -2455,31 +2499,37 @@ intersectionListener.observe(document.querySelector(".fb-like"));
 
 <!-- wp:paragraph -->
 <p>You have the tools and knowledge necessary to be transparent, create vulnerable content, and succeed. And we need to tell vulnerable stories because sharing our experiences and embracing our common connections matters. So go ahead, put yourself out into the open, and see how your customers respond.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Content, Content Strategy]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Content, Content Strategy]]>        </dc:subject>
 
-				<dc:date>
-					2019-08-22T13:30:11+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-08-22T13:30:11+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[An Essential Tool for Capturing Your Career Accomplishments]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jessica-ivins/">Jessica Ivins</a>					</author>
+    <item>
+      <title>
+        <![CDATA[An Essential Tool for Capturing Your Career Accomplishments]]>        </title>
 
-				<link>
-					https://alistapart.com/article/the-career-management-document/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jessica-ivins/">Jessica
+        Ivins
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/the-career-management-document/				</guid>
+      <link>
+        https://alistapart.com/article/the-career-management-document/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/the-career-management-document/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Imagine you’re ready to apply for your next job. Like most busy professionals, you probably haven’t updated your résumé or your portfolio since you looked for your current job.&nbsp;</p>
 <!-- /wp:paragraph -->
 
@@ -2649,31 +2699,37 @@ intersectionListener.observe(document.querySelector(".fb-like"));
 
 <!-- wp:paragraph -->
 <p>If you don’t have a CMD yet, now is a great time to start one. Schedule 30 minutes this week to begin crafting your repository of work accomplishments. You’ll be glad you did when you seek your next job.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Career]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Career]]>        </dc:subject>
 
-				<dc:date>
-					2019-08-08T13:45:20+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-08-08T13:45:20+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Getting to the Heart of Digital Accessibility]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/carie-fisher/">Carie Fisher</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Getting to the Heart of Digital Accessibility]]>        </title>
 
-				<link>
-					https://alistapart.com/article/getting-to-the-heart-of-digital-accessibility/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/carie-fisher/">Carie
+        Fisher
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/getting-to-the-heart-of-digital-accessibility/				</guid>
+      <link>
+        https://alistapart.com/article/getting-to-the-heart-of-digital-accessibility/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/getting-to-the-heart-of-digital-accessibility/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Quick! Think of the word “developer” or “coder” — what’s the first thing that comes to mind? Maybe a whiteish male in his twenties living in a busy metropolis, wearing a nerdy t-shirt and hoodie? Someone a bit like Mark Zuckerberg? Or maybe a younger Bill Gates or Sergey Brin? Any of the dudes from the HBO series <em>Silicon Valley</em>, perhaps? Certainly no one like me.</p>
 <!-- /wp:paragraph -->
 
@@ -2779,31 +2835,37 @@ intersectionListener.observe(document.querySelector(".fb-like"));
 
 <!-- wp:paragraph -->
 <p>Because when you strip away all the styles, all the mark-up, all the cool features from a website or app — what’s left? People. And honestly, the more I learn about digital accessibility, the more I realize it’s not about the code at all. Digital accessibility is rooted in the user; and, while I (<a href="https://a11yproject.com/follow/">and countless others</a>) can certainly teach you how to write accessible code, and build you tools, patterns, and libraries to use, I realize we can’t teach you to care. That is a choice you have to make yourself. So think for a moment — what are you leaving the next generation of developers with all that inaccessible code you haven’t given much thought to? Is it the coding legacy you really want to leave? I challenge you to do better for my daughter, her peers, and for the countless others who are not fully represented in the tech community today.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Accessibility]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Accessibility]]>        </dc:subject>
 
-				<dc:date>
-					2019-08-01T13:45:18+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-08-01T13:45:18+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Responsible JavaScript: Part II]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy Wagner</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Responsible JavaScript: Part II]]>        </title>
 
-				<link>
-					https://alistapart.com/article/responsible-javascript-part-2/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy
+        Wagner
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/responsible-javascript-part-2/				</guid>
+      <link>
+        https://alistapart.com/article/responsible-javascript-part-2/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/responsible-javascript-part-2/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>You and the rest of the dev team lobbied enthusiastically for a total re-architecture of the company’s aging website. Your pleas were heard by management—even up to the C-suite—who gave the green light. Elated, you and the team started working with the design, copy, and IA teams. Before long, you were banging out new code.</p>
 <!-- /wp:paragraph -->
 
@@ -3106,31 +3168,35 @@ function logger(message, level) {
 
 <!-- wp:paragraph -->
 <p><em>Special thanks to </em><a href="https://twitter.com/_developit"><em>Jason Miller</em></a><em> for tech editing this piece. Jason is the creator and one of the many maintainers of </em><a href="https://preactjs.com/"><em>Preact</em></a><em>, a vastly smaller alternative to React with the same API. If you use Preact, </em><a href="https://opencollective.com/preact"><em>please consider supporting Preact through Open Collective</em></a><em>.</em></p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Application Development, Browsers, JavaScript]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Application Development, Browsers, JavaScript]]>        </dc:subject>
 
-				<dc:date>
-					2019-06-13T13:30:28+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-06-13T13:30:28+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Resilient Management, An Excerpt]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/larahogan/">Lara Hogan</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Resilient Management, An Excerpt]]>        </title>
 
-				<link>
-					https://alistapart.com/article/resilient-management-excerpt/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/larahogan/">Lara Hogan</a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/resilient-management-excerpt/				</guid>
+      <link>
+        https://alistapart.com/article/resilient-management-excerpt/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/resilient-management-excerpt/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>In <a href="https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development">Tuckman’s Stages of Group Development</a>, the Storming stage happens as a group begins to figure out how to work together. Previously, each person had been doing their own thing as individuals, so necessarily a few things need to be ironed out: how to collaborate, how to hit goals, how to determine priorities. Of <em>course </em>there may be some friction here! </p>
 <!-- /wp:paragraph -->
 
@@ -3396,31 +3462,37 @@ give company or conference talks, or contribute open-source work.</li></ul>
 
 <!-- wp:paragraph -->
 <p>Take a look at the daily communications you participate in: your work chat logs, the conversations you have with others, the process for figuring out who should fix a bug or work on a new project, and the processes for making your teams’ work visible (like an architecture review, code review, launch calendar, etc.). You’ll be surprised how many moments there are to sponsor someone throughout an average day. Please put in the time and intention to ensure that you’re sponsoring members of underrepresented groups, too. </p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Business, Career]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Business, Career]]>        </dc:subject>
 
-				<dc:date>
-					2019-06-06T13:30:51+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-06-06T13:30:51+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Daily Ethical Design]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/lennartoverkamp/">Lennart Overkamp</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Daily Ethical Design]]>        </title>
 
-				<link>
-					https://alistapart.com/article/daily-ethical-design/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/lennartoverkamp/">Lennart
+        Overkamp
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/daily-ethical-design/				</guid>
+      <link>
+        https://alistapart.com/article/daily-ethical-design/
+      </link>
 
-				<description>
-					<![CDATA[Suddenly, I realized that the people next to me might be severely impacted by my work.
+      <guid>
+        https://alistapart.com/article/daily-ethical-design/
+      </guid>
+
+      <description>
+        <![CDATA[Suddenly, I realized that the people next to me might be severely impacted by my work.
 
 I was having a quick lunch in the airport. A group of flight attendants sat down at the table next to me and started to prepare for their flight. For a while now, our design team had been working on futuristic concepts for the operations control center of these flight attendants’ airline, pushing ourselves to come up with innovative solutions enabled by the newest technologies. As the control center deals with all activities around flying planes, our concepts touched upon everything and everyone within the airline.
 
@@ -3505,31 +3577,35 @@ The back-and-forth Q&amp;A of the Dark Reality session will help us consider and
 
 The dark reality session is best conducted during the convergent parts of the <a href="https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond" target="_blank" rel="noopener noreferrer">double diamond</a>, as these are the design phases in which we narrow down to realistic ideas. It’s vital to have a questioner from outside the team with strong interviewing skills and who doesn’t easily accept an answer as sufficient. There are helpful tools available to help structure the session, such as the <a href="http://tarotcardsoftech.artefactgroup.com/" target="_blank" rel="noopener noreferrer">Tarot Cards of Tech</a> and these <a href="https://www.ethicsfordesigners.com/tools" target="_blank" rel="noopener noreferrer">ethical tools</a>.
 <h2>Take a step back to go forward</h2>
-As designers, we’re optimists by nature. We see the world as a set of problems that we can solve systematically and creatively if only we try hard enough. We intend well. However, merely having the <em>intention</em> to do good is not going to be enough. Our mindset comes with the pitfall of (dis)missing potential disastrous consequences, especially under pressure of daily constraints. That’s why we need to regularly, systematically take a step back and consider the future impact of our work. My hope is that the practical, structural mindset to ethics introduced in this article will help us agree on a higher standard for design.</figure>]]>				</description>
+As designers, we’re optimists by nature. We see the world as a set of problems that we can solve systematically and creatively if only we try hard enough. We intend well. However, merely having the <em>intention</em> to do good is not going to be enough. Our mindset comes with the pitfall of (dis)missing potential disastrous consequences, especially under pressure of daily constraints. That’s why we need to regularly, systematically take a step back and consider the future impact of our work. My hope is that the practical, structural mindset to ethics introduced in this article will help us agree on a higher standard for design.</figure>]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Design]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Design]]>        </dc:subject>
 
-				<dc:date>
-					2019-05-30T14:30:24+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-05-30T14:30:24+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Trans-inclusive Design]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/erin-white/">Erin White</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Trans-inclusive Design]]>        </title>
 
-				<link>
-					https://alistapart.com/article/trans-inclusive-design/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/erin-white/">Erin White</a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/trans-inclusive-design/				</guid>
+      <link>
+        https://alistapart.com/article/trans-inclusive-design/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/trans-inclusive-design/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Late one night a few years ago, a panicked professor emailed me: “My transgender student’s legal name is showing on our online discussion board. How can I keep him from being outed to his classmates?” Short story: we couldn’t. The professor created an offline workaround with the student. Years later this problem persists not just in campus systems, but in many systems we use every day.</p>
 <!-- /wp:paragraph -->
 
@@ -3879,31 +3955,37 @@ As designers, we’re optimists by nature. We see the world as a set of problems
 
 <!-- wp:paragraph -->
 <p>Jake Atchison<br>Katherine Deibel, Ph.D.<br>Justina F. Hall<br>Austyn Higgs<br>Emma Humphries<br>Tara Robertson<br>Levi R. Walter</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Community, Content, Design, Industry &amp; Business, Information Architecture, User Experience]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Community, Content, Design, Industry &amp; Business, Information Architecture, User Experience]]>        </dc:subject>
 
-				<dc:date>
-					2019-05-09T12:45:49+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-05-09T12:45:49+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Everyday Information Architecture: Auditing for Structure]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/lisamaria/">Lisa Maria Martin</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Everyday Information Architecture: Auditing for Structure]]>        </title>
 
-				<link>
-					https://alistapart.com/article/everyday-information-architecture-excerpt/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/lisamaria/">Lisa Maria
+        Martin
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/everyday-information-architecture-excerpt/				</guid>
+      <link>
+        https://alistapart.com/article/everyday-information-architecture-excerpt/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/everyday-information-architecture-excerpt/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Just as we need to
 understand our content before we can recategorize it, we need to understand the
 system before we try to rebuild it. </p>
@@ -4093,31 +4175,36 @@ untangle structural confusion—that improves with time and experience. Performi
 structural audits will not only teach you about your current site, but will
 help you develop fluency in systems thinking—a boon when it comes time to
 document the new site.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Information Architecture]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Information Architecture]]>        </dc:subject>
 
-				<dc:date>
-					2019-04-18T12:45:30+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-04-18T12:45:30+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Nothing Fails Like Success]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/zeldman/">Jeffrey Zeldman</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Nothing Fails Like Success]]>        </title>
 
-				<link>
-					https://alistapart.com/article/nothing-fails-like-success/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/zeldman/">Jeffrey Zeldman
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/nothing-fails-like-success/				</guid>
+      <link>
+        https://alistapart.com/article/nothing-fails-like-success/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/nothing-fails-like-success/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>A family buys a house they can’t afford. They can’t make their monthly mortgage payments, so they borrow money from the Mob. Now they’re in debt to the bank and the Mob, live in fear of losing their home, and must do whatever their creditors tell them to do.<br></p>
 <!-- /wp:paragraph -->
 
@@ -4331,31 +4418,37 @@ document the new site.</p>
 
 <!-- wp:paragraph -->
 <p>On an individual and small collective basis, the IndieWeb already works. But does an IndieWeb approach scale to the general public? If it doesn’t scale <em>yet</em>, can we, who envision and design and build, create a new generation of tools that will help give birth to a flourishing, independent web? One that is as accessible to ordinary internet users as Twitter and Facebook and Instagram? <a href="https://en.wikipedia.org/wiki/Tantek_%C3%87elik">Tantek Çelik</a> thinks so, and he’s been right about the web for nearly 30 years. (For more about what Tantek thinks, <a href="http://5by5.tv/bigwebshow/186">listen to our conversation</a> in Episode № 186 of The Big Web Show.)<br>Are these approaches mere whistling against a hurricane? Are most web and internet users content with how things are? What do <em>you</em> think? Share your thoughts on your personal website (dust yours off!) or (irony ahoy!) on your indie or mainstream social networks of choice using hashtag <strong>#LetsFixThis</strong>. I can’t wait to see what you have to say.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Community, Industry]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Community, Industry]]>        </dc:subject>
 
-				<dc:date>
-					2019-04-11T09:30:51+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-04-11T09:30:51+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Accessibility for Vestibular Disorders: How My Temporary Disability Changed My Perspective]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/facundo-corradini/">Facundo Corradini</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Accessibility for Vestibular Disorders: How My Temporary Disability Changed My Perspective]]>        </title>
 
-				<link>
-					https://alistapart.com/article/accessibility-for-vestibular/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/facundo-corradini/">Facundo
+        Corradini
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/accessibility-for-vestibular/				</guid>
+      <link>
+        https://alistapart.com/article/accessibility-for-vestibular/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/accessibility-for-vestibular/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>Accessibility can be tricky. There are plenty of conditions to take into consideration, and many technical limitations and weird exceptions that make it quite hard to master for most designers and developers.</p>
 <!-- /wp:paragraph -->
 
@@ -4621,31 +4714,37 @@ document the new site.</p>
 
 <!-- wp:paragraph -->
 <p><br></p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Accessibility, User Experience]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Accessibility, User Experience]]>        </dc:subject>
 
-				<dc:date>
-					2019-04-04T01:55:13+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-04-04T01:55:13+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Responsible JavaScript: Part I]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy Wagner</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Responsible JavaScript: Part I]]>        </title>
 
-				<link>
-					https://alistapart.com/article/responsible-javascript-part-1/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/jeremy-wagner/">Jeremy
+        Wagner
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/responsible-javascript-part-1/				</guid>
+      <link>
+        https://alistapart.com/article/responsible-javascript-part-1/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/responsible-javascript-part-1/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>By the numbers,&nbsp;<a href="https://httparchive.org/reports/state-of-javascript#bytesJs">JavaScript is a performance liability</a>. If the trend persists, the median page will be shipping at least 400 KB of it before too long, and that’s merely what’s&nbsp;<em>transferred</em>. Like other text-based resources, JavaScript is almost always served compressed—but that might be the only thing we’re getting consistently right in its delivery.</p>
 <!-- /wp:paragraph -->
 
@@ -4735,7 +4834,7 @@ class SignupForm extends Component {
     return (
       <div>
         <span class="email-label">Enter your email:</span>
-        
+
         <button>Sign Up</button>
       </div>
     );
@@ -4766,7 +4865,7 @@ const SignupForm = props =&gt; {
 
     // Carry on...
   };
-  
+
   return (
     &lt;form method="POST" action="/signup" onSubmit={handleSubmit}&gt;
       &lt;label for="email" class="email-label"&gt;Enter your email:&lt;/label&gt;
@@ -4872,31 +4971,36 @@ const SignupForm = props =&gt; {
 
 <!-- wp:paragraph -->
 <p><br></p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Application Development, JavaScript]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Application Development, JavaScript]]>        </dc:subject>
 
-				<dc:date>
-					2019-03-28T09:07:40+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-03-28T09:07:40+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Canary in a Coal Mine: How Tech Provides Platforms for Hate]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/tatianamac/">Tatiana Mac</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Canary in a Coal Mine: How Tech Provides Platforms for Hate]]>        </title>
 
-				<link>
-					https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/tatianamac/">Tatiana Mac
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/				</guid>
+      <link>
+        https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/
+      </link>
 
-				<description>
-					<![CDATA[<!-- wp:paragraph -->
+      <guid>
+        https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/
+      </guid>
+
+      <description>
+        <![CDATA[<!-- wp:paragraph -->
 <p>As I write this, the world is sending its thoughts and prayers to our Muslim cousins. The Christchurch act of terrorism has once again reminded the world that white supremacy’s rise is very real, that its perpetrators are no longer on the fringes of society, but centered in our holiest places of worship. People are begging us to not share videos of the mass murder or the hateful manifesto that the white supremacist terrorist wrote. That’s what he wants: for his proverbial message of hate to be spread to the ends of the earth.</p>
 <!-- /wp:paragraph -->
 
@@ -5186,31 +5290,37 @@ const SignupForm = props =&gt; {
 
 <!-- wp:paragraph -->
 <p>If the people at the highest echelons of the tech industry—the white, male CEOs in power—fail to listen to its most marginalized people—the queer, disabled, trans, people of color—the fate of the canaries will too become the fate of the miners.</p>
-<!-- /wp:paragraph -->]]>				</description>
+<!-- /wp:paragraph -->]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Community, Industry]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Community, Industry]]>        </dc:subject>
 
-				<dc:date>
-					2019-03-19T09:22:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-03-19T09:22:00+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Semantics to Screen Readers]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/melanie-richards/">Melanie Richards</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Semantics to Screen Readers]]>        </title>
 
-				<link>
-					https://alistapart.com/article/semantics-to-screen-readers/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/melanie-richards/">Melanie
+        Richards
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/semantics-to-screen-readers/				</guid>
+      <link>
+        https://alistapart.com/article/semantics-to-screen-readers/
+      </link>
 
-				<description>
-					<![CDATA[As a child of the ’90s, one of my favorite movie quotes is from <a href="https://www.imdb.com/title/tt0116493"><cite>Harriet the Spy</cite></a>: “there are as many ways to live as there are people in this world, and each one deserves a closer look.” Likewise, there are as many ways to browse the web as there are people online. We each bring unique context to our web experience based on our values, technologies, environments, minds, and bodies.
+      <guid>
+        https://alistapart.com/article/semantics-to-screen-readers/
+      </guid>
+
+      <description>
+        <![CDATA[As a child of the ’90s, one of my favorite movie quotes is from <a href="https://www.imdb.com/title/tt0116493"><cite>Harriet the Spy</cite></a>: “there are as many ways to live as there are people in this world, and each one deserves a closer look.” Likewise, there are as many ways to browse the web as there are people online. We each bring unique context to our web experience based on our values, technologies, environments, minds, and bodies.
 
 <i>Assistive technologies</i> (ATs), which are hardware and software that help us perceive and interact with digital content, come in diverse forms. ATs can use a whole host of user input, ranging from clicks and keystrokes to minor muscle movements. ATs may also present digital content in a variety of forms, such as Braille displays, color-shifted views, and decluttered <i>user interfaces</i> (UIs).
 
@@ -5554,31 +5664,37 @@ As web developers, we don’t necessarily need to make sure that each instance s
  	<li><a href="https://bugs.webkit.org/query.cgi?format=specific&amp;product=WebKit">Safari</a></li>
 </ul>
 </li>
-</ul>]]>				</description>
+</ul>]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Accessibility, Browsers]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Accessibility, Browsers]]>        </dc:subject>
 
-				<dc:date>
-					2019-02-28T13:37:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-02-28T13:37:00+00:00
+      </dc:date>
+    </item>
 
-			
-			<item>
-				<title>
-					<![CDATA[Designing for Conversions]]>				</title>
 
-				<author>
-				by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/brandongregory/">Brandon Gregory</a>					</author>
+    <item>
+      <title>
+        <![CDATA[Designing for Conversions]]>        </title>
 
-				<link>
-					https://alistapart.com/article/designing-for-conversions/				</link>
+      <author>
+        by <a itemprop="url" class="author" rel="author" href="https://alistapart.com/author/brandongregory/">Brandon
+        Gregory
+      </a>
+      </author>
 
-				<guid>
-					https://alistapart.com/article/designing-for-conversions/				</guid>
+      <link>
+        https://alistapart.com/article/designing-for-conversions/
+      </link>
 
-				<description>
-					<![CDATA[What makes creative successful? Creative work often lives in the land of feeling—we can say we like something, point to how happy the client is, or talk about how delighted users will be, but can’t objectively measure feelings. Measuring the success of creative work doesn’t have to stop with feeling. In fact, we can assign it numbers, do math with it, and track improvement to show clients objectively how well our creative is working for them.
+      <guid>
+        https://alistapart.com/article/designing-for-conversions/
+      </guid>
+
+      <description>
+        <![CDATA[What makes creative successful? Creative work often lives in the land of feeling—we can say we like something, point to how happy the client is, or talk about how delighted users will be, but can’t objectively measure feelings. Measuring the success of creative work doesn’t have to stop with feeling. In fact, we can assign it numbers, do math with it, and track improvement to show clients objectively how well our creative is working for them.
 
 David Ogilvy once said, “If it doesn’t sell, it isn’t creative.” While success may not be a tangible metric for us, it is for our clients. They have hard numbers to meet, and as designers, we owe it to them to think about how our work can meet those goals. We can track sales, sure, but websites are ripe with other opportunities for measuring improvements. Designing for conversions will not only make you a more effective designer or copywriter, it will make you much more valuable to your clients, and that’s something we should all seek out.
 
@@ -5652,14 +5768,15 @@ Users today are fearful that their information will be used for nefarious purpos
 
 One of the worst things you can do is push out a creative change, assume it’s great, and move on to the next task. <a href="https://alistapart.com/article/a-primer-on-a-b-testing">A/B testing</a> is ideal and will allow you to test a creative change directly against the old creative, eliminating other variables like time, media coverage, and anything else you might not be thinking of. Creative changes should be applied methodically and scientifically—just because two or three changes together show an improvement in conversion rate doesn’t mean that one of them wouldn’t perform better alone.
 
-Measuring tangible things like conversion rate not only helps your client or business, but can also give new purpose to your designs and creative decisions. It’s a lot easier to push for your creative decisions when you have hard data to back up why they’re the best choice for the client or project. Having this data on hand will give you more authority in dealing with clients or marketing folks, which is good for your creative and your career. If my time in the design world has taught me anything, it’s that, in the realm of creativity, certainty can be hard to come by. So, perhaps most importantly, objective measures of success give you, and your client, the reassurance that you’re doing the right thing.]]>				</description>
+Measuring tangible things like conversion rate not only helps your client or business, but can also give new purpose to your designs and creative decisions. It’s a lot easier to push for your creative decisions when you have hard data to back up why they’re the best choice for the client or project. Having this data on hand will give you more authority in dealing with clients or marketing folks, which is good for your creative and your career. If my time in the design world has taught me anything, it’s that, in the realm of creativity, certainty can be hard to come by. So, perhaps most importantly, objective measures of success give you, and your client, the reassurance that you’re doing the right thing.]]>        </description>
 
-				<dc:subject>
-					<![CDATA[Business, Design]]>				</dc:subject>
+      <dc:subject>
+        <![CDATA[Business, Design]]>        </dc:subject>
 
-				<dc:date>
-					2019-02-14T15:30:00+00:00				</dc:date>
-			</item>
+      <dc:date>
+        2019-02-14T15:30:00+00:00
+      </dc:date>
+    </item>
 
-				</channel>
+  </channel>
 </rss>

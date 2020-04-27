@@ -1,5 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Articles on Smashing Magazine — For Web Designers And Developers</title><link>https://www.smashingmagazine.com/articles/</link><description>Recent content in Articles on Smashing Magazine — For Web Designers And Developers</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Apr 2020 09:35:42 +0000</lastBuildDate><item><author>Aleem Isiaka</author><title>Exploring Node.js Internals</title><link>https://www.smashingmagazine.com/2020/04/nodejs-internals/</link><pubDate>Thu, 23 Apr 2020 10:30:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/nodejs-internals/</guid><description>Since the introduction of Node.js by Ryan Dahl at the European JSConf on 8 November 2009, it has seen wide usage across the tech industry. Companies such as Netflix, Uber, and LinkedIn give credibility to the claim that Node.js can withstand a high amount of traffic and concurrency.
-Armed with basic knowledge, beginner and intermediate developers of Node.js struggle with many things: “It’s just a runtime!” “It has event loops!</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Articles on Smashing Magazine — For Web Designers And Developers</title>
+    <link>https://www.smashingmagazine.com/articles/</link>
+    <description>Recent content in Articles on Smashing Magazine — For Web Designers And Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Apr 2020 09:35:42 +0000</lastBuildDate>
+    <item>
+      <author>Aleem Isiaka</author>
+      <title>Exploring Node.js Internals</title>
+      <link>https://www.smashingmagazine.com/2020/04/nodejs-internals/</link>
+      <pubDate>Thu, 23 Apr 2020 10:30:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/nodejs-internals/</guid>
+      <description>Since the introduction of Node.js by Ryan Dahl at the European JSConf on 8 November 2009, it has seen
+        wide usage across the tech industry. Companies such as Netflix, Uber, and LinkedIn give credibility to the claim
+        that Node.js can withstand a high amount of traffic and concurrency.
+        Armed with basic knowledge, beginner and intermediate developers of Node.js struggle with many things: “It’s
+        just a runtime!” “It has event loops!
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -10,14 +30,14 @@ Armed with basic knowledge, beginner and intermediate developers of Node.js stru
               <article>
                 <header>
                   <h1>Exploring Node.js Internals</h1>
-                  
-                    
+
+
                     <address>Aleem Isiaka</address>
-                  
+
                   <time datetime="2020-04-23T10:30:00&#43;00:00" class="op-published">2020-04-23T10:30:00+00:00</time>
                   <time datetime="2020-04-23T10:30:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>Since the introduction of Node.js by <a href="https://twitter.com/ryanmdahl">Ryan Dahl</a> at the European JSConf on 8 November 2009, it has seen wide usage across the tech industry. Companies such as Netflix, Uber, and LinkedIn give credibility to the claim that Node.js can withstand a high amount of traffic and concurrency.</p>
 
@@ -71,12 +91,12 @@ Armed with basic knowledge, beginner and intermediate developers of Node.js stru
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/285f5aff-35c8-4274-a571-b377a987bbc6/nodejs-internals-nodejs-dependencies.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/285f5aff-35c8-4274-a571-b377a987bbc6/nodejs-internals-nodejs-dependencies.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/285f5aff-35c8-4274-a571-b377a987bbc6/nodejs-internals-nodejs-dependencies.png 800w,
@@ -87,15 +107,15 @@ Armed with basic knowledge, beginner and intermediate developers of Node.js stru
 			sizes="100vw"
 			alt="Core Node.js dependencies"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Core Node.js Dependencies (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/285f5aff-35c8-4274-a571-b377a987bbc6/nodejs-internals-nodejs-dependencies.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>V8 is a project created and maintained by Google. It takes JavaScript source code and runs it outside of the browser environment. When we run a program through a <code>node</code> command, the source code is passed by the Node.js runtime to V8 for execution.</p>
@@ -126,12 +146,12 @@ Armed with basic knowledge, beginner and intermediate developers of Node.js stru
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2d6e2669-7782-4aef-b71b-0f62ff61d6d4/nodejs-internals-nodejs-apis.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2d6e2669-7782-4aef-b71b-0f62ff61d6d4/nodejs-internals-nodejs-apis.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2d6e2669-7782-4aef-b71b-0f62ff61d6d4/nodejs-internals-nodejs-apis.png 800w,
@@ -142,15 +162,15 @@ Armed with basic knowledge, beginner and intermediate developers of Node.js stru
 			sizes="100vw"
 			alt="Node.js APIs call libuv for some functions"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Node.js APIs interact with libuv (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2d6e2669-7782-4aef-b71b-0f62ff61d6d4/nodejs-internals-nodejs-apis.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>In a Node.js environment, we have nothing like a page, nor a browser &mdash; this nullifies our knowledge of the global <a href="https://developer.mozilla.org/en/docs/Web/API/Window">window object</a>. What we do have is a set of APIs that interact with the operating system to provide additional functionality to a JavaScript program. These APIs for Node.js (<code>fs</code>, <code>path</code>, <code>buffer</code>, <code>events</code>, <code>HTTP</code>, and so on), as we have them, exist only for Node.js, and they are provided by Node.js (itself a runtime) so that we can run programs written for Node.js.</p>
@@ -252,14 +272,14 @@ fs.writeFile("./test.txt", "text");
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/66134679-e264-473a-9b22-d0d731411f2d/nodejs-internals-binding-variable-declaration.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/66134679-e264-473a-9b22-d0d731411f2d/nodejs-internals-binding-variable-declaration.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/66134679-e264-473a-9b22-d0d731411f2d/nodejs-internals-binding-variable-declaration.png 800w,
@@ -270,15 +290,15 @@ fs.writeFile("./test.txt", "text");
 			sizes="100vw"
 			alt="Declaration of the binding variable"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Declaration of the binding variable (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/66134679-e264-473a-9b22-d0d731411f2d/nodejs-internals-binding-variable-declaration.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This <code>internalBinding</code> function is found in the module named <a href="https://github.com/nodejs/node/blob/cd1db2db48d28db805227e7f6ade79a106d85bc6/lib/internal/bootstrap/loaders.js">loaders</a>. The main function of the loaders module is to load all libuv libraries and connect them through the V8 project with Node.js. How it does this is rather magical, but to learn more we can look closely at the <code>writeBuffer</code> function that is called by the <code>fs</code> module.</p>
@@ -360,12 +380,12 @@ fs.writeFile("./test.txt", "test", (err) => {
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73bf59bd-2b04-456c-8f00-0dd09cdc6d8f/nodejs-internals-single-file-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73bf59bd-2b04-456c-8f00-0dd09cdc6d8f/nodejs-internals-single-file-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73bf59bd-2b04-456c-8f00-0dd09cdc6d8f/nodejs-internals-single-file-creation.png 800w,
@@ -376,15 +396,15 @@ fs.writeFile("./test.txt", "test", (err) => {
 			sizes="100vw"
 			alt="Result of the time it takes to create a single file in Node.js"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Time taken to create a single file in Node.js (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73bf59bd-2b04-456c-8f00-0dd09cdc6d8f/nodejs-internals-single-file-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <pre><code class="language-javascript">$ node ./test.js
@@ -443,12 +463,12 @@ fs.writeFile("./test4.txt", "test", function (err) {
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/36e1bb59-0e5c-492d-a093-ff78293c756b/nodejs-internals-multiple-file-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/36e1bb59-0e5c-492d-a093-ff78293c756b/nodejs-internals-multiple-file-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/36e1bb59-0e5c-492d-a093-ff78293c756b/nodejs-internals-multiple-file-creation.png 800w,
@@ -459,15 +479,15 @@ fs.writeFile("./test4.txt", "test", function (err) {
 			sizes="100vw"
 			alt="Result of the time it takes to create multiple files"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Creating many files at once (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/36e1bb59-0e5c-492d-a093-ff78293c756b/nodejs-internals-multiple-file-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>First, we will notice that the results are not consistent. Secondly, we see that the time has increased. What’s happening?</p>
@@ -487,12 +507,12 @@ fs.writeFile("./test4.txt", "test", function (err) {
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c9f250fb-7831-4c51-bace-1bc53d6ddb18/nodejs-internals-nodejs-delegation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c9f250fb-7831-4c51-bace-1bc53d6ddb18/nodejs-internals-nodejs-delegation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c9f250fb-7831-4c51-bace-1bc53d6ddb18/nodejs-internals-nodejs-delegation.png 800w,
@@ -503,15 +523,15 @@ fs.writeFile("./test4.txt", "test", function (err) {
 			sizes="100vw"
 			alt="Low-level tasks are delegated to the OS through libuv"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Node.js low-level task delegation (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c9f250fb-7831-4c51-bace-1bc53d6ddb18/nodejs-internals-nodejs-delegation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>When a call is recognized by Node.js as being intended for libuv, it delegates this task to libuv. In its operation, libuv requires threads for some of its libraries, hence the use of the thread pool in executing Node.js programs when they are needed.</p>
@@ -565,8 +585,22 @@ This is the official documentation of the JavaScript engine that makes it possib
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Carmine Zaccagnino</author><title>Responsive Web And Desktop Development With Flutter</title><link>https://www.smashingmagazine.com/2020/04/responsive-web-desktop-development-flutter/</link><pubDate>Wed, 22 Apr 2020 10:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/responsive-web-desktop-development-flutter/</guid><description>This tutorial is not an introduction to Flutter itself. There are plenty of articles, videos and several books available online with simple introductions that will help you learn the basics of Flutter. Instead, we’ll be covering the following two objectives:
-The current state of Flutter non-mobile development and how you can run Flutter code in the browser, on a desktop or laptop computer; How to create responsive apps using Flutter, so that you can see its power &amp;mdash; especially as a web framework &amp;mdash; on full display, ending with a note about routing based on URL.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Carmine Zaccagnino</author>
+      <title>Responsive Web And Desktop Development With Flutter</title>
+      <link>https://www.smashingmagazine.com/2020/04/responsive-web-desktop-development-flutter/</link>
+      <pubDate>Wed, 22 Apr 2020 10:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/responsive-web-desktop-development-flutter/</guid>
+      <description>This tutorial is not an introduction to Flutter itself. There are plenty of articles, videos and
+        several books available online with simple introductions that will help you learn the basics of Flutter.
+        Instead, we’ll be covering the following two objectives:
+        The current state of Flutter non-mobile development and how you can run Flutter code in the browser, on a
+        desktop or laptop computer; How to create responsive apps using Flutter, so that you can see its power &amp;mdash;
+        especially as a web framework &amp;mdash; on full display, ending with a note about routing based on URL.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -577,14 +611,14 @@ The current state of Flutter non-mobile development and how you can run Flutter 
               <article>
                 <header>
                   <h1>Responsive Web And Desktop Development With Flutter</h1>
-                  
-                    
+
+
                     <address>Carmine Zaccagnino</address>
-                  
+
                   <time datetime="2020-04-22T10:00:00&#43;00:00" class="op-published">2020-04-22T10:00:00+00:00</time>
                   <time datetime="2020-04-22T10:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>This tutorial is not an introduction to Flutter itself. There are plenty of articles, videos and several books available online with simple introductions that will help you learn the basics of Flutter. Instead, we’ll be covering the following two objectives:</p>
 
@@ -1168,7 +1202,7 @@ class Content extends StatelessWidget {
                             builder: (context) =&gt; HomePage()
                           )
                         );
-                      }  
+                      }
                     )
                   ]
                 ),
@@ -1387,8 +1421,21 @@ A curated list of Flutter samples and apps</li>
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Paul Boag</author><title>How To Create A Compelling Landing Page</title><link>https://www.smashingmagazine.com/2020/04/landing-page-design/</link><pubDate>Tue, 21 Apr 2020 10:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/landing-page-design/</guid><description>If you want more leads or increased sales, you need compelling landing pages. According to Hubspot, those companies with over 30 landing pages, will generate seven times more leads than those with fewer than 10.
-A landing page is a standalone webpage created to support a specific marketing campaign or targeting a particular search term. They are where users &#34;land&#34; when they click a link in search results, email or an ad.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Paul Boag</author>
+      <title>How To Create A Compelling Landing Page</title>
+      <link>https://www.smashingmagazine.com/2020/04/landing-page-design/</link>
+      <pubDate>Tue, 21 Apr 2020 10:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/landing-page-design/</guid>
+      <description>If you want more leads or increased sales, you need compelling landing pages. According to Hubspot,
+        those companies with over 30 landing pages, will generate seven times more leads than those with fewer than 10.
+        A landing page is a standalone webpage created to support a specific marketing campaign or targeting a
+        particular search term. They are where users &#34;land&#34; when they click a link in search results, email or
+        an ad.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -1399,10 +1446,10 @@ A landing page is a standalone webpage created to support a specific marketing c
               <article>
                 <header>
                   <h1>How To Create A Compelling Landing Page</h1>
-                  
-                    
+
+
                     <address>Paul Boag</address>
-                  
+
                   <time datetime="2020-04-21T10:00:00&#43;00:00" class="op-published">2020-04-21T10:00:00+00:00</time>
                   <time datetime="2020-04-21T10:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
@@ -1441,14 +1488,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ea6e7256-2e28-40c4-b2e8-db7d24a7870d/1-safari-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ea6e7256-2e28-40c4-b2e8-db7d24a7870d/1-safari-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ea6e7256-2e28-40c4-b2e8-db7d24a7870d/1-safari-landing-page-design.png 800w,
@@ -1459,15 +1506,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Skype’s value proposition outlines both the benefit they offer and how they deliver that. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ea6e7256-2e28-40c4-b2e8-db7d24a7870d/1-safari-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>However, be careful. It is easy for your value proposition to become meaningless. For example, talking about "best-in-class" or "friendly and approachable" is the kind of thing any company could, and does, say. </p>
@@ -1503,14 +1550,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/19a4c49d-3c5c-4de4-9f29-adfd27e266c0/2-safari-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/19a4c49d-3c5c-4de4-9f29-adfd27e266c0/2-safari-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/19a4c49d-3c5c-4de4-9f29-adfd27e266c0/2-safari-landing-page-design.png 800w,
@@ -1521,15 +1568,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Pipedrive does a good job at backing up its benefits with a list of features. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/19a4c49d-3c5c-4de4-9f29-adfd27e266c0/2-safari-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>With that done, you can turn your attention to your calls to action.</p>
@@ -1559,14 +1606,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cf638027-09fc-43ac-b45f-ca3c61c663c5/3-safari-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cf638027-09fc-43ac-b45f-ca3c61c663c5/3-safari-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cf638027-09fc-43ac-b45f-ca3c61c663c5/3-safari-landing-page-design.png 800w,
@@ -1577,15 +1624,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Exit-Intent Overlay Example"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Although popups can be annoying, there is a case for showing a secondary call to action on exit-intent. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cf638027-09fc-43ac-b45f-ca3c61c663c5/3-safari-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Finally, consider ways of incentivising people to complete the call to action. Perhaps you could offer a free ebook if people subscribe to your mailing list or a discount if they buy via your landing page. Sometimes, something this small can be a nudge that encourages people to take action now rather than put it off to another day.</p>
@@ -1615,14 +1662,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fae5d721-d727-4cfc-a0b0-9261c326eb22/masterclass-exit-intent-survey-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fae5d721-d727-4cfc-a0b0-9261c326eb22/masterclass-exit-intent-survey-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fae5d721-d727-4cfc-a0b0-9261c326eb22/masterclass-exit-intent-survey-landing-page-design.png 800w,
@@ -1633,15 +1680,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Example One Question Survey"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A simple one question survey can uncover why users are not taking action. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fae5d721-d727-4cfc-a0b0-9261c326eb22/masterclass-exit-intent-survey-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Once you understand the reasons why people are not acting, you can then start to address them.</p>
@@ -1661,12 +1708,12 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2026fb6b-7104-441f-9d7e-bce864cc4e6a/mcdonalds-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2026fb6b-7104-441f-9d7e-bce864cc4e6a/mcdonalds-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2026fb6b-7104-441f-9d7e-bce864cc4e6a/mcdonalds-landing-page-design.png 800w,
@@ -1677,15 +1724,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="McDonald&#39;s FAQs"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       McDonald’s are not afraid to address users concerns directly. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2026fb6b-7104-441f-9d7e-bce864cc4e6a/mcdonalds-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>There is, however, one more consideration to take into account when dealing with user’s concerns. You need to make sure you address them at the right time and in the right way.</p>
@@ -1703,12 +1750,12 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a719d02-04e5-4d35-819c-aeff113ff147/protectyourdata-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a719d02-04e5-4d35-819c-aeff113ff147/protectyourdata-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a719d02-04e5-4d35-819c-aeff113ff147/protectyourdata-landing-page-design.png 800w,
@@ -1719,15 +1766,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Newsletter sign up form with with privacy statement"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Closely associating reassurances regarding privacy with a newsletter sign up form often increases conversion. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a719d02-04e5-4d35-819c-aeff113ff147/protectyourdata-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>With our offering laid out and objections addressed, we have done the hard work of appealing to people’s logical minds. Now it is time to give them that positive feeling.</p>
@@ -1763,12 +1810,12 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a2e75713-14ac-4273-98e4-b1eeab91c925/design-testing-04-landing-page-design.jpg">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a2e75713-14ac-4273-98e4-b1eeab91c925/design-testing-04-landing-page-design.jpg 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a2e75713-14ac-4273-98e4-b1eeab91c925/design-testing-04-landing-page-design.jpg 800w,
@@ -1779,15 +1826,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Example Preference Test"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A simple preference test is often the best way to find the best design aesthetic. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a2e75713-14ac-4273-98e4-b1eeab91c925/design-testing-04-landing-page-design.jpg'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>When there is only one design, you can run a <a href="https://www.surveygizmo.com/resources/blog/how-to-measure-attitudes-with-semantic-differential-questions/">semantic differential survey</a>, in which you ask users to rate a website against your keywords. For example, is a design more "approachable" or "unapproachable"?</p>
@@ -1803,12 +1850,12 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfd03339-43d8-4e13-a155-6a35a091c70b/design-testing-03-landing-page-design.jpg">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfd03339-43d8-4e13-a155-6a35a091c70b/design-testing-03-landing-page-design.jpg 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfd03339-43d8-4e13-a155-6a35a091c70b/design-testing-03-landing-page-design.jpg 800w,
@@ -1819,15 +1866,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Example Semantic Differential Survey"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A survey can be used to ascertain whether a design is creating the right feeling in users. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfd03339-43d8-4e13-a155-6a35a091c70b/design-testing-03-landing-page-design.jpg'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Of course, aesthetics is not the only consideration when it comes to design. You also need to make sure your visual hierarchy is right too.</p>
@@ -1867,12 +1914,12 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/066192c4-8616-48d7-9f98-f9b95a96aad1/landing-page-wireframe-landing-page-design.svg">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/066192c4-8616-48d7-9f98-f9b95a96aad1/landing-page-wireframe-landing-page-design.svg 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/066192c4-8616-48d7-9f98-f9b95a96aad1/landing-page-wireframe-landing-page-design.svg 800w,
@@ -1883,15 +1930,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Wireframe of landing page structure"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A landing page should combine your value proposition, benefits, features and social proof. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/066192c4-8616-48d7-9f98-f9b95a96aad1/landing-page-wireframe-landing-page-design.svg'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Getting the flow of your content on the page right is only half of the battle when it comes to creating a strong visual hierarchy. The second challenge is ensuring that users see the most critical screen elements.</p>
@@ -1926,14 +1973,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d5e0ed7c-e1ff-432d-a1af-9f93624543cf/simple-websites-01-landing-page-design.jpg">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d5e0ed7c-e1ff-432d-a1af-9f93624543cf/simple-websites-01-landing-page-design.jpg 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d5e0ed7c-e1ff-432d-a1af-9f93624543cf/simple-websites-01-landing-page-design.jpg 800w,
@@ -1944,15 +1991,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Illustration showing the three steps of simplification"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Have a robust process for simplifying your landing page. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d5e0ed7c-e1ff-432d-a1af-9f93624543cf/simple-websites-01-landing-page-design.jpg'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Start by asking <strong>could I remove this element?</strong> If I removed it, what would the consequences be? Would those consequences be more damaging than the increase in <a href="https://en.wikipedia.org/wiki/Cognitive_load">cognitive load</a> that additional screen elements create? If not, you are better removing it.</p>
@@ -1970,14 +2017,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2dc10200-d7ec-4eca-90d8-7bcb609f5df5/4-safari-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2dc10200-d7ec-4eca-90d8-7bcb609f5df5/4-safari-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2dc10200-d7ec-4eca-90d8-7bcb609f5df5/4-safari-landing-page-design.png 800w,
@@ -1988,15 +2035,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Vibecast Homepage"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Vibecast hide secondary content under an accordion. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2dc10200-d7ec-4eca-90d8-7bcb609f5df5/4-safari-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This approach works well for secondary content, that although useful to some users who want more detail, is not something the majority of people will be interested in.</p>
@@ -2022,14 +2069,14 @@ A landing page is a standalone webpage created to support a specific marketing c
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfa5659e-fdcc-4a49-8c90-8295ca71f88c/5-safari-landing-page-design.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfa5659e-fdcc-4a49-8c90-8295ca71f88c/5-safari-landing-page-design.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfa5659e-fdcc-4a49-8c90-8295ca71f88c/5-safari-landing-page-design.png 800w,
@@ -2040,15 +2087,15 @@ A landing page is a standalone webpage created to support a specific marketing c
 			sizes="100vw"
 			alt="Usability Hub Website"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Usability Hub makes running five-second tests easy. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cfa5659e-fdcc-4a49-8c90-8295ca71f88c/5-safari-landing-page-design.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>By paying attention to what the user remembers and the order in which they recall elements, you will gain a better understanding of how effective your page hierarchy is in drawing attention to items that matter the most.</p>
@@ -2074,8 +2121,23 @@ A landing page is a standalone webpage created to support a specific marketing c
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Drew McLellan</author><title>Smashing Podcast Episode 14 With Rachel Andrew: How Can I Run Online Workshops?</title><link>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-14/</link><pubDate>Tue, 21 Apr 2020 05:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-14/</guid><description>In this episode of the Smashing Podcast, we’re talking about running online workshops. How can a traditional event adapt when participants can’t attend in person? Drew McLellan talks to Rachel Andrew to find out.
-Show Notes This episode of the Smashing Podcast is dedicated to the memory of Christopher Schmitt, who sadly passed away last week. A familiar name to many of us over the years as an active contributor to both the Web Standards and Accessibility communities, Christopher, along with his partner Ari, was also a pioneer in conducting online workshops and conferences, which is the subject of this podcast.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Drew McLellan</author>
+      <title>Smashing Podcast Episode 14 With Rachel Andrew: How Can I Run Online Workshops?</title>
+      <link>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-14/</link>
+      <pubDate>Tue, 21 Apr 2020 05:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-14/</guid>
+      <description>In this episode of the Smashing Podcast, we’re talking about running online workshops. How can a
+        traditional event adapt when participants can’t attend in person? Drew McLellan talks to Rachel Andrew to find
+        out.
+        Show Notes This episode of the Smashing Podcast is dedicated to the memory of Christopher Schmitt, who sadly
+        passed away last week. A familiar name to many of us over the years as an active contributor to both the Web
+        Standards and Accessibility communities, Christopher, along with his partner Ari, was also a pioneer in
+        conducting online workshops and conferences, which is the subject of this podcast.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -2086,14 +2148,14 @@ Show Notes This episode of the Smashing Podcast is dedicated to the memory of Ch
               <article>
                 <header>
                   <h1>Smashing Podcast Episode 14 With Rachel Andrew: How Can I Run Online Workshops?</h1>
-                  
-                    
+
+
                     <address>Drew McLellan</address>
-                  
+
                   <time datetime="2020-04-21T05:00:00&#43;00:00" class="op-published">2020-04-21T05:00:00+00:00</time>
                   <time datetime="2020-04-21T05:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p><a href="https://twitter.com/rachelandrew"><img style="float: right; padding: 1em;border-radius: 110px;max-width: 50%;height:auto" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/82c26edc-5500-42a6-87a9-62e84b998433/rachel-andrew-tw-profile.jpg" width="200" height="200" alt="Photo of Rachel Andrew" /></a>In this episode of the Smashing Podcast, we’re talking about running online workshops. How can a traditional event adapt when participants can’t attend in person? Drew McLellan talks to Rachel Andrew to find out.</p>
 
@@ -2261,8 +2323,22 @@ Show Notes This episode of the Smashing Podcast is dedicated to the memory of Ch
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Blessing Krofegha</author><title>Implementing Skeleton Screens In React</title><link>https://www.smashingmagazine.com/2020/04/skeleton-screens-react/</link><pubDate>Mon, 20 Apr 2020 10:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/skeleton-screens-react/</guid><description>Spinners and loaders have traditionally been the way to tell users that content is going to take a while to load. While this approach is great, it’s quickly becoming obsolete in modern development. Skeleton screens are becoming the perfect replacement for traditional loaders because they focus on progress rather than wait times, hence reducing loading-time frustration.
-In this article, we won’t be going through the basics of CSS React or JavaScript syntax, so you don’t have to be an expert in either of these languages to follow along.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Blessing Krofegha</author>
+      <title>Implementing Skeleton Screens In React</title>
+      <link>https://www.smashingmagazine.com/2020/04/skeleton-screens-react/</link>
+      <pubDate>Mon, 20 Apr 2020 10:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/skeleton-screens-react/</guid>
+      <description>Spinners and loaders have traditionally been the way to tell users that content is going to take a
+        while to load. While this approach is great, it’s quickly becoming obsolete in modern development. Skeleton
+        screens are becoming the perfect replacement for traditional loaders because they focus on progress rather than
+        wait times, hence reducing loading-time frustration.
+        In this article, we won’t be going through the basics of CSS React or JavaScript syntax, so you don’t have to be
+        an expert in either of these languages to follow along.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -2273,14 +2349,14 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
               <article>
                 <header>
                   <h1>Implementing Skeleton Screens In React</h1>
-                  
-                    
+
+
                     <address>Blessing Krofegha</address>
-                  
+
                   <time datetime="2020-04-20T10:00:00&#43;00:00" class="op-published">2020-04-20T10:00:00+00:00</time>
                   <time datetime="2020-04-20T10:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>Spinners and loaders have traditionally been the way to tell users that content is going to take a while to load. While this approach is great, it’s quickly becoming obsolete in modern development. Skeleton screens are becoming the perfect replacement for traditional loaders because they focus on progress rather than wait times, hence reducing loading-time frustration.</p>
 
@@ -2336,14 +2412,14 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca566f0d-f177-46ea-a3dd-345ade848c8b/02-skeleton-screens-react.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca566f0d-f177-46ea-a3dd-345ade848c8b/02-skeleton-screens-react.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca566f0d-f177-46ea-a3dd-345ade848c8b/02-skeleton-screens-react.png 800w,
@@ -2354,15 +2430,15 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 			sizes="100vw"
 			alt="Blockchain.com skeleton screen UI"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Blockchain.com’s partially loaded state (notice how a skeleton is used in the graph analytics) (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca566f0d-f177-46ea-a3dd-345ade848c8b/02-skeleton-screens-react.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h4 id="medium">Medium</h4>
@@ -2378,14 +2454,14 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/87bf4ac8-84b6-4851-893c-ba2cbdd02eaa/03-skeleton-screens-react.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/87bf4ac8-84b6-4851-893c-ba2cbdd02eaa/03-skeleton-screens-react.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/87bf4ac8-84b6-4851-893c-ba2cbdd02eaa/03-skeleton-screens-react.png 800w,
@@ -2396,15 +2472,15 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 			sizes="100vw"
 			alt="Medium skeleton screen UI"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Medium’s skeleton UI (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/87bf4ac8-84b6-4851-893c-ba2cbdd02eaa/03-skeleton-screens-react.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h4 id="linkedin">LinkedIn</h4>
@@ -2420,14 +2496,14 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15a70140-841d-4290-a06d-909d5fc35aa0/04-skeleton-screens-react.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15a70140-841d-4290-a06d-909d5fc35aa0/04-skeleton-screens-react.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15a70140-841d-4290-a06d-909d5fc35aa0/04-skeleton-screens-react.png 800w,
@@ -2438,15 +2514,15 @@ In this article, we won’t be going through the basics of CSS React or JavaScri
 			sizes="100vw"
 			alt="LinkedIn skeleton screen UI"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       LinkedIn’s home feed loading state in 2018 (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/15a70140-841d-4290-a06d-909d5fc35aa0/04-skeleton-screens-react.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h3 id="types-of-skeleton-screens">Types of Skeleton Screens</h3>
@@ -2582,14 +2658,14 @@ const SkeletonComponent = () =&gt; (
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f2920640-c8cc-4cd3-8fb4-d7660a3c0085/05-skeleton-screens-react.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f2920640-c8cc-4cd3-8fb4-d7660a3c0085/05-skeleton-screens-react.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f2920640-c8cc-4cd3-8fb4-d7660a3c0085/05-skeleton-screens-react.png 800w,
@@ -2600,15 +2676,15 @@ const SkeletonComponent = () =&gt; (
 			sizes="100vw"
 			alt="React app - Scaffold React app"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       React welcome page (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f2920640-c8cc-4cd3-8fb4-d7660a3c0085/05-skeleton-screens-react.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h4 id="create-the-youtube-ui-without-a-skeleton-screen">Create the YouTube UI Without a Skeleton Screen</h4>
@@ -2866,7 +2942,7 @@ export default App;
   border-radius: 100%;
   padding: 0, 10px, 0, 0;
   width: 40px;
-  height: 40px;  
+  height: 40px;
 }
 .card-title {
   margin-top: 10px;
@@ -3036,8 +3112,22 @@ const SkeletonCard = () =&gt; {
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Iris Lješnjanin</author><title>Staying Connected And Learning From Each Other</title><link>https://www.smashingmagazine.com/2020/04/monthly-roundup-04-2020/</link><pubDate>Fri, 17 Apr 2020 11:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/monthly-roundup-04-2020/</guid><description>Digital space obviously has its challenges, but it also provides incredible opportunities for us to connect and learn in ways we just wouldn’t be able to do otherwise. The situation with COVID-19 has challenged us to consider ways in which we could offer a similar SmashingConf experience and access to experts just as in an in-person workshop &amp;mdash; without needing to leave your desk.
-With insightful takeaways, exercises, access to slides, recordings and friendly Q&amp;amp;As, it has been such an incredible experience already!</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Iris Lješnjanin</author>
+      <title>Staying Connected And Learning From Each Other</title>
+      <link>https://www.smashingmagazine.com/2020/04/monthly-roundup-04-2020/</link>
+      <pubDate>Fri, 17 Apr 2020 11:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/monthly-roundup-04-2020/</guid>
+      <description>Digital space obviously has its challenges, but it also provides incredible opportunities for us to
+        connect and learn in ways we just wouldn’t be able to do otherwise. The situation with COVID-19 has challenged
+        us to consider ways in which we could offer a similar SmashingConf experience and access to experts just as in
+        an in-person workshop &amp;mdash; without needing to leave your desk.
+        With insightful takeaways, exercises, access to slides, recordings and friendly Q&amp;amp;As, it has been such
+        an incredible experience already!
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -3048,14 +3138,14 @@ With insightful takeaways, exercises, access to slides, recordings and friendly 
               <article>
                 <header>
                   <h1>Staying Connected And Learning From Each Other</h1>
-                  
-                    
+
+
                     <address>Iris Lješnjanin</address>
-                  
+
                   <time datetime="2020-04-17T11:00:00&#43;00:00" class="op-published">2020-04-17T11:00:00+00:00</time>
                   <time datetime="2020-04-17T11:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>Digital space obviously has its challenges, but it also provides incredible opportunities for us to connect and learn in ways we just wouldn’t be able to do otherwise. The situation with COVID-19 has challenged us to consider ways in which we could offer a similar <a href="https://smashingconf.com/">SmashingConf experience</a> and access to experts just as in an in-person workshop &mdash; without needing to leave your desk.</p>
 
@@ -3072,12 +3162,12 @@ With insightful takeaways, exercises, access to slides, recordings and friendly 
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://smashingconf.com/online-workshops/">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b3c12ad5-b0ad-4c41-aa9d-8fae3c11a76d/topple-streaming-live-online-smashing-workshops.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b3c12ad5-b0ad-4c41-aa9d-8fae3c11a76d/topple-streaming-live-online-smashing-workshops.png 800w,
@@ -3088,15 +3178,15 @@ With insightful takeaways, exercises, access to slides, recordings and friendly 
 			sizes="100vw"
 			alt="Topple the Cat running an online workshop with six other cool cats"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       We’re looking forward to connecting with Brad Frost, Joe Leech, Miriam Suzanne and many others. Try spotting them, but don’t get too distratced by the Mouse!
     </figcaption>
-  
+
 </figure>
 
 <p>And we’re just getting started! We already have <a href="https://smashingconf.com/online-workshops/">a schedule of online workshops ready for you</a> so you can start marking your calendars and join us anytime you like. What better way is there to boost your skills online and learn practical, actionable insights from experts in the industry &mdash; live!</p>
@@ -3314,7 +3404,7 @@ With insightful takeaways, exercises, access to slides, recordings and friendly 
 
 	<div class="promo-newsletter--newsletter promo-newsletter--article">
     <div class="meow__content--inlined">
-      
+
 
 <div class=" promo-newsletter--newsletter">
 
@@ -3362,7 +3452,7 @@ Subscribe <span class="nl__form__arrow">→</span>
 </div>
     </div>
   </div>
-    
+
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -3375,8 +3465,21 @@ Subscribe <span class="nl__form__arrow">→</span>
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Philip Kiely</author><title>Django Highlights: Models, Admin, And Harnessing The Relational Database (Part 3)</title><link>https://www.smashingmagazine.com/2020/04/django-highlights-models-admin-relational-database/</link><pubDate>Thu, 16 Apr 2020 10:30:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/django-highlights-models-admin-relational-database/</guid><description>Before we get started, I want to note that Django’s built-in administrative capabilities, even after customization, are not meant for end-users. The admin panel exists as a developer, operator, and administrator tool for creating and maintaining software. It is not intended to be used to give end-users moderation capabilities or any other administrator abilities over the platform you develop.
-This article is based on a hypothesis in two parts:</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Philip Kiely</author>
+      <title>Django Highlights: Models, Admin, And Harnessing The Relational Database (Part 3)</title>
+      <link>https://www.smashingmagazine.com/2020/04/django-highlights-models-admin-relational-database/</link>
+      <pubDate>Thu, 16 Apr 2020 10:30:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/django-highlights-models-admin-relational-database/</guid>
+      <description>Before we get started, I want to note that Django’s built-in administrative capabilities, even after
+        customization, are not meant for end-users. The admin panel exists as a developer, operator, and administrator
+        tool for creating and maintaining software. It is not intended to be used to give end-users moderation
+        capabilities or any other administrator abilities over the platform you develop.
+        This article is based on a hypothesis in two parts:
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -3387,14 +3490,14 @@ This article is based on a hypothesis in two parts:</description><content:encode
               <article>
                 <header>
                   <h1>Django Highlights: Models, Admin, And Harnessing The Relational Database (Part 3)</h1>
-                  
-                    
+
+
                     <address>Philip Kiely</address>
-                  
+
                   <time datetime="2020-04-16T10:30:00&#43;00:00" class="op-published">2020-04-16T10:30:00+00:00</time>
                   <time datetime="2020-04-16T10:30:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>Before we get started, I want to note that Django’s built-in administrative capabilities, even after customization, are not meant for end-users. The admin panel exists as a developer, operator, and administrator tool for creating and maintaining software. It is not intended to be used to give end-users moderation capabilities or any other administrator abilities over the platform you develop.</p>
 
@@ -3431,12 +3534,12 @@ This article is based on a hypothesis in two parts:</description><content:encode
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png 800w,
@@ -3447,15 +3550,15 @@ This article is based on a hypothesis in two parts:</description><content:encode
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Data Model. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Please complete the following steps to get the example code running on your local machine.</p>
@@ -3527,12 +3630,12 @@ def index(request):
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e977f5e6-60ac-4768-b20f-64a1582c7427/admin-page.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e977f5e6-60ac-4768-b20f-64a1582c7427/admin-page.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e977f5e6-60ac-4768-b20f-64a1582c7427/admin-page.png 800w,
@@ -3543,15 +3646,15 @@ def index(request):
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Django Admin Panel Main Page. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e977f5e6-60ac-4768-b20f-64a1582c7427/admin-page.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This view is accomplished with the following boilerplate code in <em>records/admin.py</em>:</p>
@@ -3576,12 +3679,12 @@ admin.site.register(Patron)</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png 800w,
@@ -3592,15 +3695,15 @@ admin.site.register(Patron)</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Data Model. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6f64cf97-48ef-4d0c-beeb-7633117affb4/data-model.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>In our project, a <code>Book</code> is a record with a title, author, publication date, and ISBN (International Standard Book Number). The library maintains a <code>Copy</code> of each <code>Book</code>, or possibly multiple. Each <code>Copy</code> can be checked out by a <code>Patron</code>, or could currently be checked in. A <code>Patron</code> is an extension of the <code>User</code> that records their address and date of birth.</p>
@@ -3620,12 +3723,12 @@ admin.site.register(Patron)</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b4705935-33aa-499d-a8b7-3e3ae3e82008/create-book.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b4705935-33aa-499d-a8b7-3e3ae3e82008/create-book.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b4705935-33aa-499d-a8b7-3e3ae3e82008/create-book.png 800w,
@@ -3636,15 +3739,15 @@ admin.site.register(Patron)</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Create a Book (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b4705935-33aa-499d-a8b7-3e3ae3e82008/create-book.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Creating a <code>Patron</code> reveals another built-in capability of the admin’s create form: you can create the connected model directly from the same form. The screenshot below shows the pop-up that is triggered by the green plus sign to the right of the <code>User</code> drop-down. Thus, you can create both models on the same admin page.</p>
@@ -3660,12 +3763,12 @@ admin.site.register(Patron)</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/855db41a-7c6e-4fb0-9071-956ac5f69d4c/create-patron.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/855db41a-7c6e-4fb0-9071-956ac5f69d4c/create-patron.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/855db41a-7c6e-4fb0-9071-956ac5f69d4c/create-patron.png 800w,
@@ -3676,15 +3779,15 @@ admin.site.register(Patron)</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Create a Patron. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/855db41a-7c6e-4fb0-9071-956ac5f69d4c/create-patron.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>You can create a <code>COPY</code> via the same mechanism.</p>
@@ -3708,12 +3811,12 @@ admin.site.register(Patron)</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7a0331a1-6447-4038-ab83-a0a642c3753c/create-copys.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7a0331a1-6447-4038-ab83-a0a642c3753c/create-copys.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7a0331a1-6447-4038-ab83-a0a642c3753c/create-copys.png 800w,
@@ -3724,15 +3827,15 @@ admin.site.register(Patron)</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Create Copy Action. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7a0331a1-6447-4038-ab83-a0a642c3753c/create-copys.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Creating this relies on a model method we’ll cover later. We can call it as an admin action by creating a <code>ModelAdmin</code> class for the <code>Profile</code> model as follows in <em>records/admin.py</em>:</p>
@@ -3812,12 +3915,12 @@ urlpatterns = [
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bfb530fa-ad69-40ae-8029-d3fa23933c8f/admin-panel-themed.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bfb530fa-ad69-40ae-8029-d3fa23933c8f/admin-panel-themed.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bfb530fa-ad69-40ae-8029-d3fa23933c8f/admin-panel-themed.png 800w,
@@ -3828,15 +3931,15 @@ urlpatterns = [
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Admin Panel with Theme. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bfb530fa-ad69-40ae-8029-d3fa23933c8f/admin-panel-themed.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>There are a number of other themes out there, and again you can <a href="https://docs.djangoproject.com/en/3.0/ref/contrib/admin/#overriding-admin-templates">develop your own</a>. I’ll be sticking with the default look for the rest of this article.</p>
@@ -3911,11 +4014,11 @@ class Copy(models.Model):
         if self.out_to:
             has_copy = self.out_to.user.username
         return self.book.title + " -> " + has_copy
-    
+
     def check_out(self, p):
         self.out_to = p
         self.save()
-    
+
     def check_in(self):
         self.out_to = None
         self.save()
@@ -4003,8 +4106,21 @@ class Copy(models.Model):
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Adeneye David Abiodun</author><title>Best Practices With React Hooks</title><link>https://www.smashingmagazine.com/2020/04/react-hooks-best-practices/</link><pubDate>Wed, 15 Apr 2020 11:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/react-hooks-best-practices/</guid><description>React Hooks are a new addition in React 16.8 that let you use state and other React features without writing a class component. In other words, Hooks are functions that let you “hook into” React state and lifecycle features from function components. (They do not work inside class components.)
-React provides a few built-in Hooks like useState. You can also create your own Hooks to reuse stateful behavior between different components.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Adeneye David Abiodun</author>
+      <title>Best Practices With React Hooks</title>
+      <link>https://www.smashingmagazine.com/2020/04/react-hooks-best-practices/</link>
+      <pubDate>Wed, 15 Apr 2020 11:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/react-hooks-best-practices/</guid>
+      <description>React Hooks are a new addition in React 16.8 that let you use state and other React features without
+        writing a class component. In other words, Hooks are functions that let you “hook into” React state and
+        lifecycle features from function components. (They do not work inside class components.)
+        React provides a few built-in Hooks like useState. You can also create your own Hooks to reuse stateful behavior
+        between different components.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -4015,14 +4131,14 @@ React provides a few built-in Hooks like useState. You can also create your own 
               <article>
                 <header>
                   <h1>Best Practices With React Hooks</h1>
-                  
-                    
+
+
                     <address>Adeneye David Abiodun</address>
-                  
+
                   <time datetime="2020-04-15T11:00:00&#43;00:00" class="op-published">2020-04-15T11:00:00+00:00</time>
                   <time datetime="2020-04-15T11:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>React Hooks are a new addition in React 16.8 that let you use state and other React features without writing a <code>class</code> component. In other words, <a href="https://reactjs.org/docs/hooks-intro.html">Hooks</a> are functions that let you “hook into” React state and lifecycle features from function components. (They do not work inside <code>class</code> components.)</p>
 
@@ -4200,7 +4316,7 @@ ReactDom.render(
 
 <pre><code class="language-javascript">export default function useUserName(userName) {
   const [isPresent, setIsPresent] = useState(false);
-  
+
   useEffect(() => {
     const data = MockedApi.fetchData();
     data.then((res) => {
@@ -4211,7 +4327,7 @@ ReactDom.render(
      });
     });
   });
-    
+
   return isPresent;
 }</code></pre>
 
@@ -4397,7 +4513,21 @@ Launch ‘VS Code Extension Marketplace’ (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kb
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Anna Prenzel</author><title>How To Create A Particle Trail Animation In JavaScript</title><link>https://www.smashingmagazine.com/2020/04/particle-trail-animation-javascript/</link><pubDate>Tue, 14 Apr 2020 11:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/particle-trail-animation-javascript/</guid><description>Have you ever thought about distracting visitors of your website with a fancy, glittering particle animation for a few moments, while some data is loaded in the background? Fortunately, it’s not necessary to go very deep into graphics programming with 3D libraries like three.js. All you need instead is some basic knowledge of CSS and JavaScript and a lightweight animation library such as anime.js. In the end, we should have the following result:</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Anna Prenzel</author>
+      <title>How To Create A Particle Trail Animation In JavaScript</title>
+      <link>https://www.smashingmagazine.com/2020/04/particle-trail-animation-javascript/</link>
+      <pubDate>Tue, 14 Apr 2020 11:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/particle-trail-animation-javascript/</guid>
+      <description>Have you ever thought about distracting visitors of your website with a fancy, glittering particle
+        animation for a few moments, while some data is loaded in the background? Fortunately, it’s not necessary to go
+        very deep into graphics programming with 3D libraries like three.js. All you need instead is some basic
+        knowledge of CSS and JavaScript and a lightweight animation library such as anime.js. In the end, we should have
+        the following result:
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -4408,10 +4538,10 @@ Launch ‘VS Code Extension Marketplace’ (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kb
               <article>
                 <header>
                   <h1>How To Create A Particle Trail Animation In JavaScript</h1>
-                  
-                    
+
+
                     <address>Anna Prenzel</address>
-                  
+
                   <time datetime="2020-04-14T11:00:00&#43;00:00" class="op-published">2020-04-14T11:00:00+00:00</time>
                   <time datetime="2020-04-14T11:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
@@ -4449,7 +4579,7 @@ Launch ‘VS Code Extension Marketplace’ (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kb
 .anime-container {
   position: relative;
 }
- 
+
 .anime-container .dot{
   position: absolute;
   /*draw particles as circles:*/
@@ -4484,7 +4614,7 @@ var a = 20;
 var l = 110;
 for (var i = 0; i <= l; i += 1) {
   var angle = 0.1 * i;
-  //shift the particles to the center of the window 
+  //shift the particles to the center of the window
   //by adding half of the screen width and screen height
   var x = (a*angle) * Math.cos(angle) + window.innerWidth / 2;
   var y = (a*angle) * Math.sin(angle) + window.innerHeight / 2;
@@ -4512,12 +4642,12 @@ for (var i = 0; i <= l; i += 1) {
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/45f106a4-57ba-426d-8be9-bdb8f89ab9a3/5-partical-trail-animation-javascript.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/45f106a4-57ba-426d-8be9-bdb8f89ab9a3/5-partical-trail-animation-javascript.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/45f106a4-57ba-426d-8be9-bdb8f89ab9a3/5-partical-trail-animation-javascript.png 800w,
@@ -4528,15 +4658,15 @@ for (var i = 0; i <= l; i += 1) {
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       First version of our spiral (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/45f106a4-57ba-426d-8be9-bdb8f89ab9a3/5-partical-trail-animation-javascript.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This way, we get a spiral with exactly one particle per position, but a real trail effect can only be achieved if more than one particle is generated at each position. For the trail to look bushy, the positions of the individual particles must be slightly different. The anime-library provides a practical helper function for this:
@@ -4549,18 +4679,18 @@ for (var i = 0; i <= l; i += 1) {
 <div class="break-out">
 <pre><code class="language-javascript">for (var i = 0; i <= l; i += 1) {
   var angle = 0.1 * i;
-  //shift particles to the center of the window 
+  //shift particles to the center of the window
   //by adding half of the screen width and screen height
   var x = (a*angle) * Math.cos(angle) + window.innerWidth / 2;
   var y = (a*angle) * Math.sin(angle) + window.innerHeight / 2;
   var n = 15;
-  
+
   //create n particles for each angle
   for (var j = 0; j < n; j++) {
     var dot = document.createElement("div");
     dot.classList.add("dot");
     container.appendChild(dot);
-    var size = anime.random(5, 10); 
+    var size = anime.random(5, 10);
     dot.style.width = size + "px";
     dot.style.height = size + "px";
     dot.style.left = x + anime.random(-15, 15) + "px";
@@ -4581,12 +4711,12 @@ for (var i = 0; i <= l; i += 1) {
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06a78c08-5c54-4ef0-a688-4a218dee3073/3-partical-trail-animation-javascript.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06a78c08-5c54-4ef0-a688-4a218dee3073/3-partical-trail-animation-javascript.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06a78c08-5c54-4ef0-a688-4a218dee3073/3-partical-trail-animation-javascript.png 800w,
@@ -4597,15 +4727,15 @@ for (var i = 0; i <= l; i += 1) {
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       The spiral with randomly placed particles (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06a78c08-5c54-4ef0-a688-4a218dee3073/3-partical-trail-animation-javascript.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Here you can play around with the intermediate result:</p>
@@ -4658,7 +4788,7 @@ for (var i = 0; i <= l; i += 1) {
   easing: "linear",
   targets: document.querySelectorAll(".dot"),
   opacity: { value: 1, duration: 50}
-});</code></pre> 
+});</code></pre>
 
 <p>And now I will finally reveal the trick that creates a spiral movement of the particles! The idea is to make the particles visible with a certain time delay (e.g. in an interval of 2ms). The particles in the middle of the spiral are made visible at first, followed by all the other particles from inside to outside. The <a href="https://animejs.com/documentation/#staggeringBasics">stagger function</a> of anime.js is perfectly suited for this. In my opinion, staggering is one of the biggest strengths of the library that allows you to achieve great effects.</p>
 
@@ -4766,8 +4896,23 @@ translateY: {
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Andrew Clarke</author><title>Inspired Design Decisions With Herb Lubalin: Typography Can Be As Exciting As Illustration And Photography</title><link>https://www.smashingmagazine.com/2020/04/inspired-design-decisions-herb-lubalin/</link><pubDate>Mon, 13 Apr 2020 10:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/inspired-design-decisions-herb-lubalin/</guid><description>While good use of type helps people to read, great typography can do so much more. Typography can eloquently articulate an idea and colourfully communicate a message in ways which are as powerful as any illustration or photograph.
-I’m someone who loves cinema as much as I admire typography. Few things inspire me as much as seeing movie poster typography which either evokes the atmosphere of a film and adds to the telling of its story.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Andrew Clarke</author>
+      <title>Inspired Design Decisions With Herb Lubalin: Typography Can Be As Exciting As Illustration And
+        Photography
+      </title>
+      <link>https://www.smashingmagazine.com/2020/04/inspired-design-decisions-herb-lubalin/</link>
+      <pubDate>Mon, 13 Apr 2020 10:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/inspired-design-decisions-herb-lubalin/</guid>
+      <description>While good use of type helps people to read, great typography can do so much more. Typography can
+        eloquently articulate an idea and colourfully communicate a message in ways which are as powerful as any
+        illustration or photograph.
+        I’m someone who loves cinema as much as I admire typography. Few things inspire me as much as seeing movie
+        poster typography which either evokes the atmosphere of a film and adds to the telling of its story.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -4778,14 +4923,14 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
               <article>
                 <header>
                   <h1>Inspired Design Decisions With Herb Lubalin: Typography Can Be As Exciting As Illustration And Photography</h1>
-                  
-                    
+
+
                     <address>Andrew Clarke</address>
-                  
+
                   <time datetime="2020-04-13T10:00:00&#43;00:00" class="op-published">2020-04-13T10:00:00+00:00</time>
                   <time datetime="2020-04-13T10:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>While good use of type helps people to read, great typography can do so much more. Typography can eloquently articulate an idea and colourfully communicate a message in ways which are as powerful as any illustration or photograph.</p>
 
@@ -4802,12 +4947,12 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a26deb4f-437a-42a6-ad5b-ad7c3a9873bb/issue-8-01-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a26deb4f-437a-42a6-ad5b-ad7c3a9873bb/issue-8-01-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a26deb4f-437a-42a6-ad5b-ad7c3a9873bb/issue-8-01-inspired-design-decisions-herb-lubalin.png 800w,
@@ -4818,15 +4963,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt="From left: Pulp Fiction by Indika Entertainment Advertising. Once Upon a Time in Hollywood by BLT and Steve Chorney. Vertigo by Saul Bass. West Side Story by Joseph Caroff."
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       From left: Pulp Fiction by Indika Entertainment Advertising. Once Upon a Time in Hollywood by BLT and Steve Chorney. Vertigo by Saul Bass. West Side Story by Joseph Caroff. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a26deb4f-437a-42a6-ad5b-ad7c3a9873bb/issue-8-01-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>More recently, typography in Quentin Tarantino’s film posters perfectly reflects the atmosphere and character of his movies. In Pulp Fiction, the title’s Aachen Bold typeface is as hardboiled as the film itself. For Once Upon a Time in Hollywood, although the typesetting of the iconic sign deviates from reality as much as other parts of the film, the poster conjures up the spirit of Hollywood.</p>
@@ -4872,14 +5017,14 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/62e78c71-b7e7-4443-8659-c77273d3b2d5/issue-8-02-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/62e78c71-b7e7-4443-8659-c77273d3b2d5/issue-8-02-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/62e78c71-b7e7-4443-8659-c77273d3b2d5/issue-8-02-inspired-design-decisions-herb-lubalin.png 800w,
@@ -4890,15 +5035,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       U&lc (Uppercase and lowercase) magazine by Herb Lubalin. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/62e78c71-b7e7-4443-8659-c77273d3b2d5/issue-8-02-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>These designers imported new processes which brought art directors, layout artists, and writers together to form the creative teams made popular by the famous advertising creative director Bill Bernbach in the 1960s and 1970s.</p>
@@ -4916,14 +5061,14 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/93280e2d-b6f3-4ccc-bca1-779d7cc5c583/issue-8-03-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/93280e2d-b6f3-4ccc-bca1-779d7cc5c583/issue-8-03-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/93280e2d-b6f3-4ccc-bca1-779d7cc5c583/issue-8-03-inspired-design-decisions-herb-lubalin.png 800w,
@@ -4934,15 +5079,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Fact magazine by Herb Lubalin. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/93280e2d-b6f3-4ccc-bca1-779d7cc5c583/issue-8-03-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>At the start of any new project, Lubalin began by sketching arrangements of headlines, copy, and images onto tissue paper. Then, he’d lay another tissue on top to refine his ideas, then another, and another, to rapidly develop his design. After his assistants recovered discarded tissues from the floor or trash, they became collectors’ items.</p>
@@ -4960,14 +5105,14 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/501f6e4a-447b-49cd-9fa2-91297098a3aa/issue-8-04-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/501f6e4a-447b-49cd-9fa2-91297098a3aa/issue-8-04-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/501f6e4a-447b-49cd-9fa2-91297098a3aa/issue-8-04-inspired-design-decisions-herb-lubalin.png 800w,
@@ -4978,15 +5123,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       From left: Trade press advertisement. The fourth of July means picnics… Announcement of Avant Garde’s anti-war poster competition by Herb Lubalin. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/501f6e4a-447b-49cd-9fa2-91297098a3aa/issue-8-04-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Lubalin was equally as precise about the placement of text in a poster which announced the Avant Garde anti-war poster competition. He would frequently take a scalpel blade to type, adjusting the spacing between letters and altering the height of ascenders and descenders to fit his designs. Letters in the headline for “No More War” are precisely sized and aligned. The tracking of the uppercase blue standfirst creates a block of copy which perfectly fits into its space.</p>
@@ -5008,14 +5153,14 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a9fde76-1023-4de1-92b8-1f071d29332a/issue-8-05-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a9fde76-1023-4de1-92b8-1f071d29332a/issue-8-05-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a9fde76-1023-4de1-92b8-1f071d29332a/issue-8-05-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5026,15 +5171,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Various designs by Herb Lubalin. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a9fde76-1023-4de1-92b8-1f071d29332a/issue-8-05-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>There are two books on Herb Lubalin and his work you should add to your collection. “Herb Lubalin: Art Director, Graphic Designer and Typographer” (1985) by Gertrude Snyder and Alan Peckolick is out of print, but good copies are available on eBay. Better still is “Herb Lubalin: American Graphic Designer” (2013) by Adrian Shaughnessy and published by Unit Editions. A limited edition of 2000, Shaughnessy’s book features hundreds of examples of Lubalin’s work.</p>
@@ -5056,12 +5201,12 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/75c00b26-5e5c-4de7-8e0f-2558e43400c5/issue-8-06-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/75c00b26-5e5c-4de7-8e0f-2558e43400c5/issue-8-06-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/75c00b26-5e5c-4de7-8e0f-2558e43400c5/issue-8-06-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5072,15 +5217,15 @@ I’m someone who loves cinema as much as I admire typography. Few things inspir
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Black and light weights, negative tracking and tight leading. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/75c00b26-5e5c-4de7-8e0f-2558e43400c5/issue-8-06-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>In the past, developing headlines like this involved hard-coding the design into your HTML by adding breaks between individual words, like this:</p>
@@ -5105,7 +5250,7 @@ the &lt;br&gt;
 
 <p>Instead of these presentational elements, I add explicit line breaks in my HTML:</p>
 
-<pre><code class="language-html">&lt;h1&gt;&lt;strong&gt;UK&#8217;s 
+<pre><code class="language-html">&lt;h1&gt;&lt;strong&gt;UK&#8217;s
 best-
 selling
 car&lt;/strong&gt;
@@ -5161,12 +5306,12 @@ white-space: pre; }
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cc5c5053-18df-41a9-96d6-5328626dd321/issue-8-07-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cc5c5053-18df-41a9-96d6-5328626dd321/issue-8-07-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cc5c5053-18df-41a9-96d6-5328626dd321/issue-8-07-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5177,15 +5322,15 @@ white-space: pre; }
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Several paragraph styles from one font family adds visual interest. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cc5c5053-18df-41a9-96d6-5328626dd321/issue-8-07-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>First, I need two structural elements to accomplish my design, main and aside:</p>
@@ -5241,7 +5386,7 @@ font-weight: 600; }</code></pre>
 
 aside {
 display: grid;
-grid-template-areas: 
+grid-template-areas:
 "a b c"
 "d e f"
 "g h i";
@@ -5322,12 +5467,12 @@ grid-column: 3 / -1; }
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a0052683-4a22-48ce-9871-a7a2752383ca/issue-8-08-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a0052683-4a22-48ce-9871-a7a2752383ca/issue-8-08-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a0052683-4a22-48ce-9871-a7a2752383ca/issue-8-08-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5338,15 +5483,15 @@ grid-column: 3 / -1; }
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: Castrated. Book jacket designed by Herb Lubalin. Right: Intricate header design developed using CSS Grid and Flexbox. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a0052683-4a22-48ce-9871-a7a2752383ca/issue-8-08-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>My header contains a headline followed by two paragraphs and their order in HTML means they make sense when read without any styling applied:</p>
@@ -5392,10 +5537,10 @@ order: -1; }</code></pre>
 <pre><code class="language-css">@media (min-width: 48em) {
 
 body {
-background-image: linear-gradient(to right, 
-#0a0a08 0%, 
-#0a0a08 50%, 
-#fff 50%, 
+background-image: linear-gradient(to right,
+#0a0a08 0%,
+#0a0a08 50%,
+#fff 50%,
 #fff 100%); }
 
 header h1 {
@@ -5427,14 +5572,14 @@ padding-top: 0; }
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dc45ea0d-c5e1-4f1a-b438-d4d617cdf73d/issue-8-09-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dc45ea0d-c5e1-4f1a-b438-d4d617cdf73d/issue-8-09-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dc45ea0d-c5e1-4f1a-b438-d4d617cdf73d/issue-8-09-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5445,15 +5590,15 @@ padding-top: 0; }
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A dynamic diagonal which adds interest to this header. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dc45ea0d-c5e1-4f1a-b438-d4d617cdf73d/issue-8-09-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>My headline spreads across all four columns:</p>
@@ -5490,14 +5635,14 @@ transform-origin: 0 100%; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4a35a0ff-9b9a-43c4-9452-0300ca2c2022/issue-8-10-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4a35a0ff-9b9a-43c4-9452-0300ca2c2022/issue-8-10-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4a35a0ff-9b9a-43c4-9452-0300ca2c2022/issue-8-10-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5508,15 +5653,15 @@ transform-origin: 0 100%; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       The results of 50% 50%, 0 0, 100% 0, 100% 100%, and 0 100% transform-origin values. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4a35a0ff-9b9a-43c4-9452-0300ca2c2022/issue-8-10-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>For an extra element of surprise, I add a subtle transition to that transform and reduce the amount of rotation when someone passes their cursor over my headline:</p>
@@ -5538,14 +5683,14 @@ transform: rotate(-25deg) translateY(150px); }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/164229e6-3487-49d8-809d-ede009318a92/issue-8-11-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/164229e6-3487-49d8-809d-ede009318a92/issue-8-11-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/164229e6-3487-49d8-809d-ede009318a92/issue-8-11-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5556,15 +5701,15 @@ transform: rotate(-25deg) translateY(150px); }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       CSS Grid is now the best tool to use for implementing inspired layouts. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/164229e6-3487-49d8-809d-ede009318a92/issue-8-11-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h3 id="combining-header-elements">Combining Header Elements</h3>
@@ -5580,14 +5725,14 @@ transform: rotate(-25deg) translateY(150px); }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a1f1c0b2-14e2-4151-9036-b6eb0e1be600/issue-8-12-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a1f1c0b2-14e2-4151-9036-b6eb0e1be600/issue-8-12-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a1f1c0b2-14e2-4151-9036-b6eb0e1be600/issue-8-12-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5598,15 +5743,15 @@ transform: rotate(-25deg) translateY(150px); }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: Graphis Annual Report. Center: American Showcase references USA flag. Right: My design references the United Kingdom’s Union flag. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a1f1c0b2-14e2-4151-9036-b6eb0e1be600/issue-8-12-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>In my next Lubalin-inspired design, I combine an ordered list of Cortina models with a multi-coloured headline to make a powerful statement with this header:</p>
@@ -5687,14 +5832,14 @@ text-transform: uppercase; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/607bfc8f-1c4c-4c06-8cb5-ff12734caf50/issue-8-13-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/607bfc8f-1c4c-4c06-8cb5-ff12734caf50/issue-8-13-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/607bfc8f-1c4c-4c06-8cb5-ff12734caf50/issue-8-13-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5705,15 +5850,15 @@ text-transform: uppercase; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       A multi-coloured headline combined with an ordered list of Cortina models. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/607bfc8f-1c4c-4c06-8cb5-ff12734caf50/issue-8-13-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Centring an element both horizontally and vertically used to be tricky, but thankfully, Flexbox has made this alignment trivial to implement. Flexbox has two axes &mdash; main axis and cross axis &mdash; which change direction if you change the default flex-direction value from a row.</p>
@@ -5731,7 +5876,7 @@ justify-content: center; }
 <p>With content now entered in the header, I apply a grid which contains three columns and two rows. Their dimensions will be defined by their content and will resize automatically:</p>
 
 <pre><code class="language-css">header > div {
-display: grid; 
+display: grid;
 grid-template-columns: repeat(3, min-content);
 grid-template-rows: auto auto; }</code></pre>
 
@@ -5757,7 +5902,7 @@ grid-row: 1 / 3; }</code></pre>
 <p>I want the text in my header to appear vertical, so I rotate each span clockwise by 180 degrees, then change their writing-mode to vertical left–right:</p>
 
 <pre><code class="language-css">h1 span {
-transform: rotate(180deg); 
+transform: rotate(180deg);
 writing-mode: vertical-lr; }</code></pre>
 
 <p>The headline and ordered list in my design form a solid block. To pack these elements tightly together, I change the list’s display property from grid to block. Then, I align content in each list-item to the right, so they sit on my headline’s baseline:</p>
@@ -5851,12 +5996,12 @@ text-transform: uppercase; }
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9822db90-287c-4e7d-8cd6-cb762a4747d6/issue-8-14-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9822db90-287c-4e7d-8cd6-cb762a4747d6/issue-8-14-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9822db90-287c-4e7d-8cd6-cb762a4747d6/issue-8-14-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5867,15 +6012,15 @@ text-transform: uppercase; }
 			sizes="70vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9822db90-287c-4e7d-8cd6-cb762a4747d6/issue-8-14-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>For my headline, I position the first tspan element 80px from the top, then each subsequent element appears 80px below it:</p>
@@ -5920,12 +6065,12 @@ text-transform: uppercase; }
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3e92798d-2af9-4f86-950a-4e46d35c1b83/issue-8-15-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3e92798d-2af9-4f86-950a-4e46d35c1b83/issue-8-15-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3e92798d-2af9-4f86-950a-4e46d35c1b83/issue-8-15-inspired-design-decisions-herb-lubalin.png 800w,
@@ -5936,15 +6081,15 @@ text-transform: uppercase; }
 			sizes="70vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3e92798d-2af9-4f86-950a-4e46d35c1b83/issue-8-15-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p><code>text-stroke</code> is shorthand for two properties: <code>text-stroke-color</code> and <code>text-stroke-width</code>. For my stroked headline, I first set foundation typography styles for <code>family</code>, <code>size</code>, and <code>weight</code>, then adjust the leading and tracking:</p>
@@ -5998,12 +6143,12 @@ stroke-opacity=".8"; }</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/228c7184-26df-4dca-8372-9310da55bdbd/issue-8-16-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/228c7184-26df-4dca-8372-9310da55bdbd/issue-8-16-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/228c7184-26df-4dca-8372-9310da55bdbd/issue-8-16-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6014,15 +6159,15 @@ stroke-opacity=".8"; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       SVG stroke-dasharray adds a border style not possible using CSS alone. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/228c7184-26df-4dca-8372-9310da55bdbd/issue-8-16-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>SVG includes other properties which fine-tune aspects of a stroke. Unlike CSS, SVG strokes can be dashed using the stroke-dasharray property. Alternate values define filled areas and blank areas, so the dashes around my headline text are one unit filled, then ten units blank:</p>
@@ -6043,12 +6188,12 @@ stroke-dasharray: 1, 10; }</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/90daef5e-333f-40c7-b830-e85de4bc9aa0/issue-8-17-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/90daef5e-333f-40c7-b830-e85de4bc9aa0/issue-8-17-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/90daef5e-333f-40c7-b830-e85de4bc9aa0/issue-8-17-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6059,15 +6204,15 @@ stroke-dasharray: 1, 10; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       My large-screen design, inspired by Herb Lubalin. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/90daef5e-333f-40c7-b830-e85de4bc9aa0/issue-8-17-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -6081,14 +6226,14 @@ stroke-dasharray: 1, 10; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/365ac905-bd46-4a7e-8de0-e7150e0d0bd6/issue-8-18-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/365ac905-bd46-4a7e-8de0-e7150e0d0bd6/issue-8-18-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/365ac905-bd46-4a7e-8de0-e7150e0d0bd6/issue-8-18-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6099,15 +6244,15 @@ stroke-dasharray: 1, 10; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       stroke-linecap defines how ends of lines appear in SVG. Left: butt. Middle: round. Right: square. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/365ac905-bd46-4a7e-8de0-e7150e0d0bd6/issue-8-18-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -6121,14 +6266,14 @@ stroke-dasharray: 1, 10; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c67c8741-2ccc-4122-898b-992daab19009/issue-8-19-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c67c8741-2ccc-4122-898b-992daab19009/issue-8-19-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c67c8741-2ccc-4122-898b-992daab19009/issue-8-19-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6139,15 +6284,15 @@ stroke-dasharray: 1, 10; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       stroke-linejoin defines how lines join in SVG. Left: bevel. Middle: round. Right: miter. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c67c8741-2ccc-4122-898b-992daab19009/issue-8-19-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h4 id="optimize-svg-accessibility">Optimize SVG Accessibility</h4>
@@ -6177,14 +6322,14 @@ stroke-dasharray: 1, 10; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f8bdbb90-6dff-4faa-8d12-72b36cd55284/issue-8-20-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f8bdbb90-6dff-4faa-8d12-72b36cd55284/issue-8-20-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f8bdbb90-6dff-4faa-8d12-72b36cd55284/issue-8-20-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6195,15 +6340,15 @@ stroke-dasharray: 1, 10; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f8bdbb90-6dff-4faa-8d12-72b36cd55284/issue-8-20-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>The order of these paths matters, because just as in HTML, elements are stacked in the order they’re written. SVG includes a set of properties and attribute values which can be applied to any element. I use the fill property to colour each path in my header:</p>
@@ -6231,7 +6376,7 @@ stroke-dasharray: 1, 10; }</code></pre>
 
 <p>SVG images which contain text outlines can also be made accessible by using alternative text and ARIA properties. When linking to an external SVG file, add alternative text as you should with any non-decorative image:</p>
 
-<pre><code class="language-html">&lt;img src="header.svg" 
+<pre><code class="language-html">&lt;img src="header.svg"
 alt="Cortina. ’70s best-selling British car"&gt;</code></pre>
 
 <p>The best way to help people who use assistive technology is to embed SVG into HTML. Add an ARIA role and a descriptive label and screen readers will treat the SVG as a single element and read the label description aloud:</p>
@@ -6290,14 +6435,14 @@ The background is rendered within (clipped to) the content box only.</li>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dffb0054-8cdc-4a25-b3f9-0d26146926f2/issue-8-21-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dffb0054-8cdc-4a25-b3f9-0d26146926f2/issue-8-21-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dffb0054-8cdc-4a25-b3f9-0d26146926f2/issue-8-21-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6308,15 +6453,15 @@ The background is rendered within (clipped to) the content box only.</li>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       background-clip. Left: border-box. Middle: padding-box. Right: content-box. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dffb0054-8cdc-4a25-b3f9-0d26146926f2/issue-8-21-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>But, there’s one more value which offers many more opportunities for inspiring typography. Using text as a value for background-clip clips an element’s background to the space occupied by the text it contains.</p>
@@ -6332,12 +6477,12 @@ The background is rendered within (clipped to) the content box only.</li>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c8d99a0c-8c3d-4fe2-8141-5bfbd360c758/issue-8-22-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c8d99a0c-8c3d-4fe2-8141-5bfbd360c758/issue-8-22-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c8d99a0c-8c3d-4fe2-8141-5bfbd360c758/issue-8-22-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6348,15 +6493,15 @@ The background is rendered within (clipped to) the content box only.</li>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: Anti-war poster for American Institute of Graphic Arts exhibition. Designed by Herb Lubalin. Right: The background-clip text value clips an element’s background to the space occupied by the text it contains. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c8d99a0c-8c3d-4fe2-8141-5bfbd360c758/issue-8-22-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>In my next example, the brake disk background image is visible only where there’s text in the headline. When my headline includes more content or its text size increases, more of that background image will be visible:</p>
@@ -6399,12 +6544,12 @@ color: transparent; }
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/aa064119-6b77-4652-aa0f-2077bc3ebb18/issue-8-23-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/aa064119-6b77-4652-aa0f-2077bc3ebb18/issue-8-23-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/aa064119-6b77-4652-aa0f-2077bc3ebb18/issue-8-23-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6415,20 +6560,20 @@ color: transparent; }
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: Trade press advertisement designed by Herb Lubalin. Right: Images inside each letter of my SVG headline. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/aa064119-6b77-4652-aa0f-2077bc3ebb18/issue-8-23-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>As this SVG image represents a heading, I add alternative text plus an ARIA role and level to ensure it remains accessible:</p>
 
-<pre><code class="language-html">&lt;img src="header.svg" alt="Cortina" 
+<pre><code class="language-html">&lt;img src="header.svg" alt="Cortina"
 role="heading" aria-level="1"&gt;</code></pre>
 
 <p>In SVG, the defs element stores graphical objects which can be referenced from elsewhere in a file. These include the patterns which contain my images and I add one for each letter:</p>
@@ -6464,12 +6609,12 @@ role="heading" aria-level="1"&gt;</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2de7e53b-b90b-40ad-9b61-28ba5a2eef9d/issue-8-24-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2de7e53b-b90b-40ad-9b61-28ba5a2eef9d/issue-8-24-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2de7e53b-b90b-40ad-9b61-28ba5a2eef9d/issue-8-24-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6480,15 +6625,15 @@ role="heading" aria-level="1"&gt;</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Images inside each letter of my SVG headline. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2de7e53b-b90b-40ad-9b61-28ba5a2eef9d/issue-8-24-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Image elements allow either bitmap or vector images to be rendered within an SVG. My design incorporates three car part blueprint images which I link to using a standard href attribute:</p>
@@ -6517,12 +6662,12 @@ role="heading" aria-level="1"&gt;</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7ad51ab4-c011-4f61-9a95-13c82d69b7f2/issue-8-25-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7ad51ab4-c011-4f61-9a95-13c82d69b7f2/issue-8-25-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7ad51ab4-c011-4f61-9a95-13c82d69b7f2/issue-8-25-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6533,15 +6678,15 @@ role="heading" aria-level="1"&gt;</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: Trade press advertisement designed by Herb Lubalin. Right: Main content placed over a text-based SVG background image. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7ad51ab4-c011-4f61-9a95-13c82d69b7f2/issue-8-25-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>To develop this design, I need two structural elements which should be very familiar by now, a main and aside:</p>
@@ -6615,14 +6760,14 @@ grid-row: 3 / 6; }</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4379a33b-ffc7-43e7-ae26-4060c9805f16/issue-8-27-inspired-design-decisions-herb-lubalin.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4379a33b-ffc7-43e7-ae26-4060c9805f16/issue-8-27-inspired-design-decisions-herb-lubalin.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4379a33b-ffc7-43e7-ae26-4060c9805f16/issue-8-27-inspired-design-decisions-herb-lubalin.png 800w,
@@ -6633,15 +6778,15 @@ grid-row: 3 / 6; }</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Left: My large-screen design, inspired by Herb Lubalin. Right: To serve a full Cortina image to small screens and only the right half to larger viewports, I use a picture element. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4379a33b-ffc7-43e7-ae26-4060c9805f16/issue-8-27-inspired-design-decisions-herb-lubalin.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This dazzling design becomes more memorable on larger viewports when the text-based SVG background image and my Cortina outline fit alongside each other. I apply a two-column symmetrical grid to the body element:</p>
@@ -6704,8 +6849,22 @@ backdrop-filter: blur(3px); }</code></pre>
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Shedrack Akintayo</author><title>Getting Started With The React Hooks API</title><link>https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/</link><pubDate>Fri, 10 Apr 2020 09:30:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/</guid><description>When React 16.8 was released officially in early February 2019, it shipped with an additional API that lets you use state and other features in React without writing a class. This additional API is called Hooks and they’re becoming popular in the React ecosystem, from open-sourced projects to being used in production applications.
-React Hooks are completely opt-in which means that rewriting existing code is unecessary, they do not contain any breaking changes, and they’re available for use with the release of React 16.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Shedrack Akintayo</author>
+      <title>Getting Started With The React Hooks API</title>
+      <link>https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/</link>
+      <pubDate>Fri, 10 Apr 2020 09:30:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/</guid>
+      <description>When React 16.8 was released officially in early February 2019, it shipped with an additional API
+        that lets you use state and other features in React without writing a class. This additional API is called Hooks
+        and they’re becoming popular in the React ecosystem, from open-sourced projects to being used in production
+        applications.
+        React Hooks are completely opt-in which means that rewriting existing code is unecessary, they do not contain
+        any breaking changes, and they’re available for use with the release of React 16.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -6716,14 +6875,14 @@ React Hooks are completely opt-in which means that rewriting existing code is un
               <article>
                 <header>
                   <h1>Getting Started With The React Hooks API</h1>
-                  
-                    
+
+
                     <address>Shedrack Akintayo</address>
-                  
+
                   <time datetime="2020-04-10T09:30:00&#43;00:00" class="op-published">2020-04-10T09:30:00+00:00</time>
                   <time datetime="2020-04-10T09:30:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>When React 16.8 was released officially in early February 2019, it shipped with an additional API that lets you use state and other features in React without writing a class. This additional API is called <strong>Hooks</strong> and they’re becoming popular in the React ecosystem, from open-sourced projects to being used in production applications.</p>
 
@@ -6793,10 +6952,10 @@ Classes are a hindrance to learning React properly; you would need to understand
   const [age, setAge] = useState(19);
   const handleClick = () =&gt; setAge(age + 1)
 
-  return 
-      &lt;div> 
-          I am {age} Years Old 
-        &lt;div&gt; 
+  return
+      &lt;div>
+          I am {age} Years Old
+        &lt;div&gt;
         &lt;button onClick={handleClick}&gt;Increase my age! &lt;/button&gt;
       &lt;/div&gt;
    &lt;/div&gt;
@@ -6837,7 +6996,7 @@ function App() {
     //Define State
     const [name, setName] = useState({firstName: 'name', surname: 'surname'});
     const [title, setTitle] = useState('BIO');
-    
+
     return(
         &lt;div&gt;
             &lt;h1&gt;Title: {title}&lt;/h1&gt;
@@ -6860,12 +7019,12 @@ function App() {
     //Define State
     const [name, setName] = useState({firstName: 'name', surname: 'surname'});
     const [title, setTitle] = useState('BIO');
-   
+
     //Call the use effect hook
     useEffect(() =&gt; {
       setName({name: 'Shedrack', surname: 'Akintayo'})
     }, [])//pass in an empty array as a second argument
-    
+
     return(
         &lt;div&gt;
             &lt;h1&gt;Title: {title}&lt;/h1&gt;
@@ -6895,12 +7054,12 @@ export default App
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/af586a2d-ddad-4083-b931-027cd802b8c4/02-use-effect-project.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/af586a2d-ddad-4083-b931-027cd802b8c4/02-use-effect-project.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/af586a2d-ddad-4083-b931-027cd802b8c4/02-use-effect-project.png 800w,
@@ -6911,15 +7070,15 @@ export default App
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       React app using the <code>useEffect</code> Hook (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/af586a2d-ddad-4083-b931-027cd802b8c4/02-use-effect-project.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>We can also use change the <code>title</code> property of our application inside the <code>useEffect()</code> function by calling the <code>setTitle()</code> function, like so:</p>
@@ -6930,13 +7089,13 @@ function App() {
     //Define State
     const [name, setName] = useState({firstName: 'name', surname: 'surname'});
     const [title, setTitle] = useState('BIO');
-   
+
     //Call the use effect hook
     useEffect(() =&gt; {
       setName({name: 'Shedrack', surname: 'Akintayo'})
       setTitle({'My Full Name'}) //Set Title
     }, [])// pass in an empty array as a second argument
-    
+
     return(
         &lt;div&gt;
             &lt;h1&gt;Title: {title}&lt;/h1&gt;
@@ -6962,12 +7121,12 @@ export default App
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0d4690d1-2fa3-4197-b401-a4ea26d1ca03/03-use-effect-project-2.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0d4690d1-2fa3-4197-b401-a4ea26d1ca03/03-use-effect-project-2.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0d4690d1-2fa3-4197-b401-a4ea26d1ca03/03-use-effect-project-2.png 800w,
@@ -6978,15 +7137,15 @@ export default App
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Our finished project (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0d4690d1-2fa3-4197-b401-a4ea26d1ca03/03-use-effect-project-2.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h4 id="useContext"><code>useContext()</code></h4>
@@ -7231,8 +7390,22 @@ export default App;
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Frederick O’Brien</author><title>Baking Structured Data Into The Design Process</title><link>https://www.smashingmagazine.com/2020/04/structured-data-design-process/</link><pubDate>Thu, 09 Apr 2020 11:30:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/structured-data-design-process/</guid><description>Search engine optimization (SEO) is essential for almost every kind of website, but its finer points remain something of a specialty. Even today SEO is often treated as something that can be tacked on after the fact. It can up to a point, but it really shouldn’t be. Search engines get smarter every day and there are ways for websites to be smarter too.
-The foundations of SEO are the same as they’ve always been: great content clearly labeled will win the day sooner or later &amp;mdash; regardless of how many people try to game the system.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Frederick O’Brien</author>
+      <title>Baking Structured Data Into The Design Process</title>
+      <link>https://www.smashingmagazine.com/2020/04/structured-data-design-process/</link>
+      <pubDate>Thu, 09 Apr 2020 11:30:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/structured-data-design-process/</guid>
+      <description>Search engine optimization (SEO) is essential for almost every kind of website, but its finer points
+        remain something of a specialty. Even today SEO is often treated as something that can be tacked on after the
+        fact. It can up to a point, but it really shouldn’t be. Search engines get smarter every day and there are ways
+        for websites to be smarter too.
+        The foundations of SEO are the same as they’ve always been: great content clearly labeled will win the day
+        sooner or later &amp;mdash; regardless of how many people try to game the system.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -7243,10 +7416,10 @@ The foundations of SEO are the same as they’ve always been: great content clea
               <article>
                 <header>
                   <h1>Baking Structured Data Into The Design Process</h1>
-                  
-                    
+
+
                     <address>Frederick O’Brien</address>
-                  
+
                   <time datetime="2020-04-09T11:30:00&#43;00:00" class="op-published">2020-04-09T11:30:00+00:00</time>
                   <time datetime="2020-04-09T11:30:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
@@ -7339,12 +7512,12 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5d81222e-33fd-4d8e-a66b-1a637c0d7886/1-film-review-snippets-in-google-search.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5d81222e-33fd-4d8e-a66b-1a637c0d7886/1-film-review-snippets-in-google-search.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5d81222e-33fd-4d8e-a66b-1a637c0d7886/1-film-review-snippets-in-google-search.png 800w,
@@ -7355,15 +7528,15 @@ The foundations of SEO are the same as they’ve always been: great content clea
 			sizes="100vw"
 			alt="Review snippets using structured data markup on Google Search"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5d81222e-33fd-4d8e-a66b-1a637c0d7886/1-film-review-snippets-in-google-search.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -7377,12 +7550,12 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d869a5b6-f9da-4243-be9d-d92430ae881b/2-apple-pie-recipe-snippets-in-google-search.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d869a5b6-f9da-4243-be9d-d92430ae881b/2-apple-pie-recipe-snippets-in-google-search.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d869a5b6-f9da-4243-be9d-d92430ae881b/2-apple-pie-recipe-snippets-in-google-search.png 800w,
@@ -7393,15 +7566,15 @@ The foundations of SEO are the same as they’ve always been: great content clea
 			sizes="100vw"
 			alt="Recipe snippets using structured data markup on Google Search"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Examine the code on the websites featured above and sure enough, structured data is there. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d869a5b6-f9da-4243-be9d-d92430ae881b/2-apple-pie-recipe-snippets-in-google-search.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>It’s not just search either, to be clear. That’s a big part of it but it’s not the whole deal. Structured data is primarily about tagging and organizing content. Rich search results are just one way for said content to be used. Google Dataset Search uses <a href="https://schema.org/Dataset">Schema.org/Dataset</a> markup, for example.</p>
@@ -7457,7 +7630,7 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 <p>In our case, these are the essentials:
 
-<ul> 
+<ul>
   <li>We review music albums;</li>
   <li>Each review has three reviewers who each write a summary by choosing up to three favorite tracks and assigning a personal score out of ten;</li>
   <li>These three scores are combined into a final score out of 30;</li>
@@ -7479,14 +7652,14 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06e29dc4-2af2-4a37-ae39-a09d7e940446/3-web-page-annotated-with-structured-data.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06e29dc4-2af2-4a37-ae39-a09d7e940446/3-web-page-annotated-with-structured-data.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06e29dc4-2af2-4a37-ae39-a09d7e940446/3-web-page-annotated-with-structured-data.png 800w,
@@ -7497,15 +7670,15 @@ The foundations of SEO are the same as they’ve always been: great content clea
 			sizes="100vw"
 			alt="A web page annotated with structured data markup"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Even the most sprawling content is packed full of information just waiting to be tagged and structured. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/06e29dc4-2af2-4a37-ae39-a09d7e940446/3-web-page-annotated-with-structured-data.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>There’s no trick to this process. I know what the content is about, so I know where to look in the documentation. In this case, I go to <a href="https://schema.org/MusicAlbum">Schema.org/MusicAlbum</a> and am met with all manner of potential properties, including:</p>
@@ -7525,7 +7698,7 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 <div class="break-out">
 <pre><code class="language-json">&lt;script type="application/ld+json"&gt;
-    
+
         {
   "@context": "http://schema.org/",
   "@type": "Review",
@@ -7592,12 +7765,12 @@ The foundations of SEO are the same as they’ve always been: great content clea
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ed67f6f1-33f3-43f7-8ef2-bfc6df1f1469/4-google-structured-data-markup-helper.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ed67f6f1-33f3-43f7-8ef2-bfc6df1f1469/4-google-structured-data-markup-helper.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ed67f6f1-33f3-43f7-8ef2-bfc6df1f1469/4-google-structured-data-markup-helper.png 800w,
@@ -7608,15 +7781,15 @@ The foundations of SEO are the same as they’ve always been: great content clea
 			sizes="100vw"
 			alt="Example of Google Structured Data Markup Helper in action"
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Tools like Google’’s Structured Data Markup Helper are excellent for getting to grips with how structured data works. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ed67f6f1-33f3-43f7-8ef2-bfc6df1f1469/4-google-structured-data-markup-helper.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>The fundamentals are actually very simple. Once you get your head around them, it’s the breadth of options that take time to explore and play around with. You don’t want to be that person who gets to the end of a design process, looks into schema options, and starts second-guessing everything that’s been done.</p>
@@ -7669,8 +7842,23 @@ The foundations of SEO are the same as they’ve always been: great content clea
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Chidi Orji</author><title>How To Set Up An Express API Backend Project With PostgreSQL</title><link>https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/</link><pubDate>Wed, 08 Apr 2020 11:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/</guid><description>We will take a Test-Driven Development (TDD) approach and the set up Continuous Integration (CI) job to automatically run our tests on Travis CI and AppVeyor, complete with code quality and coverage reporting. We will learn about controllers, models (with PostgreSQL), error handling, and asynchronous Express middleware. Finally, we’ll complete the CI/CD pipeline by configuring automatic deploy on Heroku.
-It sounds like a lot, but this tutorial is aimed at beginners who are ready to try their hands on a back-end project with some level of complexity, and who may still be confused as to how all the pieces fit together in a real project.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Chidi Orji</author>
+      <title>How To Set Up An Express API Backend Project With PostgreSQL</title>
+      <link>https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/</link>
+      <pubDate>Wed, 08 Apr 2020 11:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/</guid>
+      <description>We will take a Test-Driven Development (TDD) approach and the set up Continuous Integration (CI) job
+        to automatically run our tests on Travis CI and AppVeyor, complete with code quality and coverage reporting. We
+        will learn about controllers, models (with PostgreSQL), error handling, and asynchronous Express middleware.
+        Finally, we’ll complete the CI/CD pipeline by configuring automatic deploy on Heroku.
+        It sounds like a lot, but this tutorial is aimed at beginners who are ready to try their hands on a back-end
+        project with some level of complexity, and who may still be confused as to how all the pieces fit together in a
+        real project.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -7681,14 +7869,14 @@ It sounds like a lot, but this tutorial is aimed at beginners who are ready to t
               <article>
                 <header>
                   <h1>How To Set Up An Express API Backend Project With PostgreSQL</h1>
-                  
-                    
+
+
                     <address>Chidi Orji</address>
-                  
+
                   <time datetime="2020-04-08T11:00:00&#43;00:00" class="op-published">2020-04-08T11:00:00+00:00</time>
                   <time datetime="2020-04-08T11:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>We will take a Test-Driven Development (TDD) approach and the set up Continuous Integration (CI) job to automatically run our tests on Travis CI and AppVeyor, complete with code quality and coverage reporting. We will learn about controllers, models (with PostgreSQL), error handling, and asynchronous Express middleware. Finally, we’ll complete the CI/CD pipeline by configuring automatic deploy on Heroku.</p>
 
@@ -7752,7 +7940,7 @@ insert_final_newline = true</code></pre>
 
 <pre><code class="language-javascript"># initialize the project folder as a git repository
 git init</code></pre>
-   
+
 
 <p>Create a <em>.gitignore</em> file and enter the following lines:</p>
 
@@ -7815,7 +8003,7 @@ express -f</code></pre>
 </ol>
 
 <pre><code class="language-javascript">"start": "node ./src/bin/www"</code></pre>
-      
+
 
 <p>At this point, your project folder structure looks like below. You can see how VS Code highlights the file changes that have taken place.</p>
 
@@ -8389,14 +8577,14 @@ describe('Index page test', () => {
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c0a8035c-d7ad-4b6b-acb9-474495a5c84d/01-first-test-report.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c0a8035c-d7ad-4b6b-acb9-474495a5c84d/01-first-test-report.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c0a8035c-d7ad-4b6b-acb9-474495a5c84d/01-first-test-report.png 800w,
@@ -8407,15 +8595,15 @@ describe('Index page test', () => {
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Test coverage report (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c0a8035c-d7ad-4b6b-acb9-474495a5c84d/01-first-test-report.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Notice that two additional folders are generated:</p>
@@ -8565,14 +8753,14 @@ build: off</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4daf736a-f918-48a9-af01-04a785aedab7/02-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4daf736a-f918-48a9-af01-04a785aedab7/02-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4daf736a-f918-48a9-af01-04a785aedab7/02-express-api-backend-project-with-postgresql.png 800w,
@@ -8583,15 +8771,15 @@ build: off</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Repo CI/CD badges. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/4daf736a-f918-48a9-af01-04a785aedab7/02-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Now is a good time to commit our changes.</p>
@@ -8666,14 +8854,14 @@ export default indexRouter;</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7eacbd2b-e090-43f6-96dc-f6ab7763b2b8/03-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7eacbd2b-e090-43f6-96dc-f6ab7763b2b8/03-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7eacbd2b-e090-43f6-96dc-f6ab7763b2b8/03-express-api-backend-project-with-postgresql.png 800w,
@@ -8684,15 +8872,15 @@ export default indexRouter;</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       ElephantSQL turtle plan details page (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7eacbd2b-e090-43f6-96dc-f6ab7763b2b8/03-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>If you would rather set up a database locally, you should visit the <a href="https://www.postgresql.org/">PostgreSQL</a> and <a href="https://www.pgadmin.org/">PgAdmin</a> sites for further instructions.</p>
@@ -8822,7 +9010,7 @@ export const dropTables = () => executeQueryArray([ dropMessagesTable ]);
 export const createTables = () => executeQueryArray([ createMessageTable ]);
 export const insertIntoTables = () => executeQueryArray([ insertMessages ]);</code></pre>
 </div>
-    
+
 
 <p>Here, we create functions to execute the queries we defined earlier. Note that the <code>executeQueryArray</code> function executes an array of queries and waits for each one to complete inside the loop. (Don’t do such a thing in production code though). Then, we only resolve the promise once we have executed the last query in the list. The reason for using an array is that the number of such queries will grow as the number of tables in our database grows.</p>
 
@@ -8891,14 +9079,14 @@ indexRouter.get('/messages', messagesPage)</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/61480f23-8930-4e4f-affd-ee1548760c39/04-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/61480f23-8930-4e4f-affd-ee1548760c39/04-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/61480f23-8930-4e4f-affd-ee1548760c39/04-express-api-backend-project-with-postgresql.png 800w,
@@ -8909,15 +9097,15 @@ indexRouter.get('/messages', messagesPage)</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Messages from database. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/61480f23-8930-4e4f-affd-ee1548760c39/04-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Now, let’s update our test file. When doing TDD, you usually write your tests before implementing the code that makes the test pass. I’m taking the opposite approach here because we’re still working on setting up the database.</p>
@@ -9106,14 +9294,14 @@ indexRouter.post('/messages', addMessage);</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d69d2e52-8a94-4fa1-a883-772c6c1ab2c9/05-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d69d2e52-8a94-4fa1-a883-772c6c1ab2c9/05-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d69d2e52-8a94-4fa1-a883-772c6c1ab2c9/05-express-api-backend-project-with-postgresql.png 800w,
@@ -9124,15 +9312,15 @@ indexRouter.post('/messages', addMessage);</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       POST request to messages endpoint. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d69d2e52-8a94-4fa1-a883-772c6c1ab2c9/05-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -9146,14 +9334,14 @@ indexRouter.post('/messages', addMessage);</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dd02979f-dbd0-490d-82cf-c7a7369f91e6/06-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dd02979f-dbd0-490d-82cf-c7a7369f91e6/06-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dd02979f-dbd0-490d-82cf-c7a7369f91e6/06-express-api-backend-project-with-postgresql.png 800w,
@@ -9164,15 +9352,15 @@ indexRouter.post('/messages', addMessage);</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       GET request showing newly added message. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dd02979f-dbd0-490d-82cf-c7a7369f91e6/06-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Commit your changes and push to GitHub. Your tests should pass on both Travis and AppVeyor. Your test coverage will drop by a few points, but that’s okay.</p>
@@ -9252,12 +9440,12 @@ indexRouter.post('/messages', modifyMessage, addMessage);</code></pre>
 
 
 <figure class="
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c36c9fd6-e754-4c4c-b08b-4b4c12c1c9e5/07-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c36c9fd6-e754-4c4c-b08b-4b4c12c1c9e5/07-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c36c9fd6-e754-4c4c-b08b-4b4c12c1c9e5/07-express-api-backend-project-with-postgresql.png 800w,
@@ -9268,15 +9456,15 @@ indexRouter.post('/messages', modifyMessage, addMessage);</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Message modified by middleware. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c36c9fd6-e754-4c4c-b08b-4b4c12c1c9e5/07-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>This is a good point to commit our changes.</p>
@@ -9307,7 +9495,7 @@ indexRouter.post('/messages', modifyMessage, addMessage);</code></pre>
 
 <pre><code class="language-bash"># install axios
 yarn add axios</code></pre>
- 
+
 
 <p>Open <em>src/middleware/middleware.js</em> and add the below function:</p>
 
@@ -9400,14 +9588,14 @@ heroku logs --tail</code></pre>
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0023c952-8e6d-41cc-82a5-be95c682808f/08-express-api-backend-project-with-postgresql.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0023c952-8e6d-41cc-82a5-be95c682808f/08-express-api-backend-project-with-postgresql.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0023c952-8e6d-41cc-82a5-be95c682808f/08-express-api-backend-project-with-postgresql.png 800w,
@@ -9418,15 +9606,15 @@ heroku logs --tail</code></pre>
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Heroku logs. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0023c952-8e6d-41cc-82a5-be95c682808f/08-express-api-backend-project-with-postgresql.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Run the following three commands to set the required environment variables:</p>
@@ -9545,9 +9733,21 @@ travis encrypt $(heroku auth:token) --add deploy.api_key --pro</code></pre>
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Drew McLellan</author><title>Smashing Podcast Episode 13 With Laura Kalbag: What Is Online Privacy?</title><link>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/</link><pubDate>Tue, 07 Apr 2020 07:00:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/</guid><description>In this episode of the Smashing Podcast, we’re talking about online privacy. What should web developers be doing to make sure the privacy of our users is maintained? I spoke to Laura Kalbag to find out.
-Show Notes Laura Kalbag’s personal website Small Technology Foundation Better Blocker Site.js Weekly Update “How To Make Life Easier When Using Git,”
-by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Drew McLellan</author>
+      <title>Smashing Podcast Episode 13 With Laura Kalbag: What Is Online Privacy?</title>
+      <link>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/</link>
+      <pubDate>Tue, 07 Apr 2020 07:00:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/</guid>
+      <description>In this episode of the Smashing Podcast, we’re talking about online privacy. What should web
+        developers be doing to make sure the privacy of our users is maintained? I spoke to Laura Kalbag to find out.
+        Show Notes Laura Kalbag’s personal website Small Technology Foundation Better Blocker Site.js Weekly Update “How
+        To Make Life Easier When Using Git,”
+        by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -9558,14 +9758,14 @@ by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”</de
               <article>
                 <header>
                   <h1>Smashing Podcast Episode 13 With Laura Kalbag: What Is Online Privacy?</h1>
-                  
-                    
+
+
                     <address>Drew McLellan</address>
-                  
+
                   <time datetime="2020-04-07T07:00:00&#43;00:00" class="op-published">2020-04-07T07:00:00+00:00</time>
                   <time datetime="2020-04-07T07:00:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p><a href="https://twitter.com/laurakalbag"><img style="float: right; padding: 1em;border-radius: 110px;max-width: 50%;height:auto" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b588d4eb-9d28-40c9-b24e-81020a17111f/laurakalbag-300x300.jpg" width="200" height="200" alt="Laura Kalbag" /></a>In this episode of the Smashing Podcast, we’re talking about online privacy. What should web developers be doing to make sure the privacy of our users is maintained? I spoke to Laura Kalbag to find out.</p>
 
@@ -9756,7 +9956,21 @@ by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”</de
               </article>
             </body>
           </html>
-        ]]></content:encoded></item><item><author>Zara Cooper</author><title>Create Your Free Developer Blog Using Hugo And Firebase</title><link>https://www.smashingmagazine.com/2020/04/free-developer-blog-hugo-firebase/</link><pubDate>Mon, 06 Apr 2020 11:30:00 +0000</pubDate><guid>https://www.smashingmagazine.com/2020/04/free-developer-blog-hugo-firebase/</guid><description>In this tutorial, I’ll demonstrate how to create your own blog using Hugo and deploy it on Firebase for free. Hugo is an open-source static site generator and Firebase is a Google platform that offers resources and services used to augment web and mobile development. If you’re a developer who does not have a blog yet but is interested in hosting one, this article will help you create one. To follow these steps, you need to know how to use Git and your terminal.</description><content:encoded><![CDATA[
+        ]]></content:encoded>
+    </item>
+    <item>
+      <author>Zara Cooper</author>
+      <title>Create Your Free Developer Blog Using Hugo And Firebase</title>
+      <link>https://www.smashingmagazine.com/2020/04/free-developer-blog-hugo-firebase/</link>
+      <pubDate>Mon, 06 Apr 2020 11:30:00 +0000</pubDate>
+      <guid>https://www.smashingmagazine.com/2020/04/free-developer-blog-hugo-firebase/</guid>
+      <description>In this tutorial, I’ll demonstrate how to create your own blog using Hugo and deploy it on Firebase
+        for free. Hugo is an open-source static site generator and Firebase is a Google platform that offers resources
+        and services used to augment web and mobile development. If you’re a developer who does not have a blog yet but
+        is interested in hosting one, this article will help you create one. To follow these steps, you need to know how
+        to use Git and your terminal.
+      </description>
+      <content:encoded><![CDATA[
           <html>
             <head>
               <meta charset="utf-8">
@@ -9767,14 +9981,14 @@ by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”</de
               <article>
                 <header>
                   <h1>Create Your Free Developer Blog Using Hugo And Firebase</h1>
-                  
-                    
+
+
                     <address>Zara Cooper</address>
-                  
+
                   <time datetime="2020-04-06T11:30:00&#43;00:00" class="op-published">2020-04-06T11:30:00+00:00</time>
                   <time datetime="2020-04-06T11:30:00&#43;00:00" class="op-modified">2020-04-24T09:35:42+00:00</time>
                 </header>
-                
+
 
 <p>In this tutorial, I’ll demonstrate how to create your own blog using Hugo and deploy it on Firebase for free. Hugo is an open-source static site generator and Firebase is a Google platform that offers resources and services used to augment web and mobile development. If you’re a developer who does not have a blog yet but is interested in hosting one, this article will help you create one. To follow these steps, you need to know how to use Git and your terminal.</p>
 
@@ -9816,7 +10030,7 @@ by Shane Hudson “Visual Design Language: The Building Blocks Of Design,”</de
 
 <p>If you’re running on windows, Hugo can be installed using either the <a href="https://scoop.sh/">scoop</a> installer or the  <a href="https://chocolatey.org/install">chocolatey</a> package manager. For scoop:</p>
 
-<pre><code class="language-bash">scoop install hugo 
+<pre><code class="language-bash">scoop install hugo
 </code></pre>
 
 <p>For chocolatey:</p>
@@ -9915,7 +10129,7 @@ googleAnalytics = "your_google_analytics_id"
     twitter = "cats"
     copyright = "Cat Photographer"
 
-    # Tools 
+    # Tools
     enableRSS = true
     enableDisqus = true
     disqusShortname = "your_disqus_short_name"
@@ -9997,14 +10211,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7c4f2c62-de2e-4afc-889b-316bae3892fe/hugo-1-firebase-project-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7c4f2c62-de2e-4afc-889b-316bae3892fe/hugo-1-firebase-project-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7c4f2c62-de2e-4afc-889b-316bae3892fe/hugo-1-firebase-project-creation.png 800w,
@@ -10015,15 +10229,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Firebase Console home page where the “Create a Project” button resides. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7c4f2c62-de2e-4afc-889b-316bae3892fe/hugo-1-firebase-project-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Input the name of your project.</p>
@@ -10039,14 +10253,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1eb3572a-f416-4c45-9acf-d770f055303b/hugo-2-firebase-project-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1eb3572a-f416-4c45-9acf-d770f055303b/hugo-2-firebase-project-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1eb3572a-f416-4c45-9acf-d770f055303b/hugo-2-firebase-project-creation.png 800w,
@@ -10057,15 +10271,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       First page of “Create a project” flow on Firebase Console. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1eb3572a-f416-4c45-9acf-d770f055303b/hugo-2-firebase-project-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Enable Google Analytics if you want to use it in your blog.</p>
@@ -10081,14 +10295,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/773bbde5-7097-46dc-9400-473e4fb2fb58/hugo-3-firebase-project-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/773bbde5-7097-46dc-9400-473e4fb2fb58/hugo-3-firebase-project-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/773bbde5-7097-46dc-9400-473e4fb2fb58/hugo-3-firebase-project-creation.png 800w,
@@ -10099,15 +10313,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Second page of “Create a project” flow on Firebase Console. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/773bbde5-7097-46dc-9400-473e4fb2fb58/hugo-3-firebase-project-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -10121,14 +10335,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6b645d43-cadf-4ffd-869d-bf739a72e770/hugo-4-firebase-project-creation.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6b645d43-cadf-4ffd-869d-bf739a72e770/hugo-4-firebase-project-creation.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6b645d43-cadf-4ffd-869d-bf739a72e770/hugo-4-firebase-project-creation.png 800w,
@@ -10139,15 +10353,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Third page of “Create a project” flow on Firebase Console. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6b645d43-cadf-4ffd-869d-bf739a72e770/hugo-4-firebase-project-creation.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Once you’re done creating the project, go back to your blog’s root and initialize a Firebase project in the blog.</p>
@@ -10195,14 +10409,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2f520d7f-3e1a-48c4-a51f-a50b040e06b4/hugo-1-firebase-init.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2f520d7f-3e1a-48c4-a51f-a50b040e06b4/hugo-1-firebase-init.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2f520d7f-3e1a-48c4-a51f-a50b040e06b4/hugo-1-firebase-init.png 800w,
@@ -10213,15 +10427,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       First prompt of the <code>firebase init</code> command requesting a feature selection. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2f520d7f-3e1a-48c4-a51f-a50b040e06b4/hugo-1-firebase-init.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -10235,14 +10449,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a83efd2e-dba9-4ab7-86a2-228f981328ad/hugo-2-firebase-init.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a83efd2e-dba9-4ab7-86a2-228f981328ad/hugo-2-firebase-init.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a83efd2e-dba9-4ab7-86a2-228f981328ad/hugo-2-firebase-init.png 800w,
@@ -10253,15 +10467,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Second prompt of the <code>firebase init</code> command requesting a project selection. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a83efd2e-dba9-4ab7-86a2-228f981328ad/hugo-2-firebase-init.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 
@@ -10275,14 +10489,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca3a55d6-def3-4f4c-95ab-683e2ac89a5f/hugo-3-firebase-init.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca3a55d6-def3-4f4c-95ab-683e2ac89a5f/hugo-3-firebase-init.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca3a55d6-def3-4f4c-95ab-683e2ac89a5f/hugo-3-firebase-init.png 800w,
@@ -10293,15 +10507,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Third and fourth prompts of the <code>firebase init</code> command requesting a deployment folder and inquiring whether to configure the project as a single-page app. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ca3a55d6-def3-4f4c-95ab-683e2ac89a5f/hugo-3-firebase-init.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <p>Next, we’ll build the blog. A <code>/public</code> folder will be created and it will contain your generated blog.</p>
@@ -10327,14 +10541,14 @@ git push origin master
 
 
 <figure class="
-  
+
     break-out article__image
-  
-  
+
+
   ">
-  
+
     <a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/875dc148-2e4c-4e8d-8d95-557ddbefa94b/hugo-firebase-deployment.png">
-    
+
     <img
 			srcset="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/875dc148-2e4c-4e8d-8d95-557ddbefa94b/hugo-firebase-deployment.png 400w,
 			        https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_800/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/875dc148-2e4c-4e8d-8d95-557ddbefa94b/hugo-firebase-deployment.png 800w,
@@ -10345,15 +10559,15 @@ git push origin master
 			sizes="100vw"
 			alt=""
 		/>
-    
-    </a>
-  
 
-  
+    </a>
+
+
+
     <figcaption class="op-vertical-bottom">
       Output from running the <code>firebase deploy</code> command. (<a href='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/875dc148-2e4c-4e8d-8d95-557ddbefa94b/hugo-firebase-deployment.png'>Large preview</a>)
     </figcaption>
-  
+
 </figure>
 
 <h3 id="next-steps">Next Steps</h3>
@@ -10375,4 +10589,7 @@ git push origin master
               </article>
             </body>
           </html>
-        ]]></content:encoded></item></channel></rss>
+        ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

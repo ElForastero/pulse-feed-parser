@@ -1,4 +1,4 @@
-import { Person } from 'types/Feed';
+import { Person } from '../types/Feed';
 
 const emailNameRgx = new RegExp(`^([^@]+@[^\s]+)\s+\(([^@]+)\)$`);
 const nameEmailRgx = new RegExp(`^([^@]+)\s+\(([^@]+@[^)]+)\)$`);

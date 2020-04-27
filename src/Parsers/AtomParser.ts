@@ -7,7 +7,7 @@ import {
   AtomLink,
   AtomPerson,
   AtomSource,
-} from './Atom';
+} from '../types/Atom';
 
 /**
  * Parser for Atom feeds
@@ -37,6 +37,7 @@ export class AtomParser {
       updated: null,
       entries: null,
       links: null,
+      extensions: null,
     };
 
     this.entry = {
@@ -52,6 +53,7 @@ export class AtomParser {
       published: null,
       updated: null,
       content: null,
+      extensions: null,
     };
 
     this.source = {

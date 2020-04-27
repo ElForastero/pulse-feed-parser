@@ -8,8 +8,13 @@ import {
   RSSSource,
   RSSCloud,
   RSSTextInput,
-} from './RSS';
+} from '../types/RSS';
 import { append } from '../utils/collection';
+import {
+  getExtensionName,
+  isExtension,
+  parseExtension,
+} from '../utils/extensions';
 
 /**
  * Parser for RSS feeds
@@ -57,6 +62,7 @@ export class RSSParser {
       webmaster: null,
       cloud: null,
       textInput: null,
+      extensions: null,
     };
 
     this.item = {
@@ -71,6 +77,7 @@ export class RSSParser {
       pubDate: null,
       source: null,
       title: null,
+      extensions: null,
     };
 
     this.textInput = {
@@ -115,7 +122,23 @@ export class RSSParser {
     do {
       const tagName = walker.currentNode.nodeName.toLowerCase();
 
-      if (tagName === 'title') {
+      if (isExtension(walker.currentNode)) {
+        const ext = getExtensionName(walker.currentNode as Element);
+        const [prop, extension] = parseExtension(walker.currentNode as Element);
+
+        if (this.feed.extensions === null) {
+          this.feed.extensions = { [ext]: { [prop]: [] } };
+        } else if (this.feed.extensions[ext] === undefined) {
+          this.feed.extensions[ext] = { [prop]: [] };
+        } else if (this.feed.extensions[ext][prop] === undefined) {
+          this.feed.extensions[ext][prop] = [];
+        }
+
+        this.feed.extensions[ext][prop] = [
+          ...this.feed.extensions[ext][prop],
+          extension,
+        ];
+      } else if (tagName === 'title') {
         this.feed.title = this.parseText(walker.currentNode);
       } else if (tagName === 'description') {
         this.feed.description = this.parseText(walker.currentNode);
@@ -192,28 +215,34 @@ export class RSSParser {
 
     let item = { ...this.item };
 
-    // nodeName -> feed property
-    const textNodes: {
-      [key: string]: keyof Pick<
-        RSSItem,
-        'title' | 'description' | 'link' | 'author' | 'comments' | 'pubDate'
-      >;
-    } = {
-      title: 'title',
-      description: 'description',
-      link: 'link',
-      author: 'author',
-      comments: 'comments',
-      pubdate: 'pubDate',
-    };
-
     do {
-      const tagName = walker.currentNode.nodeName;
+      const tagName = walker.currentNode.nodeName.toLowerCase();
 
-      if (textNodes[tagName] !== undefined) {
-        item[textNodes[tagName]] = this.parseText(
-          walker.currentNode as Element
-        );
+      if (isExtension(walker.currentNode)) {
+        const ext = getExtensionName(walker.currentNode as Element);
+        const [prop, extension] = parseExtension(walker.currentNode as Element);
+
+        if (item.extensions === null) {
+          item.extensions = { [ext]: { [prop]: [] } };
+        } else if (item.extensions[ext] === undefined) {
+          item.extensions[ext] = { [prop]: [] };
+        } else if (item.extensions[ext][prop] === undefined) {
+          item.extensions[ext][prop] = [];
+        }
+
+        item.extensions[ext][prop] = [...item.extensions[ext][prop], extension];
+      } else if (tagName === 'title') {
+        item.title = this.parseText(walker.currentNode as Element);
+      } else if (tagName === 'description') {
+        item.description = this.parseText(walker.currentNode as Element);
+      } else if (tagName === 'link') {
+        item.link = this.parseText(walker.currentNode as Element);
+      } else if (tagName === 'author') {
+        item.author = this.parseText(walker.currentNode as Element);
+      } else if (tagName === 'comments') {
+        item.comments = this.parseText(walker.currentNode as Element);
+      } else if (tagName === 'pubdate') {
+        item.pubDate = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'content:encoded') {
         item.content = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'source') {

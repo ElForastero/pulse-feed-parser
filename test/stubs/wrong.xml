@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The GitHub Blog</title>
+    <generator>https://wordpress.org/?v=5.4</generator>
+  <!--  note the <channel /> is not closed -->
+</rss>
