@@ -4,42 +4,42 @@ import { parsePerson } from '../utils/parsePerson';
 
 export class RSSFeedAdapter {
   public static adapt(rss: RSSFeed): Feed {
-    let feed = {} as Feed;
-
-    feed.title = RSSFeedAdapter.getTitle(rss);
-    feed.description = rss.description;
-    feed.link = RSSFeedAdapter.getLink(rss);
-    feed.feedLink = null;
-    feed.updated = RSSFeedAdapter.getUpdated(rss);
-    feed.published = rss.pubDate;
-    feed.author = RSSFeedAdapter.getFeedAuthor(rss);
-    feed.language = RSSFeedAdapter.getLanguage(rss);
-    feed.image = RSSFeedAdapter.getImage(rss);
-    feed.copyright = RSSFeedAdapter.getCopyright(rss);
-    feed.generator = rss.generator;
-    feed.categories = RSSFeedAdapter.getFeedCategories(rss);
-    feed.items = RSSFeedAdapter.getItems(rss);
-    feed.feedType = 'rss';
-
-    return feed;
+    return {
+      title: RSSFeedAdapter.getTitle(rss),
+      description: rss.description,
+      link: RSSFeedAdapter.getLink(rss),
+      feedLink: null,
+      updated: RSSFeedAdapter.getUpdated(rss),
+      published: rss.pubDate,
+      author: RSSFeedAdapter.getFeedAuthor(rss),
+      language: RSSFeedAdapter.getLanguage(rss),
+      image: RSSFeedAdapter.getImage(rss),
+      copyright: RSSFeedAdapter.getCopyright(rss),
+      generator: rss.generator,
+      categories: RSSFeedAdapter.getFeedCategories(rss),
+      items: RSSFeedAdapter.getItems(rss),
+      extensions: rss.extensions,
+      feedType: 'rss',
+      // @todo
+      feedVersion: '',
+    };
   }
 
   private static getItem(rss: RSSItem): Item {
-    let item = {} as Item;
-
-    item.title = RSSFeedAdapter.getTitle(rss);
-    item.description = rss.description;
-    item.content = rss.content;
-    item.link = RSSFeedAdapter.getLink(rss);
-    item.published = RSSFeedAdapter.getItemPublished(rss);
-    item.updated = RSSFeedAdapter.getItemUpdated(rss);
-    item.author = RSSFeedAdapter.getItemAuthor(rss);
-    item.guid = rss.guid?.value ?? null;
-    item.image = RSSFeedAdapter.getItemImage(rss);
-    item.categories = RSSFeedAdapter.getItemCategories(rss);
-    item.enclosures = RSSFeedAdapter.getEnclosures(rss);
-
-    return item;
+    return {
+      title: RSSFeedAdapter.getTitle(rss),
+      description: rss.description,
+      content: rss.content,
+      link: RSSFeedAdapter.getLink(rss),
+      published: RSSFeedAdapter.getItemPublished(rss),
+      updated: RSSFeedAdapter.getItemUpdated(rss),
+      author: RSSFeedAdapter.getItemAuthor(rss),
+      guid: rss.guid?.value ?? null,
+      image: RSSFeedAdapter.getItemImage(rss),
+      categories: RSSFeedAdapter.getItemCategories(rss),
+      enclosures: RSSFeedAdapter.getEnclosures(rss),
+      extensions: rss.extensions,
+    };
   }
 
   private static getCopyright(rss: RSSFeed): Maybe<string> {
@@ -66,7 +66,7 @@ export class RSSFeedAdapter {
     if (rss.pubDate) {
       return rss.pubDate;
     } else if (rss.extensions?.dc?.date) {
-      return rss.extensions.dc.date[0].value
+      return rss.extensions.dc.date[0].value;
     }
 
     return null;

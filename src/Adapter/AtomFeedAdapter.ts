@@ -10,41 +10,41 @@ import { parsePerson } from '../utils/parsePerson';
 // for each of the fields in Feed.
 export class AtomFeedAdapter {
   public static adapt(atom: AtomFeed): Feed {
-    let feed = {} as Feed;
-
-    feed.title = atom.title;
-    feed.description = atom.subtitle;
-    feed.link = atom.links?.find(({ type }) => type === 'alternate')?.href ?? null;
-    feed.feedLink = atom.links?.find(({ type }) => type === 'self')?.href ?? null;
-    feed.updated = atom.updated;
-    feed.published = null;
-    feed.author = AtomFeedAdapter.getAuthor(atom);
-    feed.language = atom.language;
-    feed.image = AtomFeedAdapter.getImage(atom);
-    feed.copyright = atom.rights;
-    feed.generator = AtomFeedAdapter.getGenerator(atom);
-    feed.categories = AtomFeedAdapter.getCategories(atom);
-    feed.items = AtomFeedAdapter.getItems(atom);
-    feed.feedType = 'atom';
-
-    return feed;
+    return {
+      title: atom.title,
+      description: atom.subtitle,
+      link: atom.links?.find(({ rel }) => rel === 'alternate')?.href ?? null,
+      feedLink: atom.links?.find(({ rel }) => rel === 'self')?.href ?? null,
+      updated: atom.updated,
+      published: null,
+      author: AtomFeedAdapter.getAuthor(atom),
+      language: atom.language,
+      image: AtomFeedAdapter.getImage(atom),
+      copyright: atom.rights,
+      generator: AtomFeedAdapter.getGenerator(atom),
+      categories: AtomFeedAdapter.getCategories(atom),
+      items: AtomFeedAdapter.getItems(atom),
+      extensions: atom.extensions,
+      feedType: 'atom',
+      feedVersion: '',
+    };
   }
 
   private static getItem(atom: AtomEntry): Item {
-    let item = {} as Item;
-
-    item.title = atom.title;
-    item.description = atom.summary;
-    item.content = atom.content?.value ?? null;
-    item.link = atom.links?.find(({ type }) => type === 'alternate')?.href ?? null;
-    item.published = atom.published;
-    item.author = AtomFeedAdapter.getAuthor(atom);
-    item.guid = atom.id;
-    item.image = null;
-    item.categories = AtomFeedAdapter.getCategories(atom);
-    item.enclosures = AtomFeedAdapter.getEnclosures(atom);
-
-    return item;
+    return {
+      title: atom.title,
+      description: atom.summary,
+      content: atom.content?.value ?? null,
+      link: atom.links?.find(({ rel }) => rel === 'alternate')?.href ?? null,
+      published: atom.published,
+      updated: atom.updated,
+      author: AtomFeedAdapter.getAuthor(atom),
+      guid: atom.id,
+      image: null,
+      categories: AtomFeedAdapter.getCategories(atom),
+      enclosures: AtomFeedAdapter.getEnclosures(atom),
+      extensions: atom.extensions,
+    };
   }
 
   private static getAuthor(atom: AtomFeed | AtomEntry): Maybe<Person> {
@@ -75,7 +75,9 @@ export class AtomFeedAdapter {
     return null;
   }
 
-  private static getCategories(atom: AtomFeed | AtomEntry): Maybe<Array<string>> {
+  private static getCategories(
+    atom: AtomFeed | AtomEntry
+  ): Maybe<Array<string>> {
     if (atom.categories !== null) {
       const categories = atom.categories
         .filter(({ term }) => term !== null)
@@ -92,7 +94,7 @@ export class AtomFeedAdapter {
   private static getEnclosures(atom: AtomEntry): Maybe<Array<Enclosure>> {
     const enclosureLinks = atom.links?.filter(({ rel }) => rel === 'enclosure');
 
-    if (enclosureLinks) {
+    if (enclosureLinks && enclosureLinks.length > 0) {
       return enclosureLinks.map(({ href, length, type }) => ({
         length,
         type,

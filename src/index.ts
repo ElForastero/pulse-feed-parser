@@ -6,3 +6,4 @@ export * from './Adapter/AtomFeedAdapter';
 export * from './Adapter/RSSFeedAdapter';
 export * from './Errors/FeedTypeError'
 export * from './Errors/NetworkError'
+export * from './types';

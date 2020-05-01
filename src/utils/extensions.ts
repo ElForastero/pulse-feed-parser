@@ -30,7 +30,7 @@ export const parseExtension = (node: Element): [string, Extension] => {
   ext.name = node.nodeName.toLowerCase();
 
   if (!node.hasChildNodes() || firstChildName === '#text') {
-    ext.value = node.textContent;
+    ext.value = node.textContent!.trim();
   } else {
     ext.children = Array.from(node.childNodes).map(node => {
       const [, data] = parseExtension(node as Element);

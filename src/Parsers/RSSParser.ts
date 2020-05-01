@@ -264,7 +264,7 @@ export class RSSParser {
 
   private parseSource(node: Element): RSSSource {
     return {
-      title: node.textContent,
+      title: this.parseText(node),
       url: node.getAttribute('url'),
     };
   }
@@ -280,14 +280,14 @@ export class RSSParser {
   private parseGUID(node: Element): RSSGUID {
     return {
       isPermalink: node.getAttribute('isPermalink') === 'true',
-      value: node.textContent!,
+      value: this.parseText(node),
     };
   }
 
   private parseCategory(node: Element): RSSCategory {
     return {
       domain: node.getAttribute('domain'),
-      value: node.textContent!,
+      value: this.parseText(node),
     };
   }
 

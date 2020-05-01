@@ -9,6 +9,25 @@ import {
   AtomSource,
 } from '../types/Atom';
 
+// Atom elements which contain URIs
+// https://tools.ietf.org/html/rfc4287
+// const uriElements = {
+//   icon: true,
+//   id: true,
+//   logo: true,
+//   uri: true,
+//   url: true, // atom 0.3
+// };
+
+// Atom attributes which contain URIs
+// https://tools.ietf.org/html/rfc4287
+// const atomURIAttrs = {
+//   href: true,
+//   scheme: true,
+//   src: true,
+//   uri: true,
+// };
+
 /**
  * Parser for Atom feeds
  */
@@ -18,9 +37,11 @@ export class AtomParser {
   private readonly person: AtomPerson;
   private feed: AtomFeed;
   private document: Document;
+  // private baseURL: Maybe<string>;
 
   constructor(document: Document) {
     this.document = document;
+    // this.baseURL = null;
 
     this.feed = {
       id: null,
@@ -80,6 +101,8 @@ export class AtomParser {
     if (root === null) {
       throw new Error('No root node');
     }
+
+    // this.baseURL = root.getAttributeNS('xml', 'base');
 
     const walker = window.document.createTreeWalker(
       root,
@@ -328,17 +351,17 @@ export class AtomParser {
     const type = node.getAttribute('type') ?? 'text';
 
     if (type === 'text') {
-      return node.textContent;
+      return node.textContent!.trim();
     }
 
     // If type="html", then this element contains entity escaped html.
     if (type === 'html') {
-      return node.textContent;
+      return node.textContent!.trim();
     }
 
     // If type="xhtml", then this element contains inline xhtml, wrapped in a div element.
     if (type === 'xhtml') {
-      return node.firstElementChild!.textContent;
+      return node.firstElementChild!.textContent!.trim()
     }
 
     return null;

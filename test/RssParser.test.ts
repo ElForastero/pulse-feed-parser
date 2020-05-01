@@ -17,7 +17,7 @@ const alistapart = fs.readFileSync(
 const devzen = fs.readFileSync(path.join(__dirname, './stubs/rss/devzen.xml'));
 
 it('should parse RSS feeds', () => {
-  const doc = new DOMParser().parseFromString(devzen, 'application/xml');
+  const doc = new DOMParser().parseFromString(alistapart, 'application/xml');
   const parser = new RSSParser(doc);
 
   console.log(parser.parse().items[0].extensions);
@@ -29,10 +29,11 @@ it('should parse canonical feed', () => {
     { encoding: 'utf8' }
   );
 
-  const data = new Parser().parseXMLFeed(xml);
+  const data = new Parser().parseXMLFeed(xml).items[0];
+  console.log(data);
 
-  fs.writeFileSync(
-    path.join(__dirname, './stubs/canonical/expected.json'),
-    JSON.stringify(data)
-  );
+  // fs.writeFileSync(
+  //   path.join(__dirname, './stubs/canonical/expected.json'),
+  //   JSON.stringify(data)
+  // );
 });

@@ -37,7 +37,7 @@ export type Item = {
   image: Maybe<string>;
   categories: Maybe<Array<string>>;
   enclosures: Maybe<Array<Enclosure>>;
-  extensions: Maybe<Array<Extension>>;
+  extensions: Maybe<Extensions>;
 };
 
 // Enclosure is a file associated with a given Item.
