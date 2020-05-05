@@ -29,14 +29,20 @@ export const parseExtension = (node: Element): [string, Extension] => {
   const firstChildName = node.firstChild?.nodeName;
   ext.name = node.nodeName.toLowerCase();
 
-  if (!node.hasChildNodes() || firstChildName === '#text') {
+  if (
+    !node.hasChildNodes() ||
+    firstChildName === '#text' ||
+    firstChildName === '#cdata-section'
+  ) {
     ext.value = node.textContent!.trim();
   } else {
     ext.children = Array.from(node.childNodes).map(node => {
       const [, data] = parseExtension(node as Element);
       return data;
     });
+  }
 
+  if (node.hasAttributes()) {
     ext.attrs = node
       .getAttributeNames()
       .reduce(
