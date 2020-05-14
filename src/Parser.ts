@@ -33,19 +33,20 @@ export class Parser {
       throw new NetworkError(`The feed is unreachable`, response.status);
     }
 
-    return this.parseXMLFeed(await response.text());
+    const doc = new DOMParser().parseFromString(await response.text(), 'application/xml');
+
+    return this.parseDocument(doc);
   }
 
-  public parseXMLFeed(content: string): Feed {
-    const document = new DOMParser().parseFromString(content, 'text/xml');
-    const type = XmlFeedTypeDetector.detect(document);
+  public parseDocument(doc: Document): Feed {
+    const type = XmlFeedTypeDetector.detect(doc);
 
     if (type === FeedType.RSS) {
-      return RSSFeedAdapter.adapt(new RSSParser(document).parse());
+      return RSSFeedAdapter.adapt(new RSSParser(doc).parse());
     }
 
     if (type === FeedType.Atom) {
-      const atomFeed = new AtomParser(document).parse();
+      const atomFeed = new AtomParser(doc).parse();
       return AtomFeedAdapter.adapt(atomFeed);
     }
 
