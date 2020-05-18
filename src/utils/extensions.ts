@@ -28,12 +28,9 @@ export const parseExtension = (node: Element): [string, Extension] => {
   const ext = { ...EXTENSION };
   const firstChildName = node.firstChild?.nodeName;
   ext.name = node.nodeName.toLowerCase();
+  const isTextNode = ['#text', '#cdata-section'].includes(firstChildName!);
 
-  if (
-    !node.hasChildNodes() ||
-    firstChildName === '#text' ||
-    firstChildName === '#cdata-section'
-  ) {
+  if (isTextNode) {
     ext.value = node.textContent!.trim();
   } else {
     ext.children = Array.from(node.childNodes).map(node => {
@@ -42,7 +39,7 @@ export const parseExtension = (node: Element): [string, Extension] => {
     });
   }
 
-  if (node.hasAttributes()) {
+  if (!isTextNode && node.hasAttributes()) {
     ext.attrs = node
       .getAttributeNames()
       .reduce(

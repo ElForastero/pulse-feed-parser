@@ -8,6 +8,11 @@ import {
   AtomPerson,
   AtomSource,
 } from '../types/Atom';
+import {
+  getExtensionName,
+  isExtension,
+  parseExtension,
+} from '../utils/extensions';
 
 // Atom elements which contain URIs
 // https://tools.ietf.org/html/rfc4287
@@ -120,7 +125,23 @@ export class AtomParser {
     do {
       const tagName = walker.currentNode.nodeName.toLowerCase();
 
-      if (tagName === 'title') {
+      if (isExtension(walker.currentNode)) {
+        const ext = getExtensionName(walker.currentNode as Element);
+        const [prop, extension] = parseExtension(walker.currentNode as Element);
+
+        if (this.feed.extensions === null) {
+          this.feed.extensions = { [ext]: { [prop]: [] } };
+        } else if (this.feed.extensions[ext] === undefined) {
+          this.feed.extensions[ext] = { [prop]: [] };
+        } else if (this.feed.extensions[ext][prop] === undefined) {
+          this.feed.extensions[ext][prop] = [];
+        }
+
+        this.feed.extensions[ext][prop] = [
+          ...this.feed.extensions[ext][prop],
+          extension,
+        ];
+      } if (tagName === 'title') {
         this.feed.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
         this.feed.id = this.parseText(walker.currentNode as Element);
@@ -184,7 +205,20 @@ export class AtomParser {
     do {
       const tagName = walker.currentNode.nodeName.toLowerCase();
 
-      if (tagName === 'title') {
+      if (isExtension(walker.currentNode)) {
+        const ext = getExtensionName(walker.currentNode as Element);
+        const [prop, extension] = parseExtension(walker.currentNode as Element);
+
+        if (entry.extensions === null) {
+          entry.extensions = { [ext]: { [prop]: [] } };
+        } else if (entry.extensions[ext] === undefined) {
+          entry.extensions[ext] = { [prop]: [] };
+        } else if (entry.extensions[ext][prop] === undefined) {
+          entry.extensions[ext][prop] = [];
+        }
+
+        entry.extensions[ext][prop] = [...entry.extensions[ext][prop], extension];
+      } else if (tagName === 'title') {
         entry.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
         entry.id = this.parseText(walker.currentNode as Element);
