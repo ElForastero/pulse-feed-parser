@@ -1,5 +1,10 @@
 ## RSS Pulse Feed Parser
 
+![AppVeyor](https://img.shields.io/appveyor/build/elforastero/pulse-feed-parser)
+![David](https://img.shields.io/david/elforastero/pulse-feed-parser)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/pulse-feed-parser?label=size)
+![npm](https://img.shields.io/npm/v/pulse-feed-parser)
+
 > This is a lightweight and robust RSS, Atom and JSON feeds parser with no dependencies.
 >
 > [Pulse Feed Reader](https://chrome.google.com/webstore/detail/pulse-feed-reader/lcobhhomehlpbfhobkimfcnohdchjdke) is an example of using this parser.
