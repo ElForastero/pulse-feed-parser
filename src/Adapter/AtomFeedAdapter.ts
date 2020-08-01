@@ -26,6 +26,7 @@ export class AtomFeedAdapter {
       items: AtomFeedAdapter.getItems(atom),
       extensions: atom.extensions,
       feedType: 'atom',
+      // @todo
       feedVersion: '',
     };
   }
@@ -53,10 +54,7 @@ export class AtomFeedAdapter {
     if (atom.authors) {
       const { name, email } = atom.authors[0];
 
-      return {
-        name,
-        email,
-      };
+      return { name, email };
     } else if (dcCreator) {
       return parsePerson(dcCreator);
     }
@@ -66,10 +64,7 @@ export class AtomFeedAdapter {
 
   private static getImage(atom: AtomFeed): Maybe<Image> {
     if (atom.logo) {
-      return {
-        url: atom.logo,
-        title: null,
-      };
+      return { url: atom.logo, title: null };
     }
 
     return null;

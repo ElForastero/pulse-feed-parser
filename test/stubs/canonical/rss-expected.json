@@ -1,0 +1,91 @@
+{
+  "categories": null,
+  "copyright": null,
+  "description": "Feed description",
+  "docs": null,
+  "generator": "https://wordpress.org/?v=5.4",
+  "image": {
+    "description": null,
+    "height": "32",
+    "link": "https://example.com",
+    "title": "Feed logo",
+    "url": "https://example.com/public/logo.svg",
+    "width": "32"
+  },
+  "items": [
+    {
+      "author": null,
+      "categories": [
+        {
+          "domain": null,
+          "value": "open source"
+        },
+        {
+          "domain": null,
+          "value": "product"
+        }
+      ],
+      "comments": "https://example.com/hello-world#comments",
+      "content": "Feed item content",
+      "description": "Feed item description",
+      "enclosure": null,
+      "guid": {
+        "isPermalink": false,
+        "value": "https://example.com/hello-world"
+      },
+      "link": "https://example.com/hello-world",
+      "pubDate": "Thu, 23 Apr 2020 16:00:39 +0000",
+      "source": null,
+      "title": "Tips, tricks, hacks, and secrets",
+      "extensions": {
+        "dc": {
+          "creator": [
+            {
+              "name": "dc:creator",
+              "value": "John Doe",
+              "attrs": null,
+              "children": null
+            }
+          ]
+        },
+        "itunes": {
+          "image": [
+            {
+              "name": "itunes:image",
+              "value": null,
+              "attrs": {
+                "href": "https://example.com/image-itunes.png"
+              },
+              "children": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "language": "en-US",
+  "lastBuildDate": "Thu, 23 Apr 2020 05:00:36 +0000",
+  "link": "https://example.com",
+  "managingEditor": null,
+  "pubDate": null,
+  "rating": null,
+  "skipDays": null,
+  "skipHours": null,
+  "title": "Example feed",
+  "ttl": null,
+  "webmaster": null,
+  "cloud": null,
+  "textInput": null,
+  "extensions": {
+    "dc": {
+      "rights": [
+        {
+          "name": "dc:rights",
+          "value": "John Doe",
+          "attrs": null,
+          "children": null
+        }
+      ]
+    }
+  }
+}

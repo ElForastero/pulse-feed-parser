@@ -33,13 +33,13 @@
   "author": "Eugene Dzhumak",
   "module": "dist/pulse-feed-parser.esm.js",
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.4.5",
+    "@size-limit/preset-small-lib": "^4.5.5",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
-    "size-limit": "^4.4.5",
+    "size-limit": "^4.5.5",
     "tsdx": "^0.13.2",
-    "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
   },
   "dependencies": {}
 }

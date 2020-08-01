@@ -32,7 +32,9 @@ export const parseExtension = (node: Element): [string, Extension] => {
 
   if (isTextNode) {
     ext.value = node.textContent!.trim();
-  } else {
+  } else if (firstChildName !== undefined) {
+    // child will be undefined in case of self-closing node
+    // like <itunes:image href="https://..." />
     ext.children = Array.from(node.childNodes).map(node => {
       const [, data] = parseExtension(node as Element);
       return data;

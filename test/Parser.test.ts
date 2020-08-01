@@ -6,9 +6,10 @@ const wrongXml = fs.readFileSync(path.resolve(__dirname, './stubs/wrong.xml'), {
   encoding: 'utf8',
 });
 
-it('Should throw on broken xml document', () => {
+it('should throw on broken xml document', () => {
+  const doc = new DOMParser().parseFromString(wrongXml, 'application/xml');
+
   expect(() => {
-    new Parser().parseXMLFeed(wrongXml);
-    // @todo solve the error constructor matching
+    new Parser().parseDocument(doc);
   }).toThrowError();
 });

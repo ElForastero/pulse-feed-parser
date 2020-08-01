@@ -29,7 +29,8 @@
       <guid isPermaLink="false">https://example.com/hello-world</guid>
       <description>Feed item description</description>
       <content:encoded>Feed item content</content:encoded>
-      <itunes:image href="https://example.com/image-itunes.png" />
+      <itunes:image href="https://example.com/image-itunes.png"/>
+      <comments>https://example.com/hello-world#comments</comments>
     </item>
   </channel>
 </rss>

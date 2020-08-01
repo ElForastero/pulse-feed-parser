@@ -33,7 +33,10 @@ export class Parser {
       throw new NetworkError(`The feed is unreachable`, response.status);
     }
 
-    const doc = new DOMParser().parseFromString(await response.text(), 'application/xml');
+    const doc = new DOMParser().parseFromString(
+      await response.text(),
+      'application/xml'
+    );
 
     return this.parseDocument(doc);
   }
@@ -46,8 +49,7 @@ export class Parser {
     }
 
     if (type === FeedType.Atom) {
-      const atomFeed = new AtomParser(doc).parse();
-      return AtomFeedAdapter.adapt(atomFeed);
+      return AtomFeedAdapter.adapt(new AtomParser(doc).parse());
     }
 
     throw new FeedTypeError('Unknown feed type');

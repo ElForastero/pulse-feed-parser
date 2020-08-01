@@ -1,39 +1,38 @@
-// @ts-nocheck
 import fs from 'fs';
 import path from 'path';
 import { RSSParser } from '../src/Parsers/RSSParser';
-import { Parser } from '../src';
 
-const github = fs.readFileSync(path.join(__dirname, './stubs/rss/github.xml'));
-const trello = fs.readFileSync(
-  path.join(__dirname, './stubs/rss/blog.trello.xml')
+const feedPaths = [
+  path.join(__dirname, './stubs/rss/github.xml'),
+  path.join(__dirname, './stubs/rss/blog.trello.xml'),
+  path.join(__dirname, './stubs/rss/smashingmagazine.xml'),
+  path.join(__dirname, './stubs/rss/alistapart.xml'),
+  path.join(__dirname, './stubs/rss/devzen.xml'),
+  path.join(__dirname, './stubs/rss/web-standards.xml'),
+];
+
+const canonicalFeedPath = path.join(__dirname, './stubs/canonical/rss.xml');
+const canonicalExpectation = path.join(
+  __dirname,
+  './stubs/canonical/rss-expected.json'
 );
-const smashingmagazine = fs.readFileSync(
-  path.join(__dirname, './stubs/rss/smashingmagazine.xml')
-);
-const alistapart = fs.readFileSync(
-  path.join(__dirname, './stubs/rss/alistapart.xml')
-);
-const devzen = fs.readFileSync(path.join(__dirname, './stubs/rss/devzen.xml'));
 
 it('should parse RSS feeds', () => {
-  const doc = new DOMParser().parseFromString(alistapart, 'application/xml');
-  const parser = new RSSParser(doc);
+  feedPaths.forEach(p => {
+    const xml = fs.readFileSync(p, { encoding: 'utf8' });
+    const doc = new DOMParser().parseFromString(xml, 'application/xml');
+    const parser = new RSSParser(doc);
 
-  console.log(parser.parse().items[0].extensions);
+    expect(() => parser.parse()).not.toThrowError();
+  });
 });
 
 it('should parse canonical feed', () => {
-  const xml = fs.readFileSync(
-    path.join(__dirname, './stubs/canonical/basic.xml'),
-    { encoding: 'utf8' }
-  );
+  const canonical = fs.readFileSync(canonicalFeedPath, { encoding: 'utf8' });
+  const expected = fs.readFileSync(canonicalExpectation, { encoding: 'utf8' });
+  const doc = new DOMParser().parseFromString(canonical, 'application/xml');
+  const parser = new RSSParser(doc);
+  const data = parser.parse();
 
-  const data = new Parser().parseXMLFeed(xml).items[0];
-  console.log(data);
-
-  // fs.writeFileSync(
-  //   path.join(__dirname, './stubs/canonical/expected.json'),
-  //   JSON.stringify(data)
-  // );
+  expect(data).toEqual(JSON.parse(expected));
 });
