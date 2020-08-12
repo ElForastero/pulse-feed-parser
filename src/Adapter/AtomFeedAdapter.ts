@@ -1,5 +1,12 @@
-import { Enclosure, Feed, Image, Item, Person } from '../types/Feed';
-import { AtomEntry, AtomFeed } from '../types/Atom';
+import {
+  Enclosure,
+  Feed,
+  Image,
+  Item,
+  Person,
+  AtomEntry,
+  AtomFeed,
+} from '../types';
 import { parsePerson } from '../utils/parsePerson';
 
 // DefaultAtomTranslator converts an atom.Feed struct
