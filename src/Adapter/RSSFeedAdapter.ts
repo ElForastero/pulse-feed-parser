@@ -1,5 +1,12 @@
-import { RSSFeed, RSSItem } from '../types/RSS';
-import { Enclosure, Feed, Image, Item, Person } from '../types/Feed';
+import {
+  Enclosure,
+  Feed,
+  Image,
+  Item,
+  Person,
+  RSSFeed,
+  RSSItem,
+} from '../types';
 import { parsePerson } from '../utils/parsePerson';
 
 export class RSSFeedAdapter {

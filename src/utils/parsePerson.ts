@@ -1,9 +1,9 @@
-import { Person } from '../types/Feed';
+import { Person } from '../types';
 
-const emailNameRgx = new RegExp(`^([^@]+@[^\s]+)\s+\(([^@]+)\)$`);
-const nameEmailRgx = new RegExp(`^([^@]+)\s+\(([^@]+@[^)]+)\)$`);
-const nameOnlyRgx = new RegExp(`^([^@()]+)$`);
-const emailOnlyRgx = new RegExp(`^([^@()]+@[^@()]+)$`);
+const emailNameRgx = new RegExp(/^([^@]+@[^\s]+)\s+\(([^@]+)\)$/);
+const nameEmailRgx = new RegExp(/^([^@]+)\s+\(([^@]+@[^)]+)\)$/);
+const nameOnlyRgx = new RegExp(/^([^@()]+)$/);
+const emailOnlyRgx = new RegExp(/^([^@()]+@[^@()]+)$/);
 
 // ParseNameAddress parses name/email strings commonly
 // found in RSS feeds of the format "Example Name (example@site.com)"

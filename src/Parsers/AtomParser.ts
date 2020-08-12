@@ -7,7 +7,7 @@ import {
   AtomLink,
   AtomPerson,
   AtomSource,
-} from '../types/Atom';
+} from '../types';
 import {
   getExtensionName,
   isExtension,
@@ -141,7 +141,8 @@ export class AtomParser {
           ...this.feed.extensions[ext][prop],
           extension,
         ];
-      } if (tagName === 'title') {
+      }
+      if (tagName === 'title') {
         this.feed.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
         this.feed.id = this.parseText(walker.currentNode as Element);
@@ -217,7 +218,10 @@ export class AtomParser {
           entry.extensions[ext][prop] = [];
         }
 
-        entry.extensions[ext][prop] = [...entry.extensions[ext][prop], extension];
+        entry.extensions[ext][prop] = [
+          ...entry.extensions[ext][prop],
+          extension,
+        ];
       } else if (tagName === 'title') {
         entry.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
@@ -395,7 +399,7 @@ export class AtomParser {
 
     // If type="xhtml", then this element contains inline xhtml, wrapped in a div element.
     if (type === 'xhtml') {
-      return node.firstElementChild!.textContent!.trim()
+      return node.firstElementChild!.textContent!.trim();
     }
 
     return null;

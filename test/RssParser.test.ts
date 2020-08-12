@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { RSSParser } from '../src/Parsers/RSSParser';
+import { RSSParser } from '../src';
 
 const feedPaths = [
   path.join(__dirname, './stubs/rss/github.xml'),
