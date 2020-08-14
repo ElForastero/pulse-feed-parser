@@ -7,12 +7,14 @@ import {
   AtomLink,
   AtomPerson,
   AtomSource,
+  IParser,
 } from '../types';
 import {
   getExtensionName,
   isExtension,
   parseExtension,
 } from '../utils/extensions';
+import { BaseParser, ParserOptions } from './BaseParser';
 
 // Atom elements which contain URIs
 // https://tools.ietf.org/html/rfc4287
@@ -36,17 +38,14 @@ import {
 /**
  * Parser for Atom feeds
  */
-export class AtomParser {
+export class AtomParser extends BaseParser implements IParser {
   private readonly entry: AtomEntry;
   private readonly source: AtomSource;
   private readonly person: AtomPerson;
   private feed: AtomFeed;
-  private document: Document;
-  // private baseURL: Maybe<string>;
 
-  constructor(document: Document) {
-    this.document = document;
-    // this.baseURL = null;
+  constructor(options?: ParserOptions) {
+    super(options);
 
     this.feed = {
       id: null,
@@ -100,19 +99,14 @@ export class AtomParser {
     this.person = { email: null, name: null, uri: null };
   }
 
-  public parse(): AtomFeed {
-    const root = this.document.firstElementChild;
+  public parse(doc: Document): AtomFeed {
+    const root = doc.firstElementChild;
 
     if (root === null) {
       throw new Error('No root node');
     }
 
-    // this.baseURL = root.getAttributeNS('xml', 'base');
-
-    const walker = window.document.createTreeWalker(
-      root,
-      NodeFilter.SHOW_ELEMENT
-    );
+    const walker = doc.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
     walker.firstChild();
     this.parseRoot(walker);
 

@@ -9,29 +9,29 @@ import {
   RSSCloud,
   RSSTextInput,
   IParser,
-  ParserOptions,
 } from '../types';
+
 import { append } from '../utils/collection';
 import {
   getExtensionName,
   isExtension,
   parseExtension,
 } from '../utils/extensions';
-import { sanitize } from '../utils/sanitizing';
+import { sanitize } from '../utils/sanitizer';
+import { BaseParser, ParserOptions } from './BaseParser';
 
 /**
  * Parser for RSS feeds
  */
-export class RSSParser implements IParser {
+export class RSSParser extends BaseParser implements IParser {
   feed: RSSFeed;
   private readonly image: RSSImage;
   private readonly item: RSSItem;
   private readonly guid: RSSGUID;
   private readonly textInput: RSSTextInput;
-  private options: ParserOptions;
 
-  constructor(options: ParserOptions) {
-    this.options = options;
+  constructor(options?: ParserOptions) {
+    super(options);
 
     this.image = {
       description: null,
@@ -98,10 +98,7 @@ export class RSSParser implements IParser {
       throw new Error('No root node');
     }
 
-    const walker = window.document.createTreeWalker(
-      root,
-      NodeFilter.SHOW_ELEMENT
-    );
+    const walker = doc.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
     walker.firstChild();
 
     do {
@@ -346,8 +343,6 @@ export class RSSParser implements IParser {
     if (text === null) return null;
 
     const doc = new DOMParser().parseFromString(text, 'text/html');
-    const element = sanitize(doc);
-
-    return element.innerHTML;
+    return sanitize(doc);
   }
 }

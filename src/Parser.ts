@@ -6,6 +6,7 @@ import { RSSFeedAdapter } from './Adapter/RSSFeedAdapter';
 import { AtomFeedAdapter } from './Adapter/AtomFeedAdapter';
 import { NetworkError } from './Errors/NetworkError';
 import { FeedTypeError } from './Errors/FeedTypeError';
+// @ts-ignore
 import { version } from '../package.json';
 
 export type PFPOptions = {
@@ -40,17 +41,8 @@ export class Parser {
   /**
    * Changed options will be merged with the defaults.
    */
-  constructor(options: PFPOptions) {
-    this.options = {
-      ...options,
-      fetchOptions: {
-        ...options.fetchOptions,
-        headers: {
-          ...DEFAULT_OPTIONS.fetchOptions.headers,
-          ...options.fetchOptions?.headers,
-        },
-      },
-    };
+  constructor(options?: PFPOptions) {
+    this.options = options ? mergeOptions(options) : DEFAULT_OPTIONS;
   }
 
   /**
@@ -75,16 +67,31 @@ export class Parser {
    * Parse a feed from the given XML document.
    */
   public parseDocument(doc: Document): Feed {
+    const { sanitization } = this.options;
     const type = XmlFeedTypeDetector.detect(doc);
 
     if (type === FeedType.RSS) {
-      return RSSFeedAdapter.adapt(new RSSParser(doc).parse());
+      return RSSFeedAdapter.adapt(new RSSParser({ sanitization }).parse(doc));
     }
 
     if (type === FeedType.Atom) {
-      return AtomFeedAdapter.adapt(new AtomParser(doc).parse());
+      return AtomFeedAdapter.adapt(new AtomParser({ sanitization }).parse(doc));
     }
 
     throw new FeedTypeError('Unknown feed type');
   }
 }
+
+/**
+ * Merge provided options with the defaults.
+ */
+const mergeOptions = (options: PFPOptions) => ({
+  ...options,
+  fetchOptions: {
+    ...options.fetchOptions,
+    headers: {
+      ...DEFAULT_OPTIONS.fetchOptions.headers,
+      ...options.fetchOptions?.headers,
+    },
+  },
+});
