@@ -85,6 +85,7 @@ const ACCEPTABLE_ELEMENTS = new Set([
   'strong',
   'sub',
   'sup',
+  'svg',
   'table',
   'tbody',
   'td',
@@ -125,6 +126,18 @@ const ACCEPTABLE_ATTRIBUTES = new Set([
   'target',
   'title',
   'width',
+]);
+
+const ACCEPTABLE_EMPTY_ELEMENTS = new Set([
+  'img',
+  'video',
+  'audio',
+  'hr',
+  'br',
+  'canvas',
+  'input',
+  'area',
+  'iframe',
 ]);
 
 const MATHML_ELEMENTS = new Set([
@@ -276,203 +289,15 @@ const MATHML_ATTRIBUTES = new Set([
   'xmlns:xlink',
 ]);
 
-const SVG_ELEMENTS = new Set([
-  'a',
-  'animate',
-  'animateColor',
-  'animateMotion',
-  'animateTransform',
-  'circle',
-  'defs',
-  'desc',
-  'ellipse',
-  'font-face',
-  'font-face-name',
-  'font-face-src',
-  'foreignObject',
-  'g',
-  'glyph',
-  'hkern',
-  'line',
-  'linearGradient',
-  'marker',
-  'metadata',
-  'missing-glyph',
-  'mpath',
-  'path',
-  'polygon',
-  'polyline',
-  'radialGradient',
-  'rect',
-  'set',
-  'stop',
-  'svg',
-  'switch',
-  'text',
-  'title',
-  'tspan',
-  'use',
-]);
-
-const SVG_ATTRIBUTES = new Set([
-  'accent-height',
-  'accumulate',
-  'additive',
-  'alphabetic',
-  'arabic-form',
-  'ascent',
-  'attributeName',
-  'attributeType',
-  'baseProfile',
-  'bbox',
-  'begin',
-  'by',
-  'calcMode',
-  'cap-height',
-  'class',
-  'color',
-  'color-rendering',
-  'content',
-  'cx',
-  'cy',
-  'd',
-  'descent',
-  'display',
-  'dur',
-  'dx',
-  'dy',
-  'end',
-  'fill',
-  'fill-opacity',
-  'fill-rule',
-  'font-family',
-  'font-size',
-  'font-stretch',
-  'font-style',
-  'font-variant',
-  'font-weight',
-  'from',
-  'fx',
-  'fy',
-  'g1',
-  'g2',
-  'glyph-name',
-  'gradientUnits',
-  'hanging',
-  'height',
-  'horiz-adv-x',
-  'horiz-origin-x',
-  'id',
-  'ideographic',
-  'k',
-  'keyPoints',
-  'keySplines',
-  'keyTimes',
-  'lang',
-  'marker-end',
-  'marker-mid',
-  'marker-start',
-  'markerHeight',
-  'markerUnits',
-  'markerWidth',
-  'mathematical',
-  'max',
-  'min',
-  'name',
-  'offset',
-  'opacity',
-  'orient',
-  'origin',
-  'overline-position',
-  'overline-thickness',
-  'panose-1',
-  'path',
-  'pathLength',
-  'points',
-  'preserveAspectRatio',
-  'r',
-  'refX',
-  'refY',
-  'repeatCount',
-  'repeatDur',
-  'requiredExtensions',
-  'requiredFeatures',
-  'restart',
-  'rotate',
-  'rx',
-  'ry',
-  'slope',
-  'stemh',
-  'stemv',
-  'stop-color',
-  'stop-opacity',
-  'strikethrough-position',
-  'strikethrough-thickness',
-  'stroke',
-  'stroke-dasharray',
-  'stroke-dashoffset',
-  'stroke-linecap',
-  'stroke-linejoin',
-  'stroke-miterlimit',
-  'stroke-opacity',
-  'stroke-width',
-  'systemLanguage',
-  'target',
-  'text-anchor',
-  'to',
-  'transform',
-  'type',
-  'u1',
-  'u2',
-  'underline-position',
-  'underline-thickness',
-  'unicode',
-  'unicode-range',
-  'units-per-em',
-  'values',
-  'version',
-  'viewBox',
-  'visibility',
-  'width',
-  'widths',
-  'x',
-  'x-height',
-  'x1',
-  'x2',
-  'xlink:actuate',
-  'xlink:arcrole',
-  'xlink:href',
-  'xlink:role',
-  'xlink:show',
-  'xlink:title',
-  'xlink:type',
-  'xml:base',
-  'xml:lang',
-  'xml:space',
-  'xmlns',
-  'xmlns:xlink',
-  'y',
-  'y1',
-  'y2',
-  'zoomAndPan',
-]);
-
-const ACCEPTABLE_SVG_ROPERTIES = new Set([
-  'fill',
-  'fill-opacity',
-  'fill-rule',
-  'stroke',
-  'stroke-linecap',
-  'stroke-linejoin',
-  'stroke-opacity',
-  'stroke-width',
+const ALL_ACCEPTABLE_ELEMENTS = new Set([
+  ...ACCEPTABLE_ELEMENTS,
+  ...MATHML_ELEMENTS,
 ]);
 
 /**
  * Clear the given DOM three from unwanted elements and attributes.
  */
-export const sanitize = (doc: Document): Element => {
-  // const e = doc.body.cloneNode(true);
+export const sanitize = (doc: Document): string => {
   const walker = doc.createTreeWalker(
     doc.body,
     NodeFilter.SHOW_ELEMENT + NodeFilter.SHOW_COMMENT
@@ -480,30 +305,72 @@ export const sanitize = (doc: Document): Element => {
 
   while (walker.nextNode()) {
     const current = walker.currentNode as Element;
+    const nodeName = current.nodeName.toLowerCase();
 
+    // Strip HTML comments
+    // Strip unacceptable elements
     if (
-      // Strip HTML comments
       current.nodeType === Node.COMMENT_NODE ||
-      // Strip empty elements
-      current.childNodes.length === 0 ||
-      // Strip unacceptable elements
-      !ACCEPTABLE_ELEMENTS.has(current.nodeName.toLowerCase())
+      !ALL_ACCEPTABLE_ELEMENTS.has(nodeName)
     ) {
-      const parent = current.parentNode!;
-
-      parent.removeChild(current);
-
-      // Set currentNode to parent to prevent breaking of the walk
-      walker.currentNode = parent;
+      removeNodeFromDocument(walker, current);
       continue;
     }
 
-    current.getAttributeNames().forEach(attribute => {
-      if (!ACCEPTABLE_ATTRIBUTES.has(attribute)) {
-        current.removeAttribute(attribute);
-      }
-    });
+    // Remove redundant empty elements
+    if (
+      current.childNodes.length === 0 &&
+      !ACCEPTABLE_EMPTY_ELEMENTS.has(nodeName)
+    ) {
+      removeNodeFromDocument(walker, current);
+      continue;
+    }
+
+    // Skip SVG checking
+    if (nodeName === 'svg') {
+      skipNodeChecking(walker, current);
+      continue;
+    }
+
+    // Clear common elements' attributes
+    if (ACCEPTABLE_ELEMENTS.has(nodeName)) {
+      current.getAttributeNames().forEach(attribute => {
+        if (!ACCEPTABLE_ATTRIBUTES.has(attribute)) {
+          current.removeAttribute(attribute);
+        }
+      });
+      // Clean MATHML elements' attributes
+    } else if (MATHML_ELEMENTS.has(nodeName)) {
+      current.getAttributeNames().forEach(attribute => {
+        if (!MATHML_ATTRIBUTES.has(attribute)) {
+          current.removeAttribute(attribute);
+        }
+      });
+    }
   }
 
-  return doc.body;
+  return doc.body.innerHTML;
+};
+
+/**
+ * Helper that remove the node from the document and sets a currentNode
+ * of a walker object back to parent to continue walking.
+ */
+const removeNodeFromDocument = (walker: TreeWalker, node: Element) => {
+  const parent = node.parentNode!;
+  parent.removeChild(node);
+
+  // Set currentNode to parent to prevent breaking of the walk
+  walker.currentNode = parent;
+};
+
+/**
+ * Sets currentNode to next available
+ */
+const skipNodeChecking = (walker: TreeWalker, node: Element) => {
+  const nextSibling = node.nextSibling;
+
+  if (nextSibling !== null) {
+    walker.currentNode = nextSibling;
+  }
 };
