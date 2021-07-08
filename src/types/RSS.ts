@@ -22,7 +22,7 @@ export type RSSFeed = {
   cloud: Maybe<RSSCloud>;
   textInput: Maybe<RSSTextInput>;
   items: Maybe<Array<RSSItem>>;
-  extensions: Maybe<Extensions>
+  extensions: Maybe<Extensions>;
 };
 
 // Item is an RSS Item
@@ -38,7 +38,7 @@ export type RSSItem = {
   guid: Maybe<RSSGUID>;
   pubDate: Maybe<string>;
   source: Maybe<RSSSource>;
-  extensions: Maybe<Extensions>
+  extensions: Maybe<Extensions>;
 };
 
 // Image is an image that represents the feed

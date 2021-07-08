@@ -8,27 +8,30 @@ import {
   RSSSource,
   RSSCloud,
   RSSTextInput,
-} from '../types/RSS';
+  IParser,
+} from '../types';
+
 import { append } from '../utils/collection';
 import {
   getExtensionName,
   isExtension,
   parseExtension,
 } from '../utils/extensions';
+import { sanitize } from '../utils/sanitizer';
+import { BaseParser, ParserOptions } from './BaseParser';
 
 /**
  * Parser for RSS feeds
  */
-export class RSSParser {
+export class RSSParser extends BaseParser implements IParser {
   feed: RSSFeed;
   private readonly image: RSSImage;
   private readonly item: RSSItem;
   private readonly guid: RSSGUID;
   private readonly textInput: RSSTextInput;
-  private document: Document;
 
-  constructor(document: Document) {
-    this.document = document;
+  constructor(options?: ParserOptions) {
+    super(options);
 
     this.image = {
       description: null,
@@ -88,17 +91,14 @@ export class RSSParser {
     };
   }
 
-  public parse(): RSSFeed {
-    const root = this.document.firstElementChild;
+  public parse(doc: Document): RSSFeed {
+    const root = doc.firstElementChild;
 
     if (root === null) {
       throw new Error('No root node');
     }
 
-    const walker = window.document.createTreeWalker(
-      root,
-      NodeFilter.SHOW_ELEMENT
-    );
+    const walker = doc.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
     walker.firstChild();
 
     do {
@@ -244,7 +244,7 @@ export class RSSParser {
       } else if (tagName === 'pubdate') {
         item.pubDate = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'content:encoded') {
-        item.content = this.parseText(walker.currentNode as Element);
+        item.content = this.parseHTML(walker.currentNode as Element);
       } else if (tagName === 'source') {
         item.source = this.parseSource(walker.currentNode as Element);
       } else if (tagName === 'enclosure') {
@@ -335,5 +335,14 @@ export class RSSParser {
     }
 
     return null;
+  }
+
+  private parseHTML(node: Node): Maybe<string> {
+    const text = this.parseText(node);
+
+    if (text === null) return null;
+
+    const doc = new DOMParser().parseFromString(text, 'text/html');
+    return sanitize(doc);
   }
 }

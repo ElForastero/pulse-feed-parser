@@ -7,12 +7,14 @@ import {
   AtomLink,
   AtomPerson,
   AtomSource,
-} from '../types/Atom';
+  IParser,
+} from '../types';
 import {
   getExtensionName,
   isExtension,
   parseExtension,
 } from '../utils/extensions';
+import { BaseParser, ParserOptions } from './BaseParser';
 
 // Atom elements which contain URIs
 // https://tools.ietf.org/html/rfc4287
@@ -36,17 +38,14 @@ import {
 /**
  * Parser for Atom feeds
  */
-export class AtomParser {
+export class AtomParser extends BaseParser implements IParser {
   private readonly entry: AtomEntry;
   private readonly source: AtomSource;
   private readonly person: AtomPerson;
   private feed: AtomFeed;
-  private document: Document;
-  // private baseURL: Maybe<string>;
 
-  constructor(document: Document) {
-    this.document = document;
-    // this.baseURL = null;
+  constructor(options?: ParserOptions) {
+    super(options);
 
     this.feed = {
       id: null,
@@ -100,19 +99,14 @@ export class AtomParser {
     this.person = { email: null, name: null, uri: null };
   }
 
-  public parse(): AtomFeed {
-    const root = this.document.firstElementChild;
+  public parse(doc: Document): AtomFeed {
+    const root = doc.firstElementChild;
 
     if (root === null) {
       throw new Error('No root node');
     }
 
-    // this.baseURL = root.getAttributeNS('xml', 'base');
-
-    const walker = window.document.createTreeWalker(
-      root,
-      NodeFilter.SHOW_ELEMENT
-    );
+    const walker = doc.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
     walker.firstChild();
     this.parseRoot(walker);
 
@@ -141,7 +135,8 @@ export class AtomParser {
           ...this.feed.extensions[ext][prop],
           extension,
         ];
-      } if (tagName === 'title') {
+      }
+      if (tagName === 'title') {
         this.feed.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
         this.feed.id = this.parseText(walker.currentNode as Element);
@@ -217,7 +212,10 @@ export class AtomParser {
           entry.extensions[ext][prop] = [];
         }
 
-        entry.extensions[ext][prop] = [...entry.extensions[ext][prop], extension];
+        entry.extensions[ext][prop] = [
+          ...entry.extensions[ext][prop],
+          extension,
+        ];
       } else if (tagName === 'title') {
         entry.title = this.parseText(walker.currentNode as Element);
       } else if (tagName === 'id') {
@@ -395,7 +393,7 @@ export class AtomParser {
 
     // If type="xhtml", then this element contains inline xhtml, wrapped in a div element.
     if (type === 'xhtml') {
-      return node.firstElementChild!.textContent!.trim()
+      return node.firstElementChild!.textContent!.trim();
     }
 
     return null;

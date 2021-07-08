@@ -1,4 +1,4 @@
-import { Extension } from '../types/Extension';
+import { Extension } from '../types';
 
 const EXTENSION: Extension = {
   name: '',
@@ -26,13 +26,16 @@ export const getExtensionName = (node: Element): string => node.prefix!;
  */
 export const parseExtension = (node: Element): [string, Extension] => {
   const ext = { ...EXTENSION };
-  const firstChildName = node.firstChild?.nodeName;
+  const firstChild = node.firstChild;
+  const isTextNode =
+    node.firstChild?.nodeType === Node.COMMENT_NODE ||
+    node.firstChild?.nodeType === Node.CDATA_SECTION_NODE;
+
   ext.name = node.nodeName.toLowerCase();
-  const isTextNode = ['#text', '#cdata-section'].includes(firstChildName!);
 
   if (isTextNode) {
     ext.value = node.textContent!.trim();
-  } else if (firstChildName !== undefined) {
+  } else if (firstChild !== null) {
     // child will be undefined in case of self-closing node
     // like <itunes:image href="https://..." />
     ext.children = Array.from(node.childNodes).map(node => {

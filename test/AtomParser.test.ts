@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { AtomParser } from '../src/Parsers/AtomParser';
+import { AtomParser } from '../src';
 
 const feedPaths = [
   path.join(__dirname, './stubs/atom/gitlab.xml'),

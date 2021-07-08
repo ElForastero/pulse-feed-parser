@@ -16,7 +16,7 @@ export type AtomFeed = {
   authors: Maybe<Array<AtomPerson>>;
   categories: Maybe<Array<AtomCategory>>;
   entries: Maybe<Array<AtomEntry>>;
-  extensions: Maybe<Extensions>
+  extensions: Maybe<Extensions>;
 };
 
 // Entry is an Atom Entry
@@ -33,7 +33,7 @@ export type AtomEntry = {
   published: Maybe<string>;
   source: Maybe<AtomSource>;
   content: Maybe<AtomContent>;
-  extensions: Maybe<Extensions>
+  extensions: Maybe<Extensions>;
 };
 
 // Category is category metadata for Feeds and Entries

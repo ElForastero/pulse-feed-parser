@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { RSSParser } from '../src/Parsers/RSSParser';
+import { RSSParser } from '../src';
 
 const feedPaths = [
   path.join(__dirname, './stubs/rss/github.xml'),
@@ -21,9 +21,9 @@ it('should parse RSS feeds', () => {
   feedPaths.forEach(p => {
     const xml = fs.readFileSync(p, { encoding: 'utf8' });
     const doc = new DOMParser().parseFromString(xml, 'application/xml');
-    const parser = new RSSParser(doc);
+    const parser = new RSSParser();
 
-    expect(() => parser.parse()).not.toThrowError();
+    expect(() => parser.parse(doc)).not.toThrowError();
   });
 });
 
@@ -31,8 +31,8 @@ it('should parse canonical feed', () => {
   const canonical = fs.readFileSync(canonicalFeedPath, { encoding: 'utf8' });
   const expected = fs.readFileSync(canonicalExpectation, { encoding: 'utf8' });
   const doc = new DOMParser().parseFromString(canonical, 'application/xml');
-  const parser = new RSSParser(doc);
-  const data = parser.parse();
+  const parser = new RSSParser();
+  const data = parser.parse(doc);
 
   expect(data).toEqual(JSON.parse(expected));
 });
